@@ -1,19 +1,19 @@
 {
-    "name": "theme-ui",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/hdlion/ui-theme.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-      "url": "https://github.com/hdlion/ui-theme/issues"
-    },
-    "homepage": "https://github.com/hdlion/ui-theme#readme"
-  }
+  "name": "fe-theme",
+  "version": "2.0.0",
+  "description": "fe-theme",
+  "main": "babel.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hdlion/ui-theme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hdlion/ui-theme/issues"
+  },
+  "homepage": "https://github.com/hdlion/ui-theme#readme"
+}
