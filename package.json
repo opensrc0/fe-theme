@@ -9,7 +9,7 @@
     "build:clean": "rimraf es cjs",
     "build:es": "babel js -d es --ignore *.test.js,*.story.js",
     "build:cjs": "NODE_ENV=cjs babel js -d cjs --ignore *.test.js,*.story.js",
-    "build:prepare": "node ./src/scripts/buildPrepare.js"
+    "build:prepare": "node ./js/scripts/buildPrepare.js"
   },
   "repository": {
     "type": "git",

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
 import cx from 'classnames';
 import fontColor from '../theme/font/fontColorConst';
 import fontWeight from '../theme/font/fontWeightConst';
@@ -375,15 +374,4 @@ Button.defaultProps = {
   hiddenLG: false,
 };
 
-Button.propTypes = {
-  $isMobile: PropTypes.bool.isRequired,
-};
-
-const mapStateToProps = (state) => ({
-  $isMobile: state.$isMobile,
-});
-
-export default connect(
-  mapStateToProps,
-  null,
-)(Button);
+export default Button;
