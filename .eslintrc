@@ -1,5 +1,5 @@
 {
-  "parser": "babel-eslint",
+  "parser": "@babel/eslint-parser",
   "extends": "airbnb",
   "env": {
     "browser": true,
@@ -15,6 +15,9 @@
         ]
       }
     }
+  },
+  "parserOptions": {
+    "ecmaVersion":"latest"
   },
   "rules": {
     "arrow-parens": ["error", "always"],
