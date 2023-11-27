@@ -8,7 +8,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { ThemeProvider } from 'styled-components';
-import theme from 'fe-theme/theme';
+import theme from 'fe-theme/js/theme';
 import App from './App';
 
 ReactDOM.hydrate(
