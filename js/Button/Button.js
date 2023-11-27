@@ -6,7 +6,6 @@ import fontColor from '../theme/font/fontColorConst';
 import fontWeight from '../theme/font/fontWeightConst';
 import fontSize from '../theme/font/fontSizeConst';
 import theme from '../theme';
-import Ripple from '../../component/Ripple/Ripple';
 import Text from '../Text/TextWeb';
 
 /* eslint-disable react/button-has-type */
@@ -217,7 +216,6 @@ const Button = ({ type, onBlur, id, className, isDisabled, isDisableOnClick,
   };
 
   return (
-    <Ripple>
       <StyledButton
         buttonType={type}
         disabled={isBtnDisabled || isDisabled}
@@ -240,7 +238,6 @@ const Button = ({ type, onBlur, id, className, isDisabled, isDisableOnClick,
             )
         }
       </StyledButton>
-    </Ripple>
   );
 };
 
