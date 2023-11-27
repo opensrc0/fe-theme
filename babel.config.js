@@ -23,14 +23,6 @@ module.exports = function babelConfig(api) {
           }],
         ],
       },
-      'react-native': {
-        presets: [
-          'expo',
-        ],
-        plugins: [
-          '@babel/plugin-transform-react-jsx-source',
-        ],
-      },
     },
   };
 };
