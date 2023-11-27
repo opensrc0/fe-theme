@@ -1,12 +1,12 @@
 {
   "name": "fe-theme",
-  "version": "2.20.0",
+  "version": "2.30.0",
   "description": "fe-theme",
   "main": "babel.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "semantic-release": "semantic-release",
-    "build": "run-s build:clean && run-p build:es",
+    "build": "run-s build:clean && run-p build:es build:prepare",
     "build:clean": "rimraf es cjs",
     "build:es": "babel js -d es --ignore *.test.js",
     "build:prepare": "node ./js/scripts/buildPrepare.js",
@@ -113,5 +113,9 @@
     "WIP-Tooltip/**/*",
     "theme/**/*",
     "theme.js"
-  ]
+  ],
+  "dependencies": {
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "classnames": "^2.3.2"
+  }
 }
