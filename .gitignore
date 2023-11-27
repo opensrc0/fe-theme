@@ -13,3 +13,7 @@ builds/
 coverage/
 
 __snapshots__/
+
+cjs/
+
+es/
