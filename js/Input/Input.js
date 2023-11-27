@@ -3,7 +3,7 @@ import classNames from 'classnames/bind';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import theme from '../theme';
-import { HTML_TAG_REGEX } from '../../Utils/Constants';
+import { HTML_TAG_REGEX } from '../../utils/constants';
 import fontColor from '../theme/font/fontColorConst';
 import Image from '../../component/Image/Image';
 

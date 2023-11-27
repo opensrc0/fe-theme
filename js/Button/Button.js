@@ -8,7 +8,6 @@ import fontSize from '../theme/font/fontSizeConst';
 import theme from '../theme';
 import Ripple from '../../component/Ripple/Ripple';
 import Text from '../Text/TextWeb';
-import { showScreenLock } from '../../Utils/Utils';
 
 /* eslint-disable react/button-has-type */
 export const StyledButton = styled(
@@ -208,9 +207,7 @@ const Button = ({ type, onBlur, id, className, isDisabled, isDisableOnClick,
     if (isDisableOnClick) {
       setBtnDisabled(true);
     }
-    if (isLockOnClick) {
-      showScreenLock();
-    }
+
     onClick(setBtnDisabled);
   };
 
