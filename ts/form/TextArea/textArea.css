@@ -1,0 +1,12 @@
+textarea {
+  max-height: 200px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  overflow-y: hidden;
+  width: 100%;
+  padding: 1rem;
+  resize: none;
+  border-radius: 1rem;
+  border-color: #bcc0c8;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
