@@ -1,6 +1,6 @@
 {
   "name": "fe-theme",
-  "version": "2.16.0",
+  "version": "2.17.0",
   "description": "fe-theme",
   "main": "babel.config.js",
   "scripts": {
@@ -71,5 +71,15 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "styled-components": "^6.1.1"
-  }
+  },
+  "files": [
+    "cjs/**/*",
+    "es/**/*",
+    "Accordion/**/*",
+    "Button/**/*",
+    "Card/**/*",
+    "Checkbox/**/*",
+    "theme/**/*",
+    "theme.js"
+  ]
 }
