@@ -1,6 +1,6 @@
 {
   "name": "fe-theme",
-  "version": "3.0.2",
+  "version": "3.1.0",
   "description": "fe-theme",
   "main": "babel.config.js",
   "scripts": {
@@ -79,7 +79,6 @@
     "Block/**/*",
     "Box/**/*",
     "Button/**/*",
-    "Card/**/*",
     "Checkbox/**/*",
     "Chip/**/*",
     "Flex/**/*",
