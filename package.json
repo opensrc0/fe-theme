@@ -1,11 +1,12 @@
 {
   "name": "fe-theme",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "description": "fe-theme",
   "main": "babel.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "semantic-release": "semantic-release",
+    "local": "nodemon babel /js -d es --ignore *.test.js",
     "build": "run-s build:clean && run-p build:es build:prepare",
     "build:clean": "rimraf es cjs",
     "build:es": "babel js -d es --ignore *.test.js",
@@ -65,8 +66,12 @@
     "eslint-plugin-react": "^7.33.2",
     "lint-staged": "^15.1.0",
     "mkdirp": "^3.0.1",
+    "nodemon": "^3.0.1",
     "npm-run-all": "^4.1.5",
-    "prop-types": "^15.8.1"
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.1.1"
   },
   "peerDependencies": {
     "react": "^18.2.0",
