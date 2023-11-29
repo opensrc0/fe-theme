@@ -7,65 +7,72 @@ import theme from '../theme';
 
 const styles = {
   color(props) {
+    console.log(props);
+    const lTheme = props.theme.color ? props.theme : theme;
     if (props.kind === 'filled') {
-      return theme.color.white;
+      return lTheme.color.white;
     }
     if (props.kind === 'outlined') {
-      return theme.color[props.color];
+      return lTheme.color[props.color];
     }
     return '';
   },
   backgroundColor(props) {
+    const lTheme = props.theme.color ? props.theme : theme;
     if (props.kind === 'filled') {
-      return theme.color[props.color || 'secondary'];
+      return lTheme.color[props.color || 'secondary'];
     }
     if (props.kind === 'outlined') {
-      return theme.color.white;
+      return lTheme.color.white;
     }
     return '';
   },
   fontSize(props) {
+    const lTheme = props.theme.color ? props.theme : theme;
     if (props.size === 'small') {
-      return theme.fontSize.xs;
+      return lTheme.fontSize.xs;
     }
     if (props.size === 'medium') {
-      return theme.fontSize.s;
+      return lTheme.fontSize.s;
     }
     if (props.size === 'large') {
-      return theme.fontSize.s;
+      return lTheme.fontSize.s;
     }
     return '';
   },
   padding(props) {
+    const lTheme = props.theme.color ? props.theme : theme;
     if (props.size === 'small') {
-      return theme.px([1, 2]);
+      return lTheme.px([1, 2]);
     }
     if (props.size === 'medium') {
-      return theme.px([1.5, 2]);
+      return lTheme.px([1.5, 2]);
     }
     if (props.size === 'large') {
-      return theme.px([2]);
+      return lTheme.px([2]);
     }
     return '';
   },
   borderColor(props) {
+    const lTheme = props.theme.color ? props.theme : theme;
     if (props.kind === 'filled') {
-      return theme.color[props.color];
+      return lTheme.color[props.color];
     }
     if (props.kind === 'outlined') {
-      return theme.color[props.color];
+      return lTheme.color[props.color];
     }
     return '';
   },
   borderRadius(props) {
+    const lTheme = props.theme.color ? props.theme : theme;
     if (props.shape === 'bluntEdged') {
-      return theme.borderRadius;
+      return lTheme.borderRadius;
     }
     if (props.shape === 'sharpEdged') {
       return '0';
     }
     if (props.shape === 'capsular') {
-      return theme.px(10);
+      return lTheme.px(10);
     }
     if (props.shape === 'circular') {
       return '100%';
@@ -86,29 +93,32 @@ const styles = {
   },
   hover: {
     color(props) {
+      const lTheme = props.theme.color ? props.theme : theme;
       if (props.kind === 'filled') {
-        return theme.color.white;
+        return lTheme.color.white;
       }
       if (props.kind === 'outlined') {
-        return theme.color.white;
+        return lTheme.color.white;
       }
       return '';
     },
     backgroundColor(props) {
+      const lTheme = props.theme.color ? props.theme : theme;
       if (props.kind === 'filled') {
-        return theme.color[`${props.color}Dark`];
+        return lTheme.color[`${props.color}Dark`];
       }
       if (props.kind === 'outlined') {
-        return theme.color[props.color];
+        return lTheme.color[props.color];
       }
       return '';
     },
     borderColor(props) {
+      const lTheme = props.theme.color ? props.theme : theme;
       if (props.kind === 'filled') {
-        return theme.color[`${props.color}Dark`];
+        return lTheme.color[`${props.color}Dark`];
       }
       if (props.kind === 'outlined') {
-        return theme.color[props.color];
+        return lTheme.color[props.color];
       }
       return '';
     },
@@ -164,27 +174,30 @@ function Button({ label, disabled, className, clickCbk, ...props }) {
   );
 }
 
-export default Button;
-
 Button.propTypes = {
-  type: PropTypes.oneOf([
-    'submit',
-    'button',
-  ]),
-  label: PropTypes.string,
+  label: PropTypes.string.isRequired,
   className: PropTypes.string,
-  clickCbk: () => {},
+  clickCbk: PropTypes.func,
+  type: PropTypes.oneOf(['submit', 'button']),
+  kind: PropTypes.oneOf(['filled', 'outlined']),
+  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  shape: PropTypes.oneOf(['bluntEdged', 'sharpEdged', 'capsular', 'circular']),
+  fluid: PropTypes.bool,
   disabled: PropTypes.bool,
   isLoading: PropTypes.bool,
-  kind: PropTypes.oneOf(['filled', 'outlined']),
-  shape: PropTypes.oneOf(['bluntEdged', 'sharpEdged', 'capsular', 'circular']),
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
-  fluid: PropTypes.bool,
+
 };
 
 Button.defaultProps = {
+  className: '',
+  clickCbk: () => {},
   type: 'submit',
   kind: 'filled',
   size: 'medium',
   shape: 'bluntEdged',
+  fluid: false,
+  disabled: false,
+  isLoading: false,
 };
+
+export default Button;
