@@ -17,7 +17,7 @@ const styles = {
   },
   backgroundColor(props) {
     if (props.kind === 'filled') {
-      return theme.color[props.color];
+      return theme.color[props.color || 'secondary'];
     }
     if (props.kind === 'outlined') {
       return theme.color.white;
@@ -151,7 +151,6 @@ const StyledButton = styled(
 `;
 
 function Button({ label, disabled, className, clickCbk, ...props }) {
-  console.log(props, 'Button');
   return (
     <StyledButton
       {...props}
