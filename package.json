@@ -120,6 +120,7 @@
   ],
   "dependencies": {
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "classnames": "^2.3.2"
+    "classnames": "^2.3.2",
+    "rimraf": "^5.0.5"
   }
 }
