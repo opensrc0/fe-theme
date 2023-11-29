@@ -1,69 +1,71 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import cx from 'classnames';
+import theme from '../theme';
 
 const styles = {
   color(props) {
     if (props.kind === 'filled') {
-      return props.theme.color.white;
+      return theme.color.white;
     }
     if (props.kind === 'outlined') {
-      return props.theme.color[props.color];
+      return theme.color[props.color];
     }
     return '';
   },
   backgroundColor(props) {
     if (props.kind === 'filled') {
-      return props.theme.color[props.color];
+      return theme.color[props.color];
     }
     if (props.kind === 'outlined') {
-      return props.theme.color.white;
+      return theme.color.white;
     }
     return '';
   },
   fontSize(props) {
     if (props.size === 'small') {
-      return props.theme.fontSize.xs;
+      return theme.fontSize.xs;
     }
     if (props.size === 'medium') {
-      return props.theme.fontSize.s;
+      return theme.fontSize.s;
     }
     if (props.size === 'large') {
-      return props.theme.fontSize.s;
+      return theme.fontSize.s;
     }
     return '';
   },
   padding(props) {
     if (props.size === 'small') {
-      return props.theme.px([1, 2]);
+      return theme.px([1, 2]);
     }
     if (props.size === 'medium') {
-      return props.theme.px([1.5, 2]);
+      return theme.px([1.5, 2]);
     }
     if (props.size === 'large') {
-      return props.theme.px([2]);
+      return theme.px([2]);
     }
     return '';
   },
   borderColor(props) {
     if (props.kind === 'filled') {
-      return props.theme.color[props.color];
+      return theme.color[props.color];
     }
     if (props.kind === 'outlined') {
-      return props.theme.color[props.color];
+      return theme.color[props.color];
     }
     return '';
   },
   borderRadius(props) {
     if (props.shape === 'bluntEdged') {
-      return props.theme.borderRadius;
+      return theme.borderRadius;
     }
     if (props.shape === 'sharpEdged') {
       return '0';
     }
     if (props.shape === 'capsular') {
-      return props.theme.px(10);
+      return theme.px(10);
     }
     if (props.shape === 'circular') {
       return '100%';
@@ -85,28 +87,28 @@ const styles = {
   hover: {
     color(props) {
       if (props.kind === 'filled') {
-        return props.theme.color.white;
+        return theme.color.white;
       }
       if (props.kind === 'outlined') {
-        return props.theme.color.white;
+        return theme.color.white;
       }
       return '';
     },
     backgroundColor(props) {
       if (props.kind === 'filled') {
-        return props.theme.color[`${props.color}Dark`];
+        return theme.color[`${props.color}Dark`];
       }
       if (props.kind === 'outlined') {
-        return props.theme.color[props.color];
+        return theme.color[props.color];
       }
       return '';
     },
     borderColor(props) {
       if (props.kind === 'filled') {
-        return props.theme.color[`${props.color}Dark`];
+        return theme.color[`${props.color}Dark`];
       }
       if (props.kind === 'outlined') {
-        return props.theme.color[props.color];
+        return theme.color[props.color];
       }
       return '';
     },
@@ -148,13 +150,8 @@ const StyledButton = styled(
   }
 `;
 
-export default function Button({ label, disabled, className, clickCbk, ...props }) {
-  // const buttonClicked = () => {
-  //   if (!disabled) {
-  //     clickCbk();
-  //   }
-  // };
-
+function Button({ label, disabled, className, clickCbk, ...props }) {
+  console.log(props, 'Button');
   return (
     <StyledButton
       {...props}
@@ -164,10 +161,11 @@ export default function Button({ label, disabled, className, clickCbk, ...props 
     >
 
       {label}
-
     </StyledButton>
   );
 }
+
+export default Button;
 
 Button.propTypes = {
   type: PropTypes.oneOf([

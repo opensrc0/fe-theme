@@ -1,5 +1,8 @@
 const fontColor = {};
 
+fontColor.primary = '#00364e';
+fontColor.secondary = '#03567b';
+
 fontColor.white = '#ffffff';
 fontColor.gray1 = '#dddddd';
 fontColor.gray2 = '#cccccc';

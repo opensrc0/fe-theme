@@ -1,6 +1,6 @@
 {
   "name": "fe-theme",
-  "version": "3.1.1",
+  "version": "3.2.1",
   "description": "fe-theme",
   "main": "babel.config.js",
   "scripts": {
@@ -41,6 +41,9 @@
     "design-system",
     "ui-library"
   ],
+  "publishConfig": {
+    "registry": "https://github.com/hdlion/fe-theme.git"
+  },
   "devDependencies": {
     "@babel/cli": "^7.23.4",
     "@babel/core": "^7.23.3",
