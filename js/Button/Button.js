@@ -7,7 +7,6 @@ import theme from '../theme';
 
 const styles = {
   color(props) {
-    console.log(props);
     const lTheme = props.theme.color ? props.theme : theme;
     if (props.kind === 'filled') {
       return lTheme.color.white;
@@ -28,28 +27,26 @@ const styles = {
     return '';
   },
   fontSize(props) {
-    const lTheme = props.theme.color ? props.theme : theme;
     if (props.size === 'small') {
-      return lTheme.fontSize.xs;
+      return theme.fontSize.xs;
     }
     if (props.size === 'medium') {
-      return lTheme.fontSize.s;
+      return theme.fontSize.s;
     }
     if (props.size === 'large') {
-      return lTheme.fontSize.s;
+      return theme.fontSize.s;
     }
     return '';
   },
   padding(props) {
-    const lTheme = props.theme.color ? props.theme : theme;
     if (props.size === 'small') {
-      return lTheme.px([1, 2]);
+      return theme.px([1, 2]);
     }
     if (props.size === 'medium') {
-      return lTheme.px([1.5, 2]);
+      return theme.px([1.5, 2]);
     }
     if (props.size === 'large') {
-      return lTheme.px([2]);
+      return theme.px([2]);
     }
     return '';
   },
@@ -64,15 +61,14 @@ const styles = {
     return '';
   },
   borderRadius(props) {
-    const lTheme = props.theme.color ? props.theme : theme;
     if (props.shape === 'bluntEdged') {
-      return lTheme.borderRadius;
+      return theme.borderRadius;
     }
     if (props.shape === 'sharpEdged') {
       return '0';
     }
     if (props.shape === 'capsular') {
-      return lTheme.px(10);
+      return theme.px(10);
     }
     if (props.shape === 'circular') {
       return '100%';
