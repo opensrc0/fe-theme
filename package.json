@@ -1,6 +1,6 @@
 {
   "name": "fe-theme",
-  "version": "3.2.1",
+  "version": "3.3.1",
   "description": "fe-theme",
   "main": "babel.config.js",
   "scripts": {
