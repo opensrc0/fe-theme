@@ -41,9 +41,6 @@
     "design-system",
     "ui-library"
   ],
-  "publishConfig": {
-    "registry": "https://github.com/hdlion/fe-theme.git"
-  },
   "devDependencies": {
     "@babel/cli": "^7.23.4",
     "@babel/core": "^7.23.3",
