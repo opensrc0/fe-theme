@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "semantic-release": "semantic-release",
-    "local": "nodemon build:es",
+    "local": "babel js -d es --watch",
     "build": "run-s build:clean && run-p build:es build:prepare",
     "build:clean": "rimraf es cjs",
     "build:es": "babel js -d es --ignore *.test.js",
@@ -16,9 +16,6 @@
     "lint": "run-p lint:*",
     "lint:eslint": "eslint .",
     "lint:stylelint": "stylelint '**/*.js'"
-  },
-  "publishConfig": {
-    "registry": "https://github.com/hdlion/fe-theme.git"
   },
   "lint-staged": {
     "*.js": [
