@@ -1,2 +1,2 @@
-export { default } from '../es/WIP-Divider';
-export * from '../es/WIP-Divider';
+export { default } from '../__build-es/WIP-Divider';
+export * from '../__build-es/WIP-Divider';

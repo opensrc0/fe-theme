@@ -1,2 +1,2 @@
-export { default } from '../es/WIP-Skeleton';
-export * from '../es/WIP-Skeleton';
+export { default } from '../__build-es/WIP-Skeleton';
+export * from '../__build-es/WIP-Skeleton';

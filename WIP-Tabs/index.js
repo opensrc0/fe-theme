@@ -1,2 +1,2 @@
-export { default } from '../es/WIP-Tabs';
-export * from '../es/WIP-Tabs';
+export { default } from '../__build-es/WIP-Tabs';
+export * from '../__build-es/WIP-Tabs';

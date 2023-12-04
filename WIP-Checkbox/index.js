@@ -1,2 +1,2 @@
-export { default } from '../es/WIP-Checkbox';
-export * from '../es/WIP-Checkbox';
+export { default } from '../__build-es/WIP-Checkbox';
+export * from '../__build-es/WIP-Checkbox';

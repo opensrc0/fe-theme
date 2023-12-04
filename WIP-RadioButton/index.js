@@ -1,2 +1,2 @@
-export { default } from '../es/WIP-RadioButton';
-export * from '../es/WIP-RadioButton';
+export { default } from '../__build-es/WIP-RadioButton';
+export * from '../__build-es/WIP-RadioButton';

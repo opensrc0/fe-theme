@@ -1,2 +1,2 @@
-export { default } from '../es/WIP-Gallery';
-export * from '../es/WIP-Gallery';
+export { default } from '../__build-es/WIP-Gallery';
+export * from '../__build-es/WIP-Gallery';

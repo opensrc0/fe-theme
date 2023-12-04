@@ -1,2 +1,2 @@
-export { default } from '../es/WIP-Sticky';
-export * from '../es/WIP-Sticky';
+export { default } from '../__build-es/WIP-Sticky';
+export * from '../__build-es/WIP-Sticky';

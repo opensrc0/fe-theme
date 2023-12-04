@@ -1,2 +1,2 @@
-export { default } from '../es/WIP-Grid';
-export * from '../es/WIP-Grid';
+export { default } from '../__build-es/WIP-Grid';
+export * from '../__build-es/WIP-Grid';

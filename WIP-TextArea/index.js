@@ -1,2 +1,2 @@
-export { default } from '../es/WIP-TextArea';
-export * from '../es/WIP-TextArea';
+export { default } from '../__build-es/WIP-TextArea';
+export * from '../__build-es/WIP-TextArea';

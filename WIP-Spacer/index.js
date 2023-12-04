@@ -1,2 +1,2 @@
-export { default } from '../es/WIP-Spacer';
-export * from '../es/WIP-Spacer';
+export { default } from '../__build-es/WIP-Spacer';
+export * from '../__build-es/WIP-Spacer';

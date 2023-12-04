@@ -1,2 +1,2 @@
-export { default } from '../es/WIP-Tooltip';
-export * from '../es/WIP-Tooltip';
+export { default } from '../__build-es/WIP-Tooltip';
+export * from '../__build-es/WIP-Tooltip';
