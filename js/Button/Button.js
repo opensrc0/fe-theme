@@ -167,15 +167,17 @@ function Button({ label, disabled, className, clickCbk, spin, ...props }) {
     >
       {
         spin ? (
-          <FontAwesomeIcon
-            icon="fa-solid fa-spinner"
-            spin
-            className="disabled-spiner"
-          />
+          <>
+            <FontAwesomeIcon
+              icon="fa-solid fa-spinner"
+              spin
+              className="disabled-spiner"
+            />
+            &nbsp;&nbsp;
+          </>
         ) : null
       }
-      &nbsp;&nbsp;
-      {label}
+      Him
     </StyledButton>
   );
 }
