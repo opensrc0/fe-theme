@@ -17,3 +17,5 @@ __snapshots__/
 cjs/
 
 es/
+
+__build-es/
