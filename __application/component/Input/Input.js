@@ -11,7 +11,7 @@ const InputWrapper = styled.div`
 
 const InputIcon = styled(FontAwesomeIcon)`
   position: absolute;
-  top: 12px;
+  top: 15px;
   margin-left: 12px;
   color: #03567b;
 `;
@@ -27,7 +27,7 @@ const SuffixInputIcon = styled(InputIcon)`
 `;
 
 const InputBox = styled.input`
-  padding: 12px 48px;
+  padding: 12px 48px 12px 40px;
   width: 100%;
   ${({ state }) => state === 'error' && css`
     border-color: red;
@@ -47,7 +47,7 @@ function Input(props) {
   } = props;
   return (
     <InputWrapper>
-      {iconName && <InputIcon icon={`fa-solid ${iconName}`} size="xl" />}
+      {iconName && <InputIcon icon={`fa-solid ${iconName}`} size="s" />}
       <InputBox type={type} placeholder={placeholder} ref={reference} state={state} />
       {suffixIconName && <SuffixInputIcon icon={`fa-solid ${suffixIconName}`} size={suffixIconSize} onClick={onClickSuffixIcon} />}
     </InputWrapper>
