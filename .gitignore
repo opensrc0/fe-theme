@@ -4,7 +4,7 @@ npm-debug.log
 
 **/node_modules
 
-**/build
+**/__build-es
 
 package-lock.json
 
@@ -13,7 +13,3 @@ builds/
 coverage/
 
 __snapshots__/
-
-__build-es/
-
-

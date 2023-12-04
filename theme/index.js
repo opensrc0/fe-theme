@@ -1,2 +1,2 @@
-export { default } from '../build/theme';
-export * from '../build/theme';
+export { default } from '../__build-es/theme';
+export * from '../__build-es/theme';
