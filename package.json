@@ -16,7 +16,8 @@
     "commit": "git-cz",
     "lint": "run-p lint:*",
     "lint:eslint": "eslint .",
-    "lint:stylelint": "stylelint '**/*.js'"
+    "lint:stylelint": "stylelint '**/*.js'",
+    "version-i": "npm version patch"
   },
   "lint-staged": {
     "*.js": [
