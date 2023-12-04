@@ -3,6 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import cx from 'classnames';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import theme from '../theme';
 
 const styles = {
@@ -156,7 +157,7 @@ const StyledButton = styled(
   }
 `;
 
-function Button({ label, disabled, className, clickCbk, ...props }) {
+function Button({ label, disabled, className, clickCbk, spin, ...props }) {
   return (
     <StyledButton
       {...props}
@@ -164,7 +165,16 @@ function Button({ label, disabled, className, clickCbk, ...props }) {
       className={cx(className)}
       onClick={clickCbk}
     >
-
+      {
+        spin ? (
+          <FontAwesomeIcon
+            icon="fa-solid fa-spinner"
+            spin
+            className="disabled-spiner"
+          />
+        ) : null
+      }
+      &nbsp;&nbsp;
       {label}
     </StyledButton>
   );
@@ -179,7 +189,7 @@ Button.propTypes = {
   shape: PropTypes.oneOf(['bluntEdged', 'sharpEdged', 'capsular', 'circular']),
   fluid: PropTypes.bool,
   disabled: PropTypes.bool,
-  isLoading: PropTypes.bool,
+  spin: PropTypes.bool,
   className: PropTypes.string,
 };
 
@@ -192,7 +202,7 @@ Button.defaultProps = {
   shape: 'bluntEdged',
   fluid: false,
   disabled: false,
-  isLoading: false,
+  spin: false,
   className: '',
 };
 
