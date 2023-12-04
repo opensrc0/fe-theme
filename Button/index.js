@@ -1,2 +1,2 @@
-export { default } from '../__build-es/Button';
-export * from '../__build-es/Button';
+export { default } from '../build/Button';
+export * from '../build/Button';

@@ -1,2 +1,2 @@
-export { default } from '../__build-es/Input';
-export * from '../__build-es/Input';
+export { default } from '../build/Input';
+export * from '../build/Input';

@@ -19,7 +19,7 @@ components.forEach((component) => {
   mkdirp(componentDir).then(() => {
     // if (mkdirpErr) throw mkdirpErr;
     const componentFile = path.resolve(componentDir, 'index.js');
-    const componentContent = `export { default } from '../__build-es/${component}';\nexport * from '../__build-es/${component}';\n`;
+    const componentContent = `export { default } from '../build/${component}';\nexport * from '../build/${component}';\n`;
     fs.writeFile(componentFile, componentContent, (writeFileErr) => {
       if (writeFileErr) throw writeFileErr;
       console.log(`generated: ${componentFile}`);
@@ -36,7 +36,7 @@ fs.readFile(packageJsonPath, 'utf-8', (readFileErr, packageJsonData) => {
     ...packageJson,
     files: [
       'cjs/**/*',
-      '__build-es/**/*',
+      'build/**/*',
       ...components.map((component) => `${component}/**/*`),
       'theme.js',
     ],

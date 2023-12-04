@@ -1,2 +1,2 @@
-export { default } from '../__build-es/Flex';
-export * from '../__build-es/Flex';
+export { default } from '../build/Flex';
+export * from '../build/Flex';

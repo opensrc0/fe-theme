@@ -85,7 +85,7 @@
   },
   "files": [
     "cjs/**/*",
-    "__build-es/**/*",
+    "build/**/*",
     "Button/**/*",
     "Flex/**/*",
     "Input/**/*",
