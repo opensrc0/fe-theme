@@ -157,13 +157,13 @@ const StyledButton = styled(
   }
 `;
 
-function Button({ label, disabled, className, clickCbk, spin, ...props }) {
+function Button({ label, disabled, className, onClick, spin, ...props }) {
   return (
     <StyledButton
       {...props}
       disabled={disabled}
       className={cx(className)}
-      onClick={clickCbk}
+      onClick={onClick}
     >
       {
         spin ? (
@@ -184,7 +184,7 @@ function Button({ label, disabled, className, clickCbk, spin, ...props }) {
 
 Button.propTypes = {
   label: PropTypes.string,
-  clickCbk: PropTypes.func,
+  onClick: PropTypes.func,
   type: PropTypes.oneOf(['submit', 'button']),
   kind: PropTypes.oneOf(['filled', 'outlined']),
   size: PropTypes.oneOf(['small', 'medium', 'large']),
@@ -197,7 +197,7 @@ Button.propTypes = {
 
 Button.defaultProps = {
   label: 'Button',
-  clickCbk: () => {},
+  onClick: () => {},
   type: 'submit',
   kind: 'filled',
   size: 'medium',

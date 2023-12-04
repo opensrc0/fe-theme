@@ -14,7 +14,7 @@ var _classnames = _interopRequireDefault(require("classnames"));
 var _reactFontawesome = require("@fortawesome/react-fontawesome");
 var _theme = _interopRequireDefault(require("../theme"));
 var _excluded = ["color", "kind", "size", "shape", "fluid", "isLoading"],
-  _excluded2 = ["label", "disabled", "className", "clickCbk", "spin"];
+  _excluded2 = ["label", "disabled", "className", "onClick", "spin"];
 /* eslint-disable react/jsx-props-no-spreading */
 var styles = {
   color: function color(props) {
@@ -150,13 +150,13 @@ function Button(_ref2) {
   var label = _ref2.label,
     disabled = _ref2.disabled,
     className = _ref2.className,
-    clickCbk = _ref2.clickCbk,
+    onClick = _ref2.onClick,
     spin = _ref2.spin,
     props = (0, _objectWithoutProperties2["default"])(_ref2, _excluded2);
   return /*#__PURE__*/_react["default"].createElement(StyledButton, (0, _extends2["default"])({}, props, {
     disabled: disabled,
     className: (0, _classnames["default"])(className),
-    onClick: clickCbk
+    onClick: onClick
   }), spin ? /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(_reactFontawesome.FontAwesomeIcon, {
     icon: "fa-solid fa-spinner",
     spin: true,
@@ -165,7 +165,7 @@ function Button(_ref2) {
 }
 Button.propTypes = {
   label: _propTypes["default"].string,
-  clickCbk: _propTypes["default"].func,
+  onClick: _propTypes["default"].func,
   type: _propTypes["default"].oneOf(['submit', 'button']),
   kind: _propTypes["default"].oneOf(['filled', 'outlined']),
   size: _propTypes["default"].oneOf(['small', 'medium', 'large']),
@@ -177,7 +177,7 @@ Button.propTypes = {
 };
 Button.defaultProps = {
   label: 'Button',
-  clickCbk: function clickCbk() {},
+  onClick: function onClick() {},
   type: 'submit',
   kind: 'filled',
   size: 'medium',
