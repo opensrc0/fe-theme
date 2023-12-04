@@ -177,7 +177,7 @@ function Button({ label, disabled, className, onClick, spin, ...props }) {
           </>
         ) : null
       }
-      {label}
+      hi
     </StyledButton>
   );
 }
