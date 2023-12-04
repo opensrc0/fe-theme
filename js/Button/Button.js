@@ -127,7 +127,7 @@ const StyledButton = styled(
     kind,
     size,
     shape,
-    block,
+    fluid,
     isLoading,
     ...props
   }) => <button {...props} />,
@@ -141,7 +141,7 @@ const StyledButton = styled(
   font-size: ${styles.fontSize};
   background-color: ${styles.backgroundColor};
   padding: ${styles.padding};
-  width: ${(props) => props.block ? '100%' : ''};
+  width: ${(props) => props.fluid ? '100%' : ''};
   border-width: 1px;
   border-style: solid;
   border-color: ${styles.borderColor};
@@ -171,8 +171,7 @@ function Button({ label, disabled, className, clickCbk, ...props }) {
 }
 
 Button.propTypes = {
-  label: PropTypes.string.isRequired,
-  className: PropTypes.string,
+  label: PropTypes.string,
   clickCbk: PropTypes.func,
   type: PropTypes.oneOf(['submit', 'button']),
   kind: PropTypes.oneOf(['filled', 'outlined']),
@@ -181,11 +180,11 @@ Button.propTypes = {
   fluid: PropTypes.bool,
   disabled: PropTypes.bool,
   isLoading: PropTypes.bool,
-
+  className: PropTypes.string,
 };
 
 Button.defaultProps = {
-  className: '',
+  label: 'Button',
   clickCbk: () => {},
   type: 'submit',
   kind: 'filled',
@@ -194,6 +193,7 @@ Button.defaultProps = {
   fluid: false,
   disabled: false,
   isLoading: false,
+  className: '',
 };
 
 export default Button;
