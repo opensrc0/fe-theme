@@ -10,7 +10,7 @@ var _objectWithoutProperties2 = _interopRequireDefault(require("@babel/runtime/h
 var _react = _interopRequireDefault(require("react"));
 var _propTypes = _interopRequireDefault(require("prop-types"));
 var _styledComponents = _interopRequireWildcard(require("styled-components"));
-var _theme = _interopRequireDefault(require("../theme"));
+var _theme = _interopRequireDefault(require("../component/theme"));
 var _excluded = ["component", "color", "backgroundColor", "backgroundColorXS", "size", "sizeMD", "sizeSM", "sizeXS", "weight", "weightXS", "family", "align", "alignXS", "truncate", "children", "display", "displayXS", "lineHeight", "lineHeightXS", "verticalAlign", "position", "overflow", "float", "opacity", "textTransform", "border", "hiddenLG", "hiddenMD", "hiddenSM", "hiddenXS", "visibleLG", "visibleMD", "visibleSM", "visibleXS"];
 /* eslint-disable no-nested-ternary */
 function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(e) { return e ? t : r; })(e); }
@@ -54,7 +54,7 @@ var Text = (0, _styledComponents["default"])(function (_ref) {
   return /*#__PURE__*/_react["default"].createElement(component, props, children);
 }).withConfig({
   displayName: "TextWeb__Text",
-  componentId: "sc-wnfhin-0"
+  componentId: "sc-ygtac8-0"
 })(["color:", ";background-color:", ";font-size:", ";font-weight:", ";font-family:", ";line-height:", ";text-align:", ";vertical-align:", ";overflow:", ";white-space:", ";text-overflow:", ";position:", ";float:", ";opacity:", ";text-transform:", ";border:", ";", ";@media (max-width:767px){", "}@media (min-width:768px) and (max-width:991px){", "}@media (min-width:992px) and (max-width:1199px){", "}@media (min-width:1200px){", "}"], function (props) {
   return props.color ? props.theme.color[props.color] : '';
 }, function (props) {

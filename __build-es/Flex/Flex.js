@@ -29,7 +29,7 @@ var Flex = (0, _styledComponents["default"])(function (_ref) {
   return /*#__PURE__*/_react["default"].cloneElement(children, props);
 }).withConfig({
   displayName: "Flex",
-  componentId: "sc-12o0nim-0"
+  componentId: "sc-1y0r5wi-0"
 })(["&&&{align-content:", ";align-self:", ";align-items:", ";display:", ";flex:", ";flex-basis:", ";flex-direction:", ";flex-grow:", ";flex-shrink:", ";flex-wrap:", ";flex-flow:", ";justify-content:", ";order:", ";}"], function (props) {
   return props.alignContent ? props.alignContent : '';
 }, function (props) {

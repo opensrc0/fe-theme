@@ -17,7 +17,7 @@ var View = (0, _styledComponents["default"])(function (_ref) {
   return /*#__PURE__*/_react["default"].createElement(component, props, children);
 }).withConfig({
   displayName: "View",
-  componentId: "sc-192f3jk-0"
+  componentId: "sc-1esj3kb-0"
 })(["", ""], '');
 View.propTypes = {
   component: _propTypes["default"].string.isRequired,

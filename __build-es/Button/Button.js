@@ -142,7 +142,7 @@ var StyledButton = (0, _styledComponents["default"])(function (_ref) {
   return /*#__PURE__*/_react["default"].createElement("button", props);
 }).withConfig({
   displayName: "Button__StyledButton",
-  componentId: "sc-1j3x0hg-0"
+  componentId: "sc-oby1ng-0"
 })(["display:inline-flex;align-items:center;justify-content:center;cursor:pointer;text-transform:uppercase;color:", ";font-size:", ";background-color:", ";padding:", ";width:", ";border-width:1px;border-style:solid;border-color:", ";border-radius:", ";pointer-events:", ";opacity:", ";&:hover{color:", ";background-color:", ";border-color:", ";}"], styles.color, styles.fontSize, styles.backgroundColor, styles.padding, function (props) {
   return props.fluid ? '100%' : '';
 }, styles.borderColor, styles.borderRadius, styles.pointerEvents, styles.opacity, styles.hover.color, styles.hover.backgroundColor, styles.hover.borderColor);

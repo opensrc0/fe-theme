@@ -22,7 +22,7 @@ var Size = (0, _styledComponents["default"])(function (_ref) {
   return /*#__PURE__*/_react["default"].cloneElement(children, props);
 }).withConfig({
   displayName: "SizeWeb__Size",
-  componentId: "sc-f2z0z4-0"
+  componentId: "sc-zqaflg-0"
 })(["&&&{min-width:", ";width:", ";max-width:", ";min-height:", ";height:", ";max-height:", ";}"], function (props) {
   return props.minWidth != null ? "".concat(props.theme.px(props.minWidth)) : '';
 }, function (props) {

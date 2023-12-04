@@ -72,7 +72,7 @@ var Chip = (0, _styledComponents["default"])(function (_ref) {
   return /*#__PURE__*/_react["default"].createElement("div", props);
 }).withConfig({
   displayName: "Chip",
-  componentId: "sc-1hpiixl-0"
+  componentId: "sc-11zreyb-0"
 })(["display:inline-block;align-items:center;justify-content:center;color:", ";background:", ";border:1px solid ", ";border-radius:", ";font-size:", ";font-weight:", ";padding:", ";text-transform:", ";"], styles.color, styles.background, function (props) {
   return props.bordercolor ? props.theme.color[props.bordercolor] : props.theme.color[props.color];
 }, styles.borderRadius, function (props) {

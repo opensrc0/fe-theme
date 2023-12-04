@@ -23,7 +23,7 @@ var Position = (0, _styledComponents["default"])(function (_ref) {
   return /*#__PURE__*/_react["default"].cloneElement(children, props);
 }).withConfig({
   displayName: "PositionWeb__Position",
-  componentId: "sc-vvw8mt-0"
+  componentId: "sc-1lxvrn1-0"
 })(["&&&{position:", ";top:", ";right:", ";bottom:", ";left:", ";z-index:", ";transform:", ";}"], function (props) {
   return props.position ? props.position : '';
 }, function (props) {

@@ -29,7 +29,7 @@ var Spacer = (0, _styledComponents["default"])(function (_ref) {
   return /*#__PURE__*/_react["default"].cloneElement(children, props);
 }).withConfig({
   displayName: "SpacerWeb__Spacer",
-  componentId: "sc-qelim6-0"
+  componentId: "sc-o0ksth-0"
 })(["&&&{margin:", ";margin-top:", ";margin-bottom:", ";margin-left:", ";margin-right:", ";padding:", ";padding-top:", ";padding-bottom:", ";padding-left:", ";padding-right:", ";@media (max-width:767px){", "}@media (min-width:768px) and (max-width:991px){", "}@media (min-width:992px) and (max-width:1199px){", "}@media (min-width:1200px){", "}}"], function (props) {
   return props.margin ? "".concat(props.theme.px(props.margin)) : '';
 }, function (props) {

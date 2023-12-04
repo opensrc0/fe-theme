@@ -28,7 +28,7 @@ var Icon = (0, _styledComponents["default"])(function (_ref) {
   return /*#__PURE__*/_react["default"].createElement("i", props);
 }).withConfig({
   displayName: "Icon",
-  componentId: "sc-14lv8rf-0"
+  componentId: "sc-1j1hbxo-0"
 })(["color:", ";margin-left:", ";margin-right:", ";font-size:", ";cursor:", ";pointer-events:", ";opacity:", ";&:hover{background:", ";}"], styles.color, function (props) {
   return props.hasChildren && props.right ? props.theme.px(1) : '';
 }, function (props) {
