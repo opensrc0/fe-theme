@@ -93,10 +93,10 @@ Input.propTypes = {
 Input.defaultProps = {
   placeholder: 'Type here',
   shape: 'sharpEdged',
-  fluid: 'true',
+  fluid: true,
   disabled: false,
 
-  spin: 'false',
+  spin: false,
 
   className: '',
   prefixIcon: '',
