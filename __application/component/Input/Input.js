@@ -2,11 +2,29 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropTypes from 'prop-types';
+import theme from '../theme';
+
+const styles = {
+  borderRadius(props) {
+    if (props.shape === 'bluntEdged') {
+      return theme.borderRadius;
+    }
+    if (props.shape === 'sharpEdged') {
+      return '2px';
+    }
+    if (props.shape === 'capsular') {
+      return theme.px(10);
+    }
+    return '';
+  },
+};
 
 const InputWrapper = styled.div`
   position: relative;
   margin-bottom: 32px;
-  text-align: center;
+  ${({ fluid }) => fluid && css`
+    text-align: center;
+  `}
 `;
 
 const InputIcon = styled(FontAwesomeIcon)`
@@ -27,8 +45,12 @@ const SuffixInputIcon = styled(InputIcon)`
 `;
 
 const InputBox = styled.input`
-  padding: 12px 48px 12px 40px;
-  width: 100%;
+  padding: 12px 48px 12px 36px;
+  border-width: 1px;
+  border-radius: ${styles.borderRadius};
+  ${({ fluid }) => fluid && css`
+    width: 100%;
+  `}
   ${({ state }) => state === 'error' && css`
     border-color: red;
   `}
@@ -36,37 +58,57 @@ const InputBox = styled.input`
 
 function Input(props) {
   const {
-    reference,
-    iconName,
+    ref,
+    prefixIcon,
     placeholder,
-    type,
-    suffixIconName,
-    suffixIconSize,
-    onClickSuffixIcon,
+    suffixIcon,
+    onClickOnSuffixIcon,
     state,
   } = props;
+
   return (
     <InputWrapper>
-      {iconName && <InputIcon icon={`fa-solid ${iconName}`} size="s" />}
-      <InputBox type={type} placeholder={placeholder} ref={reference} state={state} />
-      {suffixIconName && <SuffixInputIcon icon={`fa-solid ${suffixIconName}`} size={suffixIconSize} onClick={onClickSuffixIcon} />}
+      {prefixIcon && <InputIcon icon={`fa-solid ${prefixIcon}`} size="sm" />}
+      <InputBox type="text" placeholder={placeholder} ref={ref} state={state} {...props} />
+      {suffixIcon && <SuffixInputIcon icon={`fa-solid ${suffixIcon}`} size="sm" onClick={onClickOnSuffixIcon} />}
     </InputWrapper>
   );
 }
 
 Input.propTypes = {
-  reference: PropTypes.object,
-  iconName: PropTypes.string,
   placeholder: PropTypes.string,
-  type: PropTypes.string,
-  suffixIconName: PropTypes.string,
-  suffixIconSize: PropTypes.string,
-  onClickSuffixIcon: PropTypes.func,
+  shape: PropTypes.oneOf(['bluntEdged', 'sharpEdged', 'capsular']),
+  fluid: PropTypes.bool,
+  disabled: PropTypes.bool,
+
+  spin: PropTypes.bool,
+
+  className: PropTypes.string,
+  prefixIcon: PropTypes.string,
+  suffixIcon: PropTypes.string,
+  onClickOnSuffixIcon: PropTypes.func,
   state: PropTypes.string,
+  ref: PropTypes.object.isRequired,
 };
 
-Input.dafaultProps = {
-  type: 'text',
+Input.defaultProps = {
+  placeholder: 'Type here',
+  shape: 'sharpEdged',
+  fluid: true,
+  disabled: true,
+
+  spin: false,
+
+  className: '',
+  prefixIcon: '',
+  suffixIcon: '',
+  onClickOnSuffixIcon: () => {},
+  state: '',
 };
 
 export default Input;
+
+// Left Icon
+// Right Button
+// input design
+// Validation

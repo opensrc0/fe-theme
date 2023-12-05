@@ -66,7 +66,7 @@ const styles = {
       return theme.borderRadius;
     }
     if (props.shape === 'sharpEdged') {
-      return '0';
+      return '2px';
     }
     if (props.shape === 'capsular') {
       return theme.px(10);
