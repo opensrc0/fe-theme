@@ -95,7 +95,7 @@ Input.defaultProps = {
   placeholder: 'Type here',
   shape: 'sharpEdged',
   fluid: true,
-  disabled: true,
+  disabled: false,
 
   spin: false,
 
