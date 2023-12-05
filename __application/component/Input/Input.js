@@ -56,20 +56,19 @@ const InputBox = styled.input`
   `}
 `;
 
-function Input(props) {
-  const {
-    ref,
-    prefixIcon,
-    placeholder,
-    suffixIcon,
-    onClickOnSuffixIcon,
-    state,
-  } = props;
-
+function Input({
+  reference,
+  prefixIcon,
+  placeholder,
+  suffixIcon,
+  onClickOnSuffixIcon,
+  state,
+  ...props
+}) {
   return (
     <InputWrapper>
       {prefixIcon && <InputIcon icon={`fa-solid ${prefixIcon}`} size="sm" />}
-      <InputBox type="text" placeholder={placeholder} ref={ref} state={state} {...props} />
+      <InputBox type="text" placeholder={placeholder} ref={reference} state={state} {...props} />
       {suffixIcon && <SuffixInputIcon icon={`fa-solid ${suffixIcon}`} size="sm" onClick={onClickOnSuffixIcon} />}
     </InputWrapper>
   );
@@ -88,7 +87,7 @@ Input.propTypes = {
   suffixIcon: PropTypes.string,
   onClickOnSuffixIcon: PropTypes.func,
   state: PropTypes.string,
-  ref: PropTypes.object.isRequired,
+  reference: PropTypes.object,
 };
 
 Input.defaultProps = {
@@ -103,7 +102,6 @@ Input.defaultProps = {
   prefixIcon: '',
   suffixIcon: '',
   onClickOnSuffixIcon: () => {},
-  state: '',
 };
 
 export default Input;
