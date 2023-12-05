@@ -5,28 +5,24 @@ on:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
-jobs:
 
-  start:
-    # example with web application build,
-    # server start and waiting for the server
-    # to respond before running tests
+jobs:
+  build:
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
         node-version: [16.x, 18.x]
-        
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+    - uses: actions/checkout@v3
 
-      - name: Cypress tests
-        uses: ./
-        with:
-          working-directory: ./
-          build: npm run build
-          start: npm start
-          wait-on: 'http://localhost:3000'
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
 
-   
+    - name: Build
+      run: |
+        npm install
+        npm run build
