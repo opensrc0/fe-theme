@@ -39,6 +39,7 @@
     "react/forbid-prop-types": ["error", { "forbid": ["any"] }],
     "react/jsx-filename-extension": ["error", { "extensions": [".js"] }],
     "react/require-default-props": ["off"],
-    "react/jsx-props-no-spreading": ["off"]
+    "react/jsx-props-no-spreading": ["off"],
+    "no-restricted-exports": ["off"]
   }
 }

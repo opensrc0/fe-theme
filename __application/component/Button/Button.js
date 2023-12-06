@@ -8,22 +8,20 @@ import theme from '../theme';
 
 const styles = {
   color(props) {
-    const lTheme = props.theme.color ? props.theme : theme;
     if (props.kind === 'filled') {
-      return lTheme.color.white;
+      return props.color.white;
     }
     if (props.kind === 'outlined') {
-      return lTheme.color[props.color];
+      return props.color[props.color];
     }
     return '';
   },
   backgroundColor(props) {
-    const lTheme = props.theme.color ? props.theme : theme;
     if (props.kind === 'filled') {
-      return lTheme.color[props.color || 'secondary'];
+      return props.color[props.color || 'secondary'];
     }
     if (props.kind === 'outlined') {
-      return lTheme.color.white;
+      return props.color.white;
     }
     return '';
   },
@@ -52,12 +50,11 @@ const styles = {
     return '';
   },
   borderColor(props) {
-    const lTheme = props.theme.color ? props.theme : theme;
     if (props.kind === 'filled') {
-      return lTheme.color[props.color];
+      return props.color[props.color];
     }
     if (props.kind === 'outlined') {
-      return lTheme.color[props.color];
+      return props.color[props.color];
     }
     return '';
   },
