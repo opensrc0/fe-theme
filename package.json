@@ -92,5 +92,8 @@
     "Input/**/*",
     "theme/**/*",
     "theme.js"
-  ]
+  ],
+  "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.5.1"
+  }
 }

@@ -1,0 +1,52 @@
+
+.accordion-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.accordion-section {
+
+  /* overflow: hidden; */
+
+  transition: .5s ease-in-out;
+  transition: height .7s ease-in-out;
+  border-bottom: 2px solid #00364e;
+}
+
+.accordion-section.open {
+  display: flex;
+}
+
+.accordion-title {
+  width: 100%;
+  text-align: left;
+  padding:  8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+.accordion-content {
+  /* padding:  8px 16px; */
+  display: none;
+  padding:  8px 16px;
+}
+
+.accordion-content.open {
+  display: block; 
+}
+
+@media only screen and (min-width: 768px) {
+  .accordion-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px 0px;
+  }
+
+  }
