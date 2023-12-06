@@ -1,11 +1,14 @@
-# Getting Started
-<br>
+# fe-theme
+
+   #### A react component based library for web/mobile designed and created for large scale application using styled-components
+
+# Installation
 
     npm install fe-theme --save
 
 # Setup
 
-### 1. Importing UI component and using in your application
+### 1. Importing UI component in your application
 ```js
 import Button from 'fe-theme/Button';
 ```
