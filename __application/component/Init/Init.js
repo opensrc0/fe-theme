@@ -27,6 +27,8 @@ export default function Init(userTheme) {
     borderRadius: userTheme?.borderRadius || defaultTheme.color,
 
     pxScale: userTheme?.pxScale || defaultTheme.pxScale,
+
+    px: userTheme?.px || defaultTheme.px,
   };
 
   return mergeTheme;

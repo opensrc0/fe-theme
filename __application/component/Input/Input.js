@@ -44,7 +44,9 @@ const SuffixInputIcon = styled(InputIcon)`
   `}
 `;
 
-const InputBox = styled.input`
+const InputBox = styled.input.withConfig({
+  shouldForwardProp: (prop) => prop !== 'fluid' && prop !== 'spin',
+})`
   padding: 12px 48px 12px 36px;
   border-width: 1px;
   border-radius: ${styles.borderRadius};
