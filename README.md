@@ -5,7 +5,7 @@
 
 # Setup
 
-## 1. Importing UI component and using in your application
+### 1. Importing UI component and using in your application
 ```js
 import Button from 'fe-theme/Button';
 ```
@@ -16,7 +16,7 @@ import Button from 'fe-theme/Button';
 Hurrah...!!! Button is created, but color does not match with the application. No worries.
   
 
-## 2. What to change theme according to your application?
+### 2. What to change theme according to your application?
 #### Generate a sample file(sample-theme.js) by running below commond in terminal in your project location.
 
 ```cp sample-theme.js ./```
@@ -52,7 +52,7 @@ export default theme;
 ```
 
 
-## 3. Bootstrapping theme by calling a ```themeInit```  function and pass it to ```ThemeProvider``` in ```theme``` property
+### 3. Bootstrapping theme by calling a ```themeInit```  function and pass it to ```ThemeProvider``` in ```theme``` property
 
 ```js
 import React from 'react';
@@ -70,7 +70,7 @@ ReactDOM.hydrate(
 );
 ```
 
-## 4. Go to the sample-theme.js and change the theme like primary: '#000', secondary: '#333'
+### 4. Go to the sample-theme.js and change the theme like primary: '#000', secondary: '#333'
 ```js
 <Button design="primary" />
 <Button design="secondary" />
