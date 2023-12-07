@@ -30,4 +30,26 @@ theme.px = (value) => {
 };
 theme.toString = (value) => (!value || typeof value === 'string') ? value : value.toString();
 
+theme.component = {
+  Button: {
+    borderRadius: '4px',
+    primary: {
+      color: 'white',
+      borderColor: 'white',
+    },
+    secondary: {
+      color: 'white',
+      borderColor: 'white',
+    },
+    tertiary: {
+      color: 'white',
+      borderColor: 'white',
+    },
+    quaternary: {
+      color: 'white',
+      borderColor: 'white',
+    },
+  },
+};
+
 export default theme;

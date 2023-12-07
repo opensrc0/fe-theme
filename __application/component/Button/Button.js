@@ -6,72 +6,9 @@ import cx from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const styles = {
-  color(props) {
-    if (props.kind === 'filled') {
-      return props.theme.color.white;
-    }
-    if (props.kind === 'outlined') {
-      return props.theme.color[props.color];
-    }
-    return '';
-  },
-  backgroundColor(props) {
-    if (props.kind === 'filled') {
-      return props.theme.color[props.color || 'secondary'];
-    }
-    if (props.kind === 'outlined') {
-      return props.theme.color.white;
-    }
-    return '';
-  },
-  fontSize(props) {
-    if (props.size === 'small') {
-      return props.theme.fontSize.xs;
-    }
-    if (props.size === 'medium') {
-      return props.theme.fontSize.s;
-    }
-    if (props.size === 'large') {
-      return props.theme.fontSize.s;
-    }
-    return '';
-  },
-  padding(props) {
-    if (props.size === 'small') {
-      return props.theme.px([1, 2]);
-    }
-    if (props.size === 'medium') {
-      return props.theme.px([1.5, 2]);
-    }
-    if (props.size === 'large') {
-      return props.theme.px([2]);
-    }
-    return '';
-  },
-  borderColor(props) {
-    if (props.kind === 'filled') {
-      return props.color[props.color];
-    }
-    if (props.kind === 'outlined') {
-      return props.color[props.color];
-    }
-    return '';
-  },
-  borderRadius(props) {
-    if (props.shape === 'bluntEdged') {
-      return props.theme.cornerEdge;
-    }
-    if (props.shape === 'sharpEdged') {
-      return '0';
-    }
-    if (props.shape === 'capsular') {
-      return props.theme.px(10);
-    }
-    if (props.shape === 'circular') {
-      return '100%';
-    }
-    return '';
-  },
+  size: { s: 'xs', m: 's', l: 's' },
+  padding: { s: [1, 2], m: [1.5, 2], l: [2, 2] },
+
   pointerEvents(props) {
     if (props.disabled) {
       return 'none';
@@ -131,15 +68,15 @@ const StyledButton = styled(
   justify-content: center;
   cursor: pointer;
   text-transform: uppercase;
-  color: ${styles.color};
-  font-size: ${styles.fontSize};
-  background-color: ${styles.backgroundColor};
-  padding: ${styles.padding};
+  color: ${(props) => props.theme.component.Button[props.variant].color};
+  background-color: ${(props) => props.theme.color[props.variant]};
+  font-size: ${(props) => props.theme.fontSize[styles.size[props.size]]};
+  padding: ${(props) => props.theme.px(styles.padding[props.size])};
   width: ${(props) => props.fluid ? '100%' : ''};
   border-width: 1px;
   border-style: solid;
-  border-color: ${styles.borderColor};
-  border-radius: ${styles.borderRadius};
+  border-color: ${(props) => props.theme.component.Button[props.variant].borderColor};
+  border-radius: ${(props) => props.theme.component.Button.borderRadius};
   pointer-events: ${styles.pointerEvents};
   opacity: ${styles.opacity};
 
@@ -184,10 +121,7 @@ Button.propTypes = {
   className: PropTypes.string,
   type: PropTypes.oneOf(['submit', 'button']),
   variant: PropTypes.oneOf(['primary', 'secondary', 'tertiary', 'quaternary']),
-  shape: PropTypes.oneOf(['bluntEdged', 'sharpEdged', 'capsular', 'circular']),
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
-
-  // kind: PropTypes.oneOf(['filled', 'outlined']),
+  size: PropTypes.oneOf(['s', 'm', 'l']),
 };
 
 Button.defaultProps = {
@@ -198,9 +132,8 @@ Button.defaultProps = {
   spin: false,
   className: '',
   type: 'submit',
-  variant: 'primary',
-  size: 'medium',
-  shape: 'bluntEdged',
+  variant: 'secondary',
+  size: 'm',
 };
 
 export default Button;

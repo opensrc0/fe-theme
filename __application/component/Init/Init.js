@@ -29,6 +29,31 @@ export default function Init(userTheme) {
     pxScale: userTheme?.pxScale || defaultTheme.pxScale,
 
     px: userTheme?.px || defaultTheme.px,
+
+    component: {
+      ...defaultTheme.component,
+      ...userTheme?.component,
+      Button: {
+        ...defaultTheme.component.Button,
+        ...userTheme?.component?.Button,
+        primary: {
+          ...defaultTheme.component.Button.primary,
+          ...userTheme?.component?.Button?.primary,
+        },
+        secondary: {
+          ...defaultTheme.component.Button.secondary,
+          ...userTheme?.component?.Button?.secondary,
+        },
+        tertiary: {
+          ...defaultTheme.component.Button.secondary,
+          ...userTheme?.component?.Button?.secondary,
+        },
+        quaternary: {
+          ...defaultTheme.component.Button.secondary,
+          ...userTheme?.component?.Button?.secondary,
+        },
+      },
+    },
   };
 
   return mergeTheme;
