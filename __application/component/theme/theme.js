@@ -18,8 +18,6 @@ theme.display = {
   none: 'none',
 };
 
-theme.cornerEdge = '8px';
-
 theme.pxScale = 8;
 
 theme.px = (value) => {

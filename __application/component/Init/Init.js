@@ -24,8 +24,6 @@ export default function Init(userTheme) {
       ...userTheme?.display,
     },
 
-    cornerEdge: userTheme?.cornerEdge || defaultTheme.cornerEdge,
-
     pxScale: userTheme?.pxScale || defaultTheme.pxScale,
 
     px: userTheme?.px || defaultTheme.px,

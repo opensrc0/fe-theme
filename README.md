@@ -48,8 +48,42 @@ theme.fontFamily = {};
 theme.fontSize = {};
 theme.fontWeight = {};
 theme.display = {};
-theme.cornerEdge = '';
-theme.pxScale = '';
+
+theme.component.Button = {
+  borderRadius: '4px',
+  primary: {
+    color: 'white',
+    borderColor: 'white',
+  },
+  secondary: {
+    color: 'white',
+    borderColor: 'white',
+  },
+  tertiary: {
+    color: 'white',
+    borderColor: 'white',
+  },
+  quaternary: {
+    color: 'white',
+    borderColor: 'white',
+  },
+};
+
+theme.component.TextBox = {
+  borderRadius: '4px',
+  primary: {
+    borderColor: 'white',
+  },
+  secondary: {
+    borderColor: 'white',
+  },
+  tertiary: {
+    borderColor: 'white',
+  },
+  quaternary: {
+    borderColor: 'white',
+  },
+};
 
 export default theme;
 ```
