@@ -113,4 +113,37 @@ ReactDOM.hydrate(
 <Button design="secondary" />
 ```
 
+## Contributors
 
+Thanks goes to these wonderful people
+
+<table>
+    <tbody>
+      <tr>
+        <td align="center" valign="top" width="14.28%">
+          <a href="http://chanchan.io">
+            <img src="https://avatars.githubusercontent.com/u/6891544?s=400&v=4" width="64px;" alt="Mark Chandler" />
+            <br />
+            <sub><b>Himanshu Gupta</b></sub>
+          </a>
+          <br />
+        </td>
+        <td align="center" valign="top" width="14.28%">
+          <a href="https://estheragbaje.dev/">
+            <img src="https://avatars.githubusercontent.com/u/36290248?s=64&v=4" width="64px;" alt="Folasade Agbaje" />
+            <br />
+            <sub><b>Alok Dubey</b></sub>
+          </a>
+          <br />
+        </td>
+        <td align="center" valign="top" width="14.28%">
+          <a href="https://github.com/christiannwamba">
+            <img src="https://avatars.githubusercontent.com/u/31059087?v=4" width="64px;" alt="Christian Nwamba" />
+            <br />
+            <sub><b>Ravi Verma</b></sub>
+          </a>
+          <br />
+        </td>
+      </tr>
+    </tbody>
+</table>
