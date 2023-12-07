@@ -147,3 +147,7 @@ Thanks goes to these wonderful people
       </tr>
     </tbody>
 </table>
+
+## License
+
+MIT © [Himanshu Gupta](https://github.com/hg-arch)
