@@ -3,7 +3,7 @@
     <img src="https://png.pngtree.com/png-clipart/20220103/original/pngtree-show-biceps-png-image_7019290.png" alt="FE-Theme Logo" width="100" />
   </a>
 </p>
-<h1 align="center">Build theme based React Apps using built-in Styled Component 💪 </h1>
+<h2 align="center">Build theme based React Apps using built-in Styled Component 💪 </h2>
 <br />
 <p align="center">
   <img alt="Minified Size" src="https://img.shields.io/badge/minzipped_size-100kb-%23e95143"/>
