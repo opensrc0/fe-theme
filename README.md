@@ -142,7 +142,7 @@ Thanks goes to these wonderful people
     <tbody>
       <tr>
         <td align="center" valign="top" width="14.28%">
-          <a href="http://chanchan.io">
+          <a href="https://github.com/hg-arch">
             <img src="https://avatars.githubusercontent.com/u/6891544?s=400&v=4" width="64px;" alt="Mark Chandler" />
             <br />
             <sub><b>Himanshu Gupta</b></sub>
@@ -150,7 +150,7 @@ Thanks goes to these wonderful people
           <br />
         </td>
         <td align="center" valign="top" width="14.28%">
-          <a href="https://estheragbaje.dev/">
+          <a href="https://github.com/Alok30">
             <img src="https://avatars.githubusercontent.com/u/36290248?s=64&v=4" width="64px;" alt="Folasade Agbaje" />
             <br />
             <sub><b>Alok Dubey</b></sub>
@@ -158,7 +158,7 @@ Thanks goes to these wonderful people
           <br />
         </td>
         <td align="center" valign="top" width="14.28%">
-          <a href="https://github.com/christiannwamba">
+          <a href="https://github.com/Ravi-Chef">
             <img src="https://avatars.githubusercontent.com/u/31059087?v=4" width="64px;" alt="Christian Nwamba" />
             <br />
             <sub><b>Ravi Verma</b></sub>
