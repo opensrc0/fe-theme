@@ -3,22 +3,18 @@
     <img src="https://png.pngtree.com/png-clipart/20220103/original/pngtree-show-biceps-png-image_7019290.png" alt="FE-Theme Logo" width="100" />
   </a>
 </p>
-
 <h1 align="center">Build theme based React Apps using built-in Styled Component 💪 </h1>
 <br />
-
 <p align="center">
- 
+  <img alt="Minified Size" src="https://img.shields.io/badge/minzipped_size-100kb-%23e95143"/>
+  <img alt="Downloads Per Month" src="https://img.shields.io/badge/downloads-1k%2Fmonth-%23027f02"/>
+  <img alt="React Version" src="https://img.shields.io/badge/react_version-18.2.0-blue"/>
+  <img alt="Styled Component Version" src="https://img.shields.io/badge/styled_component-6.1.1-%2350c62a"/>
   <a href="https://github.com/hg-arch/fe-theme/blob/master/LICENSE.md">
-    <img alt="MIT License" src="https://img.shields.io/github/license/fe-theme/fe-theme"/>
+    <img alt="MIT License" src="https://img.shields.io/badge/license-MIT-%23d7614b"/>
   </a>
- 
- 
- 
- 
- 
+  <img alt="Stars" src="https://img.shields.io/badge/stars-10.0-blue"/>
 </p>
-
 <br />
 
 FE-Theme is a styled-component based comprehensive library of accessible, reusable, and composable React components that streamlines the development of modern web applications and websites. The library offers a theme based UI to quickly start a new small/medium/large size web based applications.
