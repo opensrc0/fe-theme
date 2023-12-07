@@ -48,7 +48,7 @@ theme.fontFamily = {};
 theme.fontSize = {};
 theme.fontWeight = {};
 theme.display = {};
-theme.borderRadius = '';
+theme.cornerEdge = '';
 theme.pxScale = '';
 
 export default theme;

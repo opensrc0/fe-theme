@@ -59,10 +59,10 @@ const styles = {
   },
   borderRadius(props) {
     if (props.shape === 'bluntEdged') {
-      return props.theme.borderRadius;
+      return props.theme.cornerEdge;
     }
     if (props.shape === 'sharpEdged') {
-      return '2px';
+      return '0';
     }
     if (props.shape === 'capsular') {
       return props.theme.px(10);
@@ -178,27 +178,29 @@ function Button({ label, disabled, className, onClick, spin, ...props }) {
 Button.propTypes = {
   label: PropTypes.string,
   onClick: PropTypes.func,
-  type: PropTypes.oneOf(['submit', 'button']),
-  kind: PropTypes.oneOf(['filled', 'outlined']),
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
-  shape: PropTypes.oneOf(['bluntEdged', 'sharpEdged', 'capsular', 'circular']),
   fluid: PropTypes.bool,
   disabled: PropTypes.bool,
   spin: PropTypes.bool,
   className: PropTypes.string,
+  type: PropTypes.oneOf(['submit', 'button']),
+  variant: PropTypes.oneOf(['primary', 'secondary', 'tertiary', 'quaternary']),
+  shape: PropTypes.oneOf(['bluntEdged', 'sharpEdged', 'capsular', 'circular']),
+  size: PropTypes.oneOf(['small', 'medium', 'large']),
+
+  // kind: PropTypes.oneOf(['filled', 'outlined']),
 };
 
 Button.defaultProps = {
   label: 'Button',
   onClick: () => {},
-  type: 'submit',
-  kind: 'filled',
-  size: 'medium',
-  shape: 'bluntEdged',
   fluid: false,
   disabled: false,
   spin: false,
   className: '',
+  type: 'submit',
+  variant: 'primary',
+  size: 'medium',
+  shape: 'bluntEdged',
 };
 
 export default Button;

@@ -23,7 +23,7 @@ const styles = {
   },
   borderRadius(props) {
     if (props.shape === 'bluntEdged') {
-      return props.theme.borderRadius;
+      return props.theme.cornerEdge;
     }
     if (props.shape === 'sharpEdged') {
       return '0';

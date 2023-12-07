@@ -18,7 +18,7 @@ theme.display = {
   none: 'none',
 };
 
-theme.borderRadius = '8px';
+theme.cornerEdge = '8px';
 
 theme.pxScale = 8;
 

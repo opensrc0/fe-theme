@@ -24,7 +24,7 @@ export default function Init(userTheme) {
       ...userTheme?.display,
     },
 
-    borderRadius: userTheme?.borderRadius || defaultTheme.color,
+    cornerEdge: userTheme?.cornerEdge || defaultTheme.cornerEdge,
 
     pxScale: userTheme?.pxScale || defaultTheme.pxScale,
 

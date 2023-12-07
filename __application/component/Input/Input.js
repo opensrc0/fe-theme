@@ -7,7 +7,7 @@ import theme from '../theme';
 const styles = {
   borderRadius(props) {
     if (props.shape === 'bluntEdged') {
-      return theme.borderRadius;
+      return theme.cornerEdge;
     }
     if (props.shape === 'sharpEdged') {
       return '2px';
