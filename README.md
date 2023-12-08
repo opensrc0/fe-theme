@@ -13,7 +13,10 @@
   <a href="https://github.com/hg-arch/fe-theme/blob/master/LICENSE.md">
     <img alt="MIT License" src="https://img.shields.io/badge/license-MIT-%23d7614b"/>
   </a>
-  <img alt="Stars" src="https://img.shields.io/badge/stars-10.0-blue"/>
+
+  <a href="https://github.com/hg-arch/fe-theme/stargazers">
+    <img alt="Stars" src="https://img.shields.io/badge/stars-10.0-blue"/>
+  </a>
 </p>
 <br />
 
