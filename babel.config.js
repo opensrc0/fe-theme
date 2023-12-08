@@ -7,9 +7,9 @@ module.exports = function babelConfig(api) {
     ],
     plugins: [
       '@babel/plugin-proposal-export-default-from',
-      '@babel/plugin-proposal-export-namespace-from',
-      '@babel/plugin-proposal-class-properties',
-      '@babel/plugin-proposal-object-rest-spread',
+      '@babel/plugin-transform-export-namespace-from',
+      '@babel/plugin-transform-class-properties',
+      '@babel/plugin-transform-object-rest-spread',
       'syntax-trailing-function-commas',
       '@babel/plugin-transform-runtime',
       'styled-components',
