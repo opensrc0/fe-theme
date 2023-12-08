@@ -49,72 +49,7 @@ Hurrah...!!! Button is created, but color does not match with the application. N
 #### 2. Do you want to change theme according to your application?
 ##### Generate a sample file(sample-theme.js) by running below commond in terminal in your project location.
 
-```cp sample-theme.js ./```
-
-##### Or
-
-##### Create a file sample-theme.js in the root folder and add below code
-```js
-const theme = {};
-
-theme.color = {
-  primary: '#00364e',
-  secondary: '#03567b',
-
-  white: '#ffffff',
-  black: '#000000',
-
-  info: '#1976d2',
-  success: '#43a047',
-  warning: '#ffa000',
-  danger: '#d32f2f',
-  orange: '#fc6027',
-};
-
-theme.fontFamily = {};
-theme.fontSize = {};
-theme.fontWeight = {};
-theme.display = {};
-
-theme.component.Button = {
-  borderRadius: '4px',
-  primary: {
-    color: 'white',
-    borderColor: 'white',
-  },
-  secondary: {
-    color: 'white',
-    borderColor: 'white',
-  },
-  tertiary: {
-    color: 'white',
-    borderColor: 'white',
-  },
-  quaternary: {
-    color: 'white',
-    borderColor: 'white',
-  },
-};
-
-theme.component.TextBox = {
-  borderRadius: '4px',
-  primary: {
-    borderColor: 'white',
-  },
-  secondary: {
-    borderColor: 'white',
-  },
-  tertiary: {
-    borderColor: 'white',
-  },
-  quaternary: {
-    borderColor: 'white',
-  },
-};
-
-export default theme;
-```
-
+```cp sample-theme.js ./``` Or <a href="https://github.com/hg-arch/fe-theme/blob/master/sample-theme.js">```Download Sample File```</a>
 
 #### 3. Bootstrap theme by calling a ```themeInit```  function and pass it to ```ThemeProvider``` in ```theme``` property
 
