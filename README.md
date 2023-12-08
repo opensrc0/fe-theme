@@ -146,15 +146,31 @@ Thanks goes to these wonderful people
       <tr>
         <td align="center" valign="top" width="14.28%">
           <a href="https://github.com/hg-arch">
-            <img src="https://avatars.githubusercontent.com/u/6891544?s=400&v=4" width="64px;" alt="Mark Chandler" />
+            <img src="https://avatars.githubusercontent.com/u/6891544?s=400&v=4" width="64px;" alt="Himanshu Gupta" />
             <br />
             <sub><b>Himanshu Gupta</b></sub>
           </a>
           <br />
         </td>
         <td align="center" valign="top" width="14.28%">
+          <a href="https://github.com/ashwinihegde123">
+            <img src="https://avatars.githubusercontent.com/u/40521396?v=4" width="64px;" alt="Ashwini Hegde" />
+            <br />
+            <sub><b>Ashwini Hegde</b></sub>
+          </a>
+          <br />
+        </td>
+        <td align="center" valign="top" width="14.28%">
+          <a href="https://github.com/vineet091">
+            <img src="https://avatars.githubusercontent.com/u/5345138?v=4" width="64px;" alt="Vineet Gupta" />
+            <br />
+            <sub><b>Vineet Gupta</b></sub>
+          </a>
+          <br />
+        </td>
+        <td align="center" valign="top" width="14.28%">
           <a href="https://github.com/Alok30">
-            <img src="https://avatars.githubusercontent.com/u/36290248?s=64&v=4" width="64px;" alt="Folasade Agbaje" />
+            <img src="https://avatars.githubusercontent.com/u/36290248?s=64&v=4" width="64px;" alt="Alok Dubey" />
             <br />
             <sub><b>Alok Dubey</b></sub>
           </a>
@@ -162,7 +178,7 @@ Thanks goes to these wonderful people
         </td>
         <td align="center" valign="top" width="14.28%">
           <a href="https://github.com/Ravi-Chef">
-            <img src="https://avatars.githubusercontent.com/u/31059087?v=4" width="64px;" alt="Christian Nwamba" />
+            <img src="https://avatars.githubusercontent.com/u/31059087?v=4" width="64px;" alt="Ravi Verma" />
             <br />
             <sub><b>Ravi Verma</b></sub>
           </a>
