@@ -4,78 +4,11 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import cx from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import theme from '../theme';
 
 const styles = {
-  color(props) {
-    const lTheme = props.theme.color ? props.theme : theme;
-    if (props.kind === 'filled') {
-      return lTheme.color.white;
-    }
-    if (props.kind === 'outlined') {
-      return lTheme.color[props.color];
-    }
-    return '';
-  },
-  backgroundColor(props) {
-    const lTheme = props.theme.color ? props.theme : theme;
-    if (props.kind === 'filled') {
-      return lTheme.color[props.color || 'secondary'];
-    }
-    if (props.kind === 'outlined') {
-      return lTheme.color.white;
-    }
-    return '';
-  },
-  fontSize(props) {
-    if (props.size === 'small') {
-      return theme.fontSize.xs;
-    }
-    if (props.size === 'medium') {
-      return theme.fontSize.s;
-    }
-    if (props.size === 'large') {
-      return theme.fontSize.s;
-    }
-    return '';
-  },
-  padding(props) {
-    if (props.size === 'small') {
-      return theme.px([1, 2]);
-    }
-    if (props.size === 'medium') {
-      return theme.px([1.5, 2]);
-    }
-    if (props.size === 'large') {
-      return theme.px([2]);
-    }
-    return '';
-  },
-  borderColor(props) {
-    const lTheme = props.theme.color ? props.theme : theme;
-    if (props.kind === 'filled') {
-      return lTheme.color[props.color];
-    }
-    if (props.kind === 'outlined') {
-      return lTheme.color[props.color];
-    }
-    return '';
-  },
-  borderRadius(props) {
-    if (props.shape === 'bluntEdged') {
-      return theme.borderRadius;
-    }
-    if (props.shape === 'sharpEdged') {
-      return '2px';
-    }
-    if (props.shape === 'capsular') {
-      return theme.px(10);
-    }
-    if (props.shape === 'circular') {
-      return '100%';
-    }
-    return '';
-  },
+  size: { s: 'xs', m: 's', l: 's' },
+  padding: { s: [1, 2], m: [1.5, 2], l: [2, 2] },
+
   pointerEvents(props) {
     if (props.disabled) {
       return 'none';
@@ -90,32 +23,29 @@ const styles = {
   },
   hover: {
     color(props) {
-      const lTheme = props.theme.color ? props.theme : theme;
       if (props.kind === 'filled') {
-        return lTheme.color.white;
+        return props.theme.color.white;
       }
       if (props.kind === 'outlined') {
-        return lTheme.color.white;
+        return props.theme.color.white;
       }
       return '';
     },
     backgroundColor(props) {
-      const lTheme = props.theme.color ? props.theme : theme;
       if (props.kind === 'filled') {
-        return lTheme.color[`${props.color}Dark`];
+        return props.theme.color[`${props.color}Dark`];
       }
       if (props.kind === 'outlined') {
-        return lTheme.color[props.color];
+        return props.theme.color[props.color];
       }
       return '';
     },
     borderColor(props) {
-      const lTheme = props.theme.color ? props.theme : theme;
       if (props.kind === 'filled') {
-        return lTheme.color[`${props.color}Dark`];
+        return props.theme.color[`${props.color}Dark`];
       }
       if (props.kind === 'outlined') {
-        return lTheme.color[props.color];
+        return props.theme.color[props.color];
       }
       return '';
     },
@@ -138,15 +68,15 @@ const StyledButton = styled(
   justify-content: center;
   cursor: pointer;
   text-transform: uppercase;
-  color: ${styles.color};
-  font-size: ${styles.fontSize};
-  background-color: ${styles.backgroundColor};
-  padding: ${styles.padding};
+  color: ${(props) => props.theme.component.Button[props.variant].color};
+  background-color: ${(props) => props.theme.color[props.variant]};
+  font-size: ${(props) => props.theme.fontSize[styles.size[props.size]]};
+  padding: ${(props) => props.theme.px(styles.padding[props.size])};
   width: ${(props) => props.fluid ? '100%' : ''};
   border-width: 1px;
   border-style: solid;
-  border-color: ${styles.borderColor};
-  border-radius: ${styles.borderRadius};
+  border-color: ${(props) => props.theme.component.Button[props.variant].borderColor};
+  border-radius: ${(props) => props.theme.component.Button.borderRadius};
   pointer-events: ${styles.pointerEvents};
   opacity: ${styles.opacity};
 
@@ -185,27 +115,25 @@ function Button({ label, disabled, className, onClick, spin, ...props }) {
 Button.propTypes = {
   label: PropTypes.string,
   onClick: PropTypes.func,
-  type: PropTypes.oneOf(['submit', 'button']),
-  kind: PropTypes.oneOf(['filled', 'outlined']),
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
-  shape: PropTypes.oneOf(['bluntEdged', 'sharpEdged', 'capsular', 'circular']),
   fluid: PropTypes.bool,
   disabled: PropTypes.bool,
   spin: PropTypes.bool,
   className: PropTypes.string,
+  type: PropTypes.oneOf(['submit', 'button']),
+  variant: PropTypes.oneOf(['primary', 'secondary', 'tertiary', 'quaternary']),
+  size: PropTypes.oneOf(['s', 'm', 'l']),
 };
 
 Button.defaultProps = {
   label: 'Button',
   onClick: () => {},
-  type: 'submit',
-  kind: 'filled',
-  size: 'medium',
-  shape: 'bluntEdged',
   fluid: false,
   disabled: false,
   spin: false,
   className: '',
+  type: 'submit',
+  variant: 'secondary',
+  size: 'm',
 };
 
 export default Button;

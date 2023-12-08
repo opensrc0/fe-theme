@@ -3,7 +3,7 @@ import fontFamily from './font/fontFamilyConst';
 import fontSize from './font/fontSizeConst';
 import fontWeight from './font/fontWeightConst';
 
-const theme = {};
+const theme = { component: {} };
 theme.color = fontColor;
 theme.fontFamily = fontFamily;
 theme.fontSize = fontSize;
@@ -18,8 +18,6 @@ theme.display = {
   none: 'none',
 };
 
-theme.borderRadius = '8px';
-
 theme.pxScale = 8;
 
 theme.px = (value) => {
@@ -29,5 +27,41 @@ theme.px = (value) => {
     .join(' ');
 };
 theme.toString = (value) => (!value || typeof value === 'string') ? value : value.toString();
+
+theme.component.Button = {
+  borderRadius: '4px',
+  primary: {
+    color: 'white',
+    borderColor: 'white',
+  },
+  secondary: {
+    color: 'white',
+    borderColor: 'white',
+  },
+  tertiary: {
+    color: 'white',
+    borderColor: 'white',
+  },
+  quaternary: {
+    color: 'white',
+    borderColor: 'white',
+  },
+};
+
+theme.component.TextBox = {
+  borderRadius: '4px',
+  primary: {
+    borderColor: 'white',
+  },
+  secondary: {
+    borderColor: 'white',
+  },
+  tertiary: {
+    borderColor: 'white',
+  },
+  quaternary: {
+    borderColor: 'white',
+  },
+};
 
 export default theme;

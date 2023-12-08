@@ -7,7 +7,7 @@ import theme from '../theme';
 const styles = {
   borderRadius(props) {
     if (props.shape === 'bluntEdged') {
-      return theme.borderRadius;
+      return theme.cornerEdge;
     }
     if (props.shape === 'sharpEdged') {
       return '2px';
@@ -44,7 +44,9 @@ const SuffixInputIcon = styled(InputIcon)`
   `}
 `;
 
-const InputBox = styled.input`
+const InputBox = styled.input.withConfig({
+  shouldForwardProp: (prop) => prop !== 'fluid' && prop !== 'spin',
+})`
   padding: 12px 48px 12px 36px;
   border-width: 1px;
   border-radius: ${styles.borderRadius};
