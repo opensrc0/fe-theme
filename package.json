@@ -23,16 +23,19 @@
       "eslint"
     ]
   },
+  "devEngines": {
+    "node": "16.x || 18.x || 19.x || 20.x"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hdlion/ui-theme.git"
+    "url": "git+https://github.com/hg-arch/fe-theme.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hdlion/ui-theme/issues"
+    "url": "https://github.com/hg-arch/fe-theme/issues"
   },
-  "homepage": "https://github.com/hdlion/ui-theme#readme",
+  "homepage": "https://github.com/hg-arch/fe-theme#readme",
   "keywords": [
     "accessible",
     "css",
