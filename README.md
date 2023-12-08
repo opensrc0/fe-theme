@@ -6,16 +6,23 @@
 <h2 align="center">A React library using styled-component to build consistent, responsive, theme able UI 💪 </h2>
 <br />
 <p align="center">
-  <img alt="Minified Size" src="https://img.shields.io/badge/minzipped_size-100kb-%23e95143"/>
-  <img alt="Downloads Per Month" src="https://img.shields.io/badge/downloads-1k%2Fmonth-%23027f02"/>
-  <img alt="React Version" src="https://img.shields.io/badge/react_version-18.2.0-blue"/>
-  <img alt="Styled Component Version" src="https://img.shields.io/badge/styled_component-6.1.1-%2350c62a"/>
+   <a href="https://www.npmjs.com/package/fe-theme">
+     <img alt="Minified Size" src="https://img.shields.io/badge/minzipped_size-100kb-%23e95143"/>
+   </a>
+  <a href="https://styled-components.com/releases#v6.1.1">
+    <img alt="Styled Component Version" src="https://img.shields.io/badge/styled_component-6.1.1-%2350c62a"/>
+  </a>
+  <a href="https://react.dev/reference/react">
+    <img alt="React Version" src="https://img.shields.io/badge/react_version-18.2.0-blue"/>
+  </a>
+  <a href="https://www.npmjs.com/package/fe-theme">
+    <img alt="Downloads Per Month" src="https://img.shields.io/badge/downloads-1k%2Fmonth-%23027f02"/>
+  </a>
+  <a href="https://github.com/hg-arch/fe-theme/stargazers">
+    <img alt="Stars" src="https://img.shields.io/badge/stars-30.0-%23eac54f"/>
+  </a>
   <a href="https://github.com/hg-arch/fe-theme/blob/master/LICENSE.md">
     <img alt="MIT License" src="https://img.shields.io/badge/license-MIT-%23d7614b"/>
-  </a>
-
-  <a href="https://github.com/hg-arch/fe-theme/stargazers">
-    <img alt="Stars" src="https://img.shields.io/badge/stars-10.0-blue"/>
   </a>
 </p>
 <br />
