@@ -1,5 +1,5 @@
 {
-  "name": "fe-theme",
+  "name": "@hg-arch/fe-theme",
   "version": "4.0.8",
   "description": "fe-theme",
   "main": "babel.config.js",
