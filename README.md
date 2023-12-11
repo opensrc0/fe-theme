@@ -31,16 +31,17 @@ FE-Theme is a styled-component based comprehensive library of accessible, reusab
 
 ## Table of contents
 
-- 📦 [Installation](#installation)
-- 💻 [Setup](#setup)
-- ✨ [Contributors](#contributors)
-- ⚖️ [License](#license)
+1. 📦 [Installation](#installation)
+2. 💻 [Usage](#usage)
+3. 📝 [Contributing](#contributing)
+4. ✨ [Contributors](#contributors)
+5. ⚖️ [License](#license)
   
 ## Installation
 
     npm install fe-theme --save
 
-## Setup
+## Usage
 
 #### 1. Importing UI component in your application
 ```js
@@ -81,6 +82,11 @@ ReactDOM.hydrate(
 <Button design="primary" />
 <Button design="secondary" />
 ```
+
+## Contributing
+
+Feel like contributing? Most welcome! 
+```Follow this quick [setup and guide lines](CONTRIBUTING.md) to get fe-theme working on your local machine and contribute.```
 
 ## Contributors
 
