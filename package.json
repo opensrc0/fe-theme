@@ -1,7 +1,7 @@
 {
   "name": "fe-theme",
   "version": "4.0.10",
-  "description": "fe-theme",
+  "description": "@hg-arch/fe-theme",
   "main": "babel.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
