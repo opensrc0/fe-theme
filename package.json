@@ -1,6 +1,6 @@
 {
   "name": "fe-theme",
-  "version": "4.0.10",
+  "version": "4.0.8",
   "description": "@hg-arch/fe-theme",
   "main": "babel.config.js",
   "scripts": {
