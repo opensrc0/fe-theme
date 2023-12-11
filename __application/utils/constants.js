@@ -34,7 +34,3 @@ export const yearMapping = {
   11: 'Nov',
   12: 'Dec',
 };
-
-  YES:'Yes',
-  NO: 'No',
-}
