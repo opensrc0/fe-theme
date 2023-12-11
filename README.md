@@ -19,7 +19,7 @@
     <img alt="MIT License" src="https://img.shields.io/badge/license-MIT-%23d7614b"/>
   </a>
   <a href="https://github.com/hg-arch/fe-theme/stargazers">
-    <img alt="Github Stars" src="https://badgen.net/github/stars/hg-arch/fe-theme"/>
+    <img alt="Github Stars" src="https://badgen.net/github/stars/hg-arch/fe-theme/?icon=github"/>
   </a>
   <a href="https://www.npmjs.com/package/fe-theme">
     <img alt="NPM Downloads" src="https://img.shields.io/npm/dm/fe-theme"/>
