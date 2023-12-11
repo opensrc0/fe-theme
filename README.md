@@ -3,7 +3,7 @@
     <img src="https://png.pngtree.com/png-clipart/20220103/original/pngtree-show-biceps-png-image_7019290.png" alt="FE-Theme Logo" width="100" />
   </a>
 </p>
-<h2 align="center">A React library using styled-component to build consistent, responsive, theme able UI 💪 </h2>
+<h2 align="center">A React UI library using styled-component to build consistent, responsive, theme able UI 💪 </h2>
 <br />
 <p align="center">
    <a href="https://www.npmjs.com/package/fe-theme">
