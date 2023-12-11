@@ -1,7 +1,7 @@
 {
   "name": "fe-theme",
   "version": "4.0.8",
-  "description": "@hg-arch/fe-theme",
+  "description": "fe-theme",
   "main": "babel.config.js",
   "scripts": {
     "test": "echo \"Success: Verified\"",
