@@ -12,6 +12,7 @@
   <a href="https://styled-components.com/releases#v6.1.1">
     <img alt="Styled Component Version" src="https://img.shields.io/badge/styled_component-6.1.1-%2350c62a"/>
   </a>
+<a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fhg-arch%2Ffe-theme?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fhg-arch%2Ffe-theme.svg?type=shield"/></a>
   <a href="https://react.dev/reference/react">
     <img alt="React Version" src="https://img.shields.io/badge/react-18.2.0-%23f1e05a"/>
   </a>
@@ -29,6 +30,9 @@
 <br />
 
 FE-Theme is a styled-component based comprehensive library of accessible, reusable, and composable React components that streamlines the development of modern web applications and websites. The library offers a theme based UI to quickly start a new small/medium/large size web based applications.
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fhg-arch%2Ffe-theme.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fhg-arch%2Ffe-theme?ref=badge_large)
 
 ## Table of contents
 
