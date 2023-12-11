@@ -6,6 +6,8 @@ npm-debug.log
 
 **/__build-es
 
+**/index.js
+
 package-lock.json
 
 builds/
