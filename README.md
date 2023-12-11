@@ -16,7 +16,7 @@
     <img alt="React Version" src="https://img.shields.io/badge/react_version-18.2.0-blue"/>
   </a>
   <a href="https://www.npmjs.com/package/fe-theme">
-    <img alt="Downloads Per Month" src="https://img.shields.io/badge/downloads-1k%2Fmonth-%23027f02"/>
+    <img alt="Downloads Per Month" src="https://badgen.net/github/stars/hg-arch/fe-theme"/>
   </a>
   <a href="https://github.com/hg-arch/fe-theme/stargazers">
     <img alt="Stars" src="https://img.shields.io/badge/stars-30.0-%23eac54f"/>
