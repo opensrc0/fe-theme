@@ -3,8 +3,7 @@ Clone the repository and run the following commands from the root directory
 
 ## Local setup
 
-1. Clone the fe-theme repository
-2. Go to the fe-theme repo location and do 
+1. Go to the fe-theme repo location in your terminal and do 
 ```
 npm install
 
