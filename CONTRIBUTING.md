@@ -1,7 +1,7 @@
 Thanks for showing interest to contribute to FE-Theme...!
 
 ## Setup the Project
-[Setup fe-theme locally on your machine and use in the your project](https://github.com/fe-theme/SETUP.md)
+[Setup fe-theme locally on your machine and use in the your project](SETUP.md)
 
 ## Development
 
