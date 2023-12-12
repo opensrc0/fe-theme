@@ -31,9 +31,6 @@
 
 FE-Theme is a styled-component based comprehensive library of accessible, reusable, and composable React components that streamlines the development of modern web applications and websites. The library offers a theme based UI to quickly start a new small/medium/large size web based applications.
 
-
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fhg-arch%2Ffe-theme.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fhg-arch%2Ffe-theme?ref=badge_large)
-
 ## Table of contents
 
 1. 📦 [Installation](#installation)
