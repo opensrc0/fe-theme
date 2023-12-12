@@ -1,6 +1,6 @@
 {
   "name": "fe-theme",
-  "version": "4.0.13",
+  "version": "4.0.14",
   "description": "fe-theme",
   "main": "babel.config.js",
   "scripts": {
@@ -30,14 +30,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hg-arch/fe-theme.git"
+    "url": "git+https://github.com/opensrc0/fe-theme.git"
   },
   "author": "Himanshu Gupta",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hg-arch/fe-theme/issues"
+    "url": "https://github.com/opensrc0/fe-theme/issues"
   },
-  "homepage": "https://github.com/hg-arch/fe-theme#readme",
+  "homepage": "https://github.com/opensrc0/fe-theme#readme",
   "keywords": [
     "accessible",
     "css",
