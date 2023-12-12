@@ -9,9 +9,3 @@ npm-debug.log
 **/index.js
 
 package-lock.json
-
-builds/
-
-coverage/
-
-__snapshots__/
