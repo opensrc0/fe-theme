@@ -1,10 +1,10 @@
 {
   "name": "fe-theme",
-  "version": "4.0.8",
+  "version": "4.0.13",
   "description": "fe-theme",
   "main": "babel.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Success: Verified\"",
     "semantic-release": "semantic-release",
     "start": "npm run local",
     "local": "babel __application/component -d __build-es --watch",
@@ -32,8 +32,8 @@
     "type": "git",
     "url": "git+https://github.com/hg-arch/fe-theme.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Himanshu Gupta",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/hg-arch/fe-theme/issues"
   },

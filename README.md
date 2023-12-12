@@ -3,27 +3,29 @@
     <img src="https://png.pngtree.com/png-clipart/20220103/original/pngtree-show-biceps-png-image_7019290.png" alt="FE-Theme Logo" width="100" />
   </a>
 </p>
-<h2 align="center">A React library using styled-component to build consistent, responsive, theme able UI 💪 </h2>
+<h2 align="center">A React UI library using styled-component to build consistent, responsive, theme able UI 💪 </h2>
 <br />
 <p align="center">
    <a href="https://www.npmjs.com/package/fe-theme">
-     <img alt="Minified Size" src="https://img.shields.io/badge/minzipped_size-100kb-%23e95143"/>
+     <img alt="Minified Size" src="https://badgen.net/bundlephobia/minzip/fe-theme@4.0.9"/>
    </a>
   <a href="https://styled-components.com/releases#v6.1.1">
     <img alt="Styled Component Version" src="https://img.shields.io/badge/styled_component-6.1.1-%2350c62a"/>
   </a>
+<a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fhg-arch%2Ffe-theme?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fhg-arch%2Ffe-theme.svg?type=shield"/></a>
   <a href="https://react.dev/reference/react">
-    <img alt="React Version" src="https://img.shields.io/badge/react_version-18.2.0-blue"/>
+    <img alt="React Version" src="https://img.shields.io/badge/react-18.2.0-%23f1e05a"/>
   </a>
-  <a href="https://www.npmjs.com/package/fe-theme">
-    <img alt="Downloads Per Month" src="https://img.shields.io/badge/downloads-1k%2Fmonth-%23027f02"/>
-  </a>
-  <a href="https://github.com/hg-arch/fe-theme/stargazers">
-    <img alt="Stars" src="https://img.shields.io/badge/stars-30.0-%23eac54f"/>
-  </a>
-  <a href="https://github.com/hg-arch/fe-theme/blob/master/LICENSE.md">
+   <a href="https://github.com/hg-arch/fe-theme/blob/master/LICENSE.md">
     <img alt="MIT License" src="https://img.shields.io/badge/license-MIT-%23d7614b"/>
   </a>
+  <a href="https://github.com/hg-arch/fe-theme/stargazers">
+    <img alt="Github Stars" src="https://badgen.net/github/stars/hg-arch/fe-theme/?icon=github"/>
+  </a>
+  <a href="https://www.npmjs.com/package/fe-theme">
+    <img alt="NPM Downloads" src="https://img.shields.io/npm/dm/fe-theme"/>
+  </a>
+ 
 </p>
 <br />
 
@@ -31,16 +33,17 @@ FE-Theme is a styled-component based comprehensive library of accessible, reusab
 
 ## Table of contents
 
-- 📦 [Installation](#installation)
-- 💻 [Setup](#setup)
-- ✨ [Contributors](#contributors)
-- ⚖️ [License](#license)
+1. 📦 [Installation](#installation)
+2. 💻 [Usage](#usage)
+3. 📝 [Contributing](#contributing)
+4. ✨ [Contributors](#contributors)
+5. ⚖️ [License](#license)
   
 ## Installation
 
     npm install fe-theme --save
 
-## Setup
+## Usage
 
 #### 1. Importing UI component in your application
 ```js
@@ -81,6 +84,11 @@ ReactDOM.hydrate(
 <Button design="primary" />
 <Button design="secondary" />
 ```
+
+## Contributing
+
+Feel like contributing? Most welcome! 
+Follow this quick [setup and guide lines](./CONTRIBUTING.md) to get fe-theme working on your local machine and contribute.
 
 ## Contributors
 
