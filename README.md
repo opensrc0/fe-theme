@@ -12,15 +12,12 @@
   <a href="https://styled-components.com/releases#v6.1.1">
     <img alt="Styled Component Version" src="https://img.shields.io/badge/styled_component-6.1.1-%2350c62a"/>
   </a>
-<a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fopensrc0%2Ffe-theme?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fopensrc0%2Ffe-theme.svg?type=shield"/></a>
   <a href="https://react.dev/reference/react">
     <img alt="React Version" src="https://img.shields.io/badge/react-18.2.0-%23f1e05a"/>
   </a>
-   <a href="https://github.com/opensrc0/fe-theme/blob/master/LICENSE.md">
-    <img alt="MIT License" src="https://img.shields.io/badge/license-MIT-%23d7614b"/>
-  </a>
+   
   <a href="https://github.com/opensrc0/fe-theme/stargazers">
-    <img alt="Github Stars" src="https://badgen.net/github/stars/opensrc0/fe-theme?icon=github"/>
+    <img alt="Github Stars" src="https://badgen.net/github/stars/opensrc0/fe-theme?icon=github&color=red"/>
   </a>
   <a href="https://www.npmjs.com/package/fe-theme">
     <img alt="NPM Downloads" src="https://img.shields.io/npm/dm/fe-theme"/>
@@ -28,7 +25,9 @@
   <a href="https://www.npmjs.com/package/fe-theme/v/latest">
     <img alt="Latest Release" src="https://badgen.net/github/release/opensrc0/fe-theme?icon=github"/>
   </a>
-
+  <a href="https://github.com/opensrc0/fe-theme/blob/master/LICENSE.md">
+    <img alt="MIT License" src="https://img.shields.io/badge/license-MIT-%23d7614b"/>
+  </a>
 </p>
 <br />
 
