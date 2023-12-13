@@ -17,6 +17,7 @@
     "version-i": "npm version patch",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
+    "packing": "npm pack",
     "semantic-release": "npm pack"
   },
   "lint-staged": {
