@@ -18,7 +18,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "packing": "npm pack",
-    "semantic-release": "semantic-release"
+    "semantic-release": "npm pack"
   },
   "lint-staged": {
     "*.js": [
@@ -114,9 +114,9 @@
     "styled-components": "^6.1.1"
   },
   "files": [
-    "__build-es",
-    "Box",
-    "Button",
+    "__build-es/**",
+    "Box/",
+    "Button/",
     "Flex",
     "Init",
     "Input",
