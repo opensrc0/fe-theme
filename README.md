@@ -25,7 +25,10 @@
   <a href="https://www.npmjs.com/package/fe-theme">
     <img alt="NPM Downloads" src="https://img.shields.io/npm/dm/fe-theme"/>
   </a>
- 
+  <a href="https://www.npmjs.com/package/fe-theme/v/latest">
+    <img alt="Latest Release" src="https://badgen.net/github/release/opensrc0/fe-theme?icon=github"/>
+  </a>
+
 </p>
 <br />
 
