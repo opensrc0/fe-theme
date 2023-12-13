@@ -113,7 +113,15 @@
     "react-dom": "^18.2.0",
     "styled-components": "^6.1.1"
   },
-
+  "files": [
+    "__build-es/**/*",
+    "Box/**/*",
+    "Button/**/*",
+    "Flex/**/*",
+    "Init/**/*",
+    "Input/**/*",
+    "theme/**/*"
+  ],
   "eslintConfig": {
     "extends": [
       "plugin:storybook/recommended"
