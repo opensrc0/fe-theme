@@ -4,8 +4,4 @@ npm-debug.log
 
 **/node_modules
 
-**/__build-es
-
-**/index.js
-
 package-lock.json
