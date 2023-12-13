@@ -115,6 +115,7 @@
   "files": [
     "cjs/**/*",
     "__build-es/**/*",
+    "Box/**/*",
     "Button/**/*",
     "Flex/**/*",
     "Init/**/*",
