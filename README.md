@@ -7,7 +7,7 @@
 <br />
 <p align="center">
    <a href="https://www.npmjs.com/package/fe-theme">
-     <img alt="Minified Size" src="https://badgen.net/bundlephobia/minzip/fe-theme@4.0.9"/>
+     <img alt="Minified Size" src="https://badgen.net/bundlephobia/minzip/fe-theme@4.0.9?color=cyan"/>
    </a>
   <a href="https://styled-components.com/releases#v6.1.1">
     <img alt="Styled Component Version" src="https://img.shields.io/badge/styled_component-6.1.1-%2350c62a"/>
@@ -17,16 +17,16 @@
   </a>
    
   <a href="https://github.com/opensrc0/fe-theme/stargazers">
-    <img alt="Github Stars" src="https://badgen.net/github/stars/opensrc0/fe-theme?icon=github&color=red"/>
+    <img alt="Github Stars" src="https://badgen.net/github/stars/opensrc0/fe-theme?icon=github&color=purple"/>
   </a>
   <a href="https://www.npmjs.com/package/fe-theme">
     <img alt="NPM Downloads" src="https://img.shields.io/npm/dm/fe-theme"/>
   </a>
   <a href="https://www.npmjs.com/package/fe-theme/v/latest">
-    <img alt="Latest Release" src="https://badgen.net/github/release/opensrc0/fe-theme?icon=github"/>
+    <img alt="Latest Release" src="https://badgen.net/github/release/opensrc0/fe-theme?icon=github&color=pink"/>
   </a>
   <a href="https://github.com/opensrc0/fe-theme/blob/master/LICENSE.md">
-    <img alt="MIT License" src="https://img.shields.io/badge/license-MIT-%23d7614b"/>
+    <img alt="MIT License" src="https://badgen.net/static/license/MIT/orange"/>
   </a>
 </p>
 <br />
