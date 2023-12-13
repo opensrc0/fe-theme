@@ -9,3 +9,5 @@ package-lock.json
 **/index.js
 
 __build-es
+
+package/
