@@ -35,8 +35,8 @@ fs.readFile(packageJsonPath, 'utf-8', (readFileErr, packageJsonData) => {
   const newPackageJson = {
     ...packageJson,
     files: [
-      '__build-es/**/*',
-      ...components.map((component) => `${component}/**`),
+      '__build-es/**',
+      ...components.map((component) => `${component}/`),
     ],
   };
   fs.writeFile(packageJsonPath, JSON.stringify(newPackageJson, null, 2), (writeFileErr) => {

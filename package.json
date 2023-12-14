@@ -17,8 +17,7 @@
     "version-i": "npm version patch",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "packing": "npm pack --dry-run",
-    "semantic-release": "npm pack"
+    "semantic-release": "semantic-release --branches master"
   },
   "lint-staged": {
     "*.js": [
