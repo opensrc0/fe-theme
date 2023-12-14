@@ -114,7 +114,13 @@
     "styled-components": "^6.1.1"
   },
   "files": [
-    
+    "__build-es/**",
+    "Box/**",
+    "Button/**",
+    "Flex/**",
+    "Init/**",
+    "Input/**",
+    "theme/**"
   ],
   "eslintConfig": {
     "extends": [
