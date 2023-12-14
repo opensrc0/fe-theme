@@ -20,7 +20,7 @@
     <img alt="Github Stars" src="https://badgen.net/github/stars/opensrc0/fe-theme?icon=github&color=purple"/>
   </a>
   <a href="https://www.npmjs.com/package/fe-theme">
-    <img alt="NPM Downloads" src="https://img.shields.io/npm/dm/fe-theme"/>
+    <img alt="NPM Downloads" src="https://img.shields.io/npm/dw/fe-theme?label=Downloads&logo=npm"/>
   </a>
   <a href="https://www.npmjs.com/package/fe-theme/v/latest">
     <img alt="Latest Release" src="https://badgen.net/github/release/opensrc0/fe-theme?icon=github&color=pink"/>
