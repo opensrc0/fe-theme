@@ -90,7 +90,7 @@ ReactDOM.hydrate(
 ## Contributing
 
 Feel like contributing? Most welcome! 
-Follow this quick [setup and guide lines](./CONTRIBUTING.md) to get fe-theme working on your local machine and contribute.
+Follow this quick [setup and guide lines](./.github/CONTRIBUTING.md) to get fe-theme working on your local machine and contribute.
 
 ## Contributors
 
