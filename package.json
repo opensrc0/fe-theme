@@ -17,7 +17,7 @@
     "lint": "run-p lint:*",
     "lint:eslint": "eslint .",
     "version-i": "npm version patch",
-    "storybook": "storybook dev -p 6006",
+    "storybook": "storybook dev -p 8888",
     "build-storybook": "storybook build",
     "semantic-release": "semantic-release --branches master"
   },
