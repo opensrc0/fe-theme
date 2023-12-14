@@ -17,7 +17,7 @@
     "version-i": "npm version patch",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "packing": "npm pack",
+    "packing": "npm pack --dry-run",
     "semantic-release": "npm pack"
   },
   "lint-staged": {
@@ -115,12 +115,12 @@
   },
   "files": [
     "__build-es/**",
-    "Box/**",
-    "Button/**",
-    "Flex/**",
-    "Init/**",
-    "Input/**",
-    "theme/**"
+    "Box/",
+    "Button/",
+    "Flex/",
+    "Init/",
+    "Input/",
+    "theme/"
   ],
   "eslintConfig": {
     "extends": [
