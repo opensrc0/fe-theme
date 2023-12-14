@@ -1,24 +1,25 @@
 {
   "name": "fe-theme",
-  "version": "4.0.8",
+  "version": "0.0.0-development",
   "description": "fe-theme",
   "main": "babel.config.js",
   "scripts": {
     "test": "echo \"Success: Verified\"",
-    "semantic-release": "semantic-release",
     "start": "npm run local",
     "local": "babel __application/component -d __build-es --watch",
-    "build": "run-s build:es build:prepare",
-    "build:es": "babel __application/component -d __build-es --ignore *.test.js",
-    "build:prepare": "node ./__application/scripts/buildPrepare.js",
+    "build": "run-s build-es build-prepare",
+    "prebuild-es": "echo \"\\x1b[97m\\x1b[44m 1. Started: Building Component in __build-es folder. \\x1b[0m\"",
+    "build-es": "babel __application/component -d __build-es --ignore *.test.js",
+    "prebuild-prepare": "echo \"\\x1b[97m\\x1b[44m 2. Started: Direct import of individual package preparation started. \\x1b[0m\"",
+    "build-prepare": "node ./__application/scripts/buildPrepare.js",
     "precommit": "lint-staged",
     "commit": "git-cz",
     "lint": "run-p lint:*",
     "lint:eslint": "eslint .",
-    "lint:stylelint": "stylelint '**/*.js'",
     "version-i": "npm version patch",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "semantic-release": "semantic-release --branches master"
   },
   "lint-staged": {
     "*.js": [
@@ -30,14 +31,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hg-arch/fe-theme.git"
+    "url": "git+https://github.com/opensrc0/fe-theme.git"
   },
   "author": "Himanshu Gupta",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hg-arch/fe-theme/issues"
+    "url": "https://github.com/opensrc0/fe-theme/issues"
   },
-  "homepage": "https://github.com/hg-arch/fe-theme#readme",
+  "homepage": "https://github.com/opensrc0/fe-theme#readme",
   "keywords": [
     "accessible",
     "css",
@@ -88,6 +89,7 @@
     "babel-plugin-styled-components": "^2.1.4",
     "babel-plugin-syntax-trailing-function-commas": "^6.22.0",
     "classnames": "^2.3.2",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.54.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.29.0",
@@ -102,6 +104,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rimraf": "^5.0.5",
+    "semantic-release": "^22.0.12",
     "storybook": "^7.6.4",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4"
@@ -112,18 +115,22 @@
     "styled-components": "^6.1.1"
   },
   "files": [
-    "cjs/**/*",
-    "__build-es/**/*",
-    "Button/**/*",
-    "Flex/**/*",
-    "Init/**/*",
-    "Input/**/*",
-    "theme/**/*",
-    "theme.js"
+    "__build-es/**",
+    "Box/",
+    "Button/",
+    "Flex/",
+    "Init/",
+    "Input/",
+    "theme/"
   ],
   "eslintConfig": {
     "extends": [
       "plugin:storybook/recommended"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

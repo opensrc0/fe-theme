@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/hg-arch/fe-theme">
+  <a href="https://github.com/opensrc0/fe-theme">
     <img src="https://png.pngtree.com/png-clipart/20220103/original/pngtree-show-biceps-png-image_7019290.png" alt="FE-Theme Logo" width="100" />
   </a>
 </p>
@@ -7,22 +7,26 @@
 <br />
 <p align="center">
    <a href="https://www.npmjs.com/package/fe-theme">
-     <img alt="Minified Size" src="https://img.shields.io/badge/minzipped_size-100kb-%23e95143"/>
+     <img alt="Minified Size" src="https://badgen.net/bundlephobia/minzip/fe-theme@4.0.9?color=cyan"/>
    </a>
   <a href="https://styled-components.com/releases#v6.1.1">
     <img alt="Styled Component Version" src="https://img.shields.io/badge/styled_component-6.1.1-%2350c62a"/>
   </a>
   <a href="https://react.dev/reference/react">
-    <img alt="React Version" src="https://img.shields.io/badge/react_version-18.2.0-blue"/>
+    <img alt="React Version" src="https://img.shields.io/badge/react-18.2.0-%23f1e05a"/>
+  </a>
+   
+  <a href="https://github.com/opensrc0/fe-theme/stargazers">
+    <img alt="Github Stars" src="https://badgen.net/github/stars/opensrc0/fe-theme?icon=github&color=purple"/>
   </a>
   <a href="https://www.npmjs.com/package/fe-theme">
-    <img alt="Downloads Per Month" src="https://img.shields.io/badge/downloads-1k%2Fmonth-%23027f02"/>
+    <img alt="NPM Downloads" src="https://img.shields.io/npm/dw/fe-theme?label=Downloads&logo=npm"/>
   </a>
-  <a href="https://github.com/hg-arch/fe-theme/stargazers">
-    <img alt="Stars" src="https://img.shields.io/badge/stars-30.0-%23eac54f"/>
+  <a href="https://www.npmjs.com/package/fe-theme/v/latest">
+    <img alt="Latest Release" src="https://badgen.net/github/release/opensrc0/fe-theme?icon=github&color=pink"/>
   </a>
-  <a href="https://github.com/hg-arch/fe-theme/blob/master/LICENSE.md">
-    <img alt="MIT License" src="https://img.shields.io/badge/license-MIT-%23d7614b"/>
+  <a href="https://github.com/opensrc0/fe-theme/blob/master/LICENSE.md">
+    <img alt="MIT License" src="https://badgen.net/static/license/MIT/orange"/>
   </a>
 </p>
 <br />
@@ -57,7 +61,7 @@ Hurrah...!!! Button is created, but color does not match with the application. N
 #### 2. Do you want to change theme according to your application?
 ##### Generate a sample file(sample-theme.js) by running below commond in terminal in your project location.
 
-```cp sample-theme.js ./``` Or <a href="https://github.com/hg-arch/fe-theme/blob/master/sample-theme.js">```Download Sample File```</a>
+```cp sample-theme.js ./``` Or <a href="https://github.com/opensrc0/fe-theme/blob/master/sample-theme.js">```Download Sample File```</a>
 
 #### 3. Bootstrap theme by calling a ```themeInit```  function and pass it to ```ThemeProvider``` in ```theme``` property
 
@@ -96,7 +100,7 @@ Thanks goes to these wonderful people
     <tbody>
       <tr>
         <td align="center" valign="top" width="14.28%">
-          <a href="https://github.com/hg-arch">
+          <a href="https://github.com/opensrc0">
             <img src="https://avatars.githubusercontent.com/u/6891544?s=400&v=4" width="64px;" alt="Himanshu Gupta" />
             <br />
             <sub><b>Himanshu Gupta</b></sub>
@@ -141,4 +145,4 @@ Thanks goes to these wonderful people
 
 ### License
 
-MIT © [Himanshu Gupta](https://github.com/hg-arch)
+MIT © [Himanshu Gupta](https://github.com/opensrc0)

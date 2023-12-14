@@ -2,14 +2,9 @@
 
 npm-debug.log
 
-**/node_modules
+node_modules/
 
-**/__build-es
+__build-es
 
-package-lock.json
+**/index.js
 
-builds/
-
-coverage/
-
-__snapshots__/

@@ -1,6 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import themeInit from '../Init';
+import themeInit from '../__application/component/Init';
 import theme from '../__build-es/theme';
 
 /** @type { import('@storybook/react').Preview } */

@@ -1,12 +1,12 @@
-.idea
-.vscode
-.expo
-es
-cjs
-docs
-coverage
-node_modules/
+# Third party
+**/node_modules
+
+# Not written by hand
 npm-debug.log*
 
+# Build products
 babel.config.js
 __build-es
+.vscode
+**/index.js
+
