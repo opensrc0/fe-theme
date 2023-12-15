@@ -1,6 +1,6 @@
 {
   "name": "fe-theme",
-  "version": "0.0.0-development",
+  "version": "4.0.35",
   "description": "fe-theme",
   "main": "babel.config.js",
   "scripts": {
@@ -139,10 +139,10 @@
     "branches": [
       "master"
     ],
-    
     "plugins": [
-      "@semantic-release/commit-analyzer",
+      "@semantic-release/npm",
       "@semantic-release/release-notes-generator",
+      "@semantic-release/commit-analyzer",
       "@semantic-release/changelog",
       "@semantic-release/git",
       "@semantic-release/github"
