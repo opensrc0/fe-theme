@@ -1,6 +1,6 @@
 {
   "name": "fe-theme",
-  "version": "0.0.0-development",
+  "version": "4.0.34",
   "description": "fe-theme",
   "main": "babel.config.js",
   "scripts": {
@@ -139,7 +139,6 @@
     "branches": [
       "master"
     ],
-    
     "plugins": [
       "@semantic-release/npm",
       "@semantic-release/release-notes-generator",
