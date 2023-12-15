@@ -1,3 +1,10 @@
+## [4.0.30](https://github.com/opensrc0/fe-theme/compare/v4.0.29...v4.0.30) (2023-12-15)
+
+
+### Bug Fixes
+
+* **chainlog.yml:** removed chainlog.yml ([a1f6471](https://github.com/opensrc0/fe-theme/commit/a1f64712b33734470202d5383f4316d4d9e8d245))
+
 ## [4.0.29](https://github.com/opensrc0/fe-theme/compare/v4.0.28...v4.0.29) (2023-12-15)
 
 
