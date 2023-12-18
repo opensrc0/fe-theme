@@ -1,6 +1,6 @@
 {
   "name": "fe-theme",
-  "version": "0.0.0-development",
+  "version": "4.0.35",
   "description": "fe-theme",
   "main": "babel.config.js",
   "scripts": {
@@ -17,7 +17,7 @@
     "lint": "run-p lint:*",
     "lint:eslint": "eslint .",
     "version-i": "npm version patch",
-    "storybook": "storybook dev -p 6006",
+    "storybook": "storybook dev -p 8888",
     "build-storybook": "storybook build",
     "semantic-release": "semantic-release --branches master"
   },
@@ -76,6 +76,8 @@
     "@babel/preset-flow": "^7.23.3",
     "@babel/preset-react": "^7.23.3",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
     "@storybook/addon-essentials": "^7.6.4",
     "@storybook/addon-interactions": "^7.6.4",
     "@storybook/addon-links": "^7.6.4",
@@ -132,5 +134,18 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "release": {
+    "branches": [
+      "master"
+    ],
+    "plugins": [
+      "@semantic-release/npm",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/changelog",
+      "@semantic-release/git",
+      "@semantic-release/github"
+    ]
   }
 }
