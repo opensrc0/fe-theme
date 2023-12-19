@@ -155,6 +155,8 @@ Thanks goes to these wonderful people
           </a>
           <br />
         </td>
+      </tr>
+      <tr>
         <td align="center" valign="top" width="14.28%">
           <a target="_blank" href="https://github.com/fossabot">
             <img src="https://avatars.githubusercontent.com/u/29791463?v=4" width="64px;" alt="Fossa Bot" />
