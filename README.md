@@ -139,6 +139,30 @@ Thanks goes to these wonderful people
           </a>
           <br />
         </td>
+        <td align="center" valign="top" width="14.28%">
+          <a target="_blank" href="https://github.com/semantic-release-bot">
+            <img src="https://avatars.githubusercontent.com/u/32174276?v=4" width="64px;" alt="Semantic Release Bot" />
+            <br />
+            <sub><b>Semantic Release Bot</b></sub>
+          </a>
+          <br />
+        </td>
+        <td align="center" valign="top" width="14.28%">
+          <a target="_blank" href="https://github.com/Ghanshyam-K-Dobariya">
+            <img src="https://avatars.githubusercontent.com/u/5426993?s=400" width="64px;" alt="Ghanshyam KD" />
+            <br />
+            <sub><b>Ghanshyam KD</b></sub>
+          </a>
+          <br />
+        </td>
+        <td align="center" valign="top" width="14.28%">
+          <a target="_blank" href="https://github.com/fossabot">
+            <img src="https://avatars.githubusercontent.com/u/29791463?v=4" width="64px;" alt="Fossa Bot" />
+            <br />
+            <sub><b>Fossa Bot</b></sub>
+          </a>
+          <br />
+        </td>
       </tr>
     </tbody>
 </table>
