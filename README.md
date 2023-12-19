@@ -147,7 +147,6 @@ Thanks goes to these wonderful people
           </a>
           <br />
         </td>
-        
       </tr>
     </tbody>
 </table>
