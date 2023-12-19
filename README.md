@@ -141,7 +141,7 @@ Thanks goes to these wonderful people
         </td>
   <td align="center" valign="top" width="14.28%">
           <a target="_blank" href="https://github.com/Ghanshyam-K-Dobariya">
-            <img src="https://avatars.githubusercontent.com/u/5426993?s=400&u=2ffa1ebc7d3d9902769f04d4817be9375340f5d7&v=4" width="64px;" alt="Ravi Verma" />
+            <img src="https://avatars.githubusercontent.com/u/5426993?s=400&u=2ffa1ebc7d3d9902769f04d4817be9375340f5d7&v=4" width="64px;" alt="Ghanshyam KD" />
             <br />
             <sub><b>Ghanshyam KD</b></sub>
           </a>
