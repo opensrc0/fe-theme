@@ -1,4 +1,3 @@
-
 <p align="center">
   <a href="https://github.com/opensrc0/fe-theme">
     <img src="https://png.pngtree.com/png-clipart/20220103/original/pngtree-show-biceps-png-image_7019290.png" alt="FE-Theme Logo" width="100" />
