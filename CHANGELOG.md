@@ -1,3 +1,11 @@
+## [4.0.36](https://github.com/opensrc0/fe-theme/compare/v4.0.35...v4.0.36) (2023-12-19)
+
+
+### Bug Fixes
+
+* **added funding.yml:** funding.yml added ([0bf7971](https://github.com/opensrc0/fe-theme/commit/0bf79716e8fa8edea61e71dcd7bccdeb9ecdc5b2))
+* **readme.md:** added fossabot and Semantic Release Bot ([da1959b](https://github.com/opensrc0/fe-theme/commit/da1959b49ed2d05b9c6fe6f9f9704edea68e47dc))
+
 ## [4.0.35](https://github.com/opensrc0/fe-theme/compare/v4.0.34...v4.0.35) (2023-12-15)
 
 
