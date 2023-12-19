@@ -1,3 +1,4 @@
+
 <p align="center">
   <a href="https://github.com/opensrc0/fe-theme">
     <img src="https://png.pngtree.com/png-clipart/20220103/original/pngtree-show-biceps-png-image_7019290.png" alt="FE-Theme Logo" width="100" />
@@ -139,6 +140,15 @@ Thanks goes to these wonderful people
           </a>
           <br />
         </td>
+  <td align="center" valign="top" width="14.28%">
+          <a target="_blank" href="https://github.com/Ghanshyam-K-Dobariya">
+            <img src="https://avatars.githubusercontent.com/u/5426993?s=400&u=2ffa1ebc7d3d9902769f04d4817be9375340f5d7&v=4" width="64px;" alt="Ravi Verma" />
+            <br />
+            <sub><b>Ghanshyam KD</b></sub>
+          </a>
+          <br />
+        </td>
+        
       </tr>
     </tbody>
 </table>
