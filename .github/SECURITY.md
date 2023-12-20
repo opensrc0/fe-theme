@@ -16,7 +16,7 @@ major version.
 
 ## Reporting a Vulnerability
 
-If you find a vulnerability, please contact **25himanshugupta@gmail.com**,
+If you find a vulnerability, please contact **opensrc.0@gmail.com**,
 do not disclose the vulnerability on the public issue tracker.
 
 Alternatively, visit https://tidelift.com/security
