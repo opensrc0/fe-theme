@@ -67,7 +67,6 @@ theme.component.TextBox = {
 theme.component.Chip = {
   borderRadius: '1rem',
   padding: '1rem',
-  fontSize: 'm',
   primary: {
     backgroundColor: 'rgba(0, 54, 78, 0.2)',
     color: '#00364E',
