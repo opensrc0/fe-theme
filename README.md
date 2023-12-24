@@ -59,33 +59,20 @@ Hurrah...!!! Button is created, but color does not match with the application. N
   
 
 #### 2. Do you want to change theme according to your application?
-##### Generate a sample file(sample-theme.js) by running below commond in terminal in your project location.
+##### Copy the default setup from fe-theme to your proeject repo in root location
 
-```cp sample-theme.js ./``` Or <a href="https://github.com/opensrc0/fe-theme/blob/master/sample-theme.js">```Download Sample File```</a>
+```npm run theme-prepare --prefix ./node_modules/fe-theme```
 
-#### 3. Bootstrap theme by calling a ```themeInit```  function and pass it to ```ThemeProvider``` in ```theme``` property
 
-```js
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { ThemeProvider } from 'styled-components';
-import themeInit from 'fe-theme/Init';
-import theme from './sample-theme.js';
-import App from './App';
 
-ReactDOM.hydrate(
-    <ThemeProvider theme={themeInit(theme)}>
-        <App />
-    </ThemeProvider>,
-    document.getElementById('root'),
-);
-```
+#### 4. Open the config file of the component and play around with the property like in case of button primary button color to : '#000' and secondary button color to '#333'
 
-#### 4. Go to the sample-theme.js and change the theme like primary: '#000', secondary: '#333'
 ```js
 <Button design="primary" />
 <Button design="secondary" />
 ```
+
+#### 5. As simple as that. Setup finished.
 
 ## Contributing
 
