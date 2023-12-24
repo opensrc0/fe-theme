@@ -1,3 +1,10 @@
+## [4.0.42](https://github.com/opensrc0/fe-theme/compare/v4.0.41...v4.0.42) (2023-12-24)
+
+
+### Bug Fixes
+
+* **theme prepare:** theme prepare ([ffbc363](https://github.com/opensrc0/fe-theme/commit/ffbc36386870fbd95fea43b6b41ea7cea6c0bea4))
+
 ## [4.0.41](https://github.com/opensrc0/fe-theme/compare/v4.0.40...v4.0.41) (2023-12-24)
 
 
