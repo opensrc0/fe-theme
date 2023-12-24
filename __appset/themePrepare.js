@@ -99,9 +99,7 @@ mkdirp(createInnerDir).then(() => {
     fs.readFile(`${appDir}/${component}`, 'utf8', (err, data) => {
       const componentFile = path.resolve(createInnerDir, component);
       const componentContent = data;
-      fs.writeFile(componentFile, componentContent, () => {
-
-      });
+      fs.writeFile(componentFile, componentContent, () => { });
     });
 
     return null;
