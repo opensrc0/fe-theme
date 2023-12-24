@@ -47,6 +47,7 @@ jobs:
         src_path: /__appset
         dst_path: /
         dst_owner: andstor
+        dst_repo_name: copycat-action
     
     - run: npm ci
     - run: npm run build
