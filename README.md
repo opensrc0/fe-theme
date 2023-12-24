@@ -76,7 +76,7 @@ import Button from 'fe-theme/Button';
 
 Hurrah...!!! Button is created, but button theme does not match with the your application. No worries.
   
-###### Change default setting of button component, Go to **{Root-location-of-your-project} -> fe-theme -> configButton.js** and play around the property of button according to your project.
+Change default setting of button component, Go to{Root-location-of-your-project} -> fe-theme -> configButton.js and play around the property of button according to your project.
 
 
 ## Contributing
