@@ -44,10 +44,27 @@ FE-Theme is a styled-component based comprehensive library of accessible, reusab
 ## Installation
 
     npm install fe-theme --save
+    npm run theme-prepare --prefix ./node_modules/fe-theme
 
 ## Usage
 
-#### 1. Importing UI component in your application
+#### 1. Passing standrad theme set from ThemeProvider to FE-Theme
+```js
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { ThemeProvider } from 'styled-components';
+import theme from '{root-location-of-your-project}/fe-theme/universal/theme';
+import App from './App';
+
+ReactDOM.hydrate(
+  <ThemeProvider theme={theme}>
+    <App />
+  </ThemeProvider>,
+  document.getElementById('root'),
+);
+```
+
+#### 2. Importing UI component in your application
 ```js
 import Button from 'fe-theme/Button';
 ```
@@ -58,19 +75,9 @@ import Button from 'fe-theme/Button';
 Hurrah...!!! Button is created, but color does not match with the application. No worries.
   
 
-#### 2. Do you want to change theme according to your application?
-##### Copy the default setup from fe-theme to your proeject repo in root location
+###### Change default setting of button component, 
+###### {Root-location-of-your-project} -> fe-theme -> configButton.js and play around the property of button according to your project.
 
-```npm run theme-prepare --prefix ./node_modules/fe-theme```
-
-
-
-#### 4. Open the config file of the component and play around with the property like in case of button primary button color to : '#000' and secondary button color to '#333'
-
-```js
-<Button design="primary" />
-<Button design="secondary" />
-```
 
 ## Contributing
 

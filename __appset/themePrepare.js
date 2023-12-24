@@ -97,7 +97,6 @@ mkdirp(createInnerDir).then(() => {
     const appDir = path.resolve(`${__dirname}`, '../../fe-theme/__appset/universal');
 
     fs.readFile(`${appDir}/${component}`, 'utf8', (err, data) => {
-      console.log(err, data);
       const componentFile = path.resolve(createInnerDir, component);
       const componentContent = data;
       fs.writeFile(componentFile, componentContent, () => {
