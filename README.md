@@ -54,8 +54,7 @@ FE-Theme is a styled-component based comprehensive library of accessible, reusab
 
     npm run theme-prepare --prefix ./node_modules/fe-theme
 
-#### 2. Passing universal configuration like color properties, font family properties, to the fe-theme library using ThemeProvider 
-#### (For internal usage only but required)
+#### 2. Passing universal configuration like color properties, font family properties, to the fe-theme library using ThemeProvider (For internal usage only but required)
 
 ```js
 import React from 'react';
