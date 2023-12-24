@@ -1,3 +1,10 @@
+## [4.0.38](https://github.com/opensrc0/fe-theme/compare/v4.0.37...v4.0.38) (2023-12-24)
+
+
+### Bug Fixes
+
+* **sample-theme.js:** remove sample file ([6c9faf5](https://github.com/opensrc0/fe-theme/commit/6c9faf5b7692d7602310ca0ef43a72c95872bf2d))
+
 ## [4.0.37](https://github.com/opensrc0/fe-theme/compare/v4.0.36...v4.0.37) (2023-12-24)
 
 
