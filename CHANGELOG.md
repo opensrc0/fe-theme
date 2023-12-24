@@ -1,3 +1,10 @@
+## [4.0.45](https://github.com/opensrc0/fe-theme/compare/v4.0.44...v4.0.45) (2023-12-24)
+
+
+### Bug Fixes
+
+* **readme.md:** readme.md ([602d0be](https://github.com/opensrc0/fe-theme/commit/602d0beb043f74d8a59e638b8b4423e20820b992))
+
 ## [4.0.44](https://github.com/opensrc0/fe-theme/compare/v4.0.43...v4.0.44) (2023-12-24)
 
 
