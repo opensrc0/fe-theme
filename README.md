@@ -41,16 +41,20 @@ FE-Theme is a styled-component based comprehensive library of accessible, reusab
 4. ✨ [Contributors](#contributors)
 5. ⚖️ [License](#license)
   
+
+  
 ## Installation
 
     npm install fe-theme --save
     npm run theme-prepare --prefix ./node_modules/fe-theme
 
+
+
 ## Usage
 
 #### 1. Passing standrad theme set from ThemeProvider to FE-Theme
 
-```Dynamic Variable: **root-location-of-your-project**```
+```Dynamic Variable: root-location-of-your-project```
 
 ```js
 import React from 'react';
@@ -79,10 +83,13 @@ Hurrah...!!! Button is created, but button theme does not match with the your ap
 Change default setting of button component, Go to{Root-location-of-your-project} -> fe-theme -> configButton.js and play around the property of button according to your project.
 
 
+
 ## Contributing
 
 Feel like contributing? Most welcome! 
 Follow this quick [setup and guide lines](./.github/CONTRIBUTING.md) to get fe-theme working on your local machine and contribute.
+
+
 
 ## Contributors
 
@@ -160,6 +167,8 @@ Thanks goes to these wonderful people
       </tr>
     </tbody>
 </table>
+
+
 
 ### License
 
