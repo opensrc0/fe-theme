@@ -50,7 +50,7 @@ FE-Theme is a styled-component based comprehensive library of accessible, reusab
 
 #### 1. Passing standrad theme set from ThemeProvider to FE-Theme
 
-```Dynamic Variable: **root-location-of-your-project**``
+```Dynamic Variable: **root-location-of-your-project**```
 
 ```js
 import React from 'react';
