@@ -1,3 +1,10 @@
+## [4.0.44](https://github.com/opensrc0/fe-theme/compare/v4.0.43...v4.0.44) (2023-12-24)
+
+
+### Bug Fixes
+
+* **package.json:** update package.json ([9b2b64c](https://github.com/opensrc0/fe-theme/commit/9b2b64c3d0df31e74f66331e875e740da0edf77a))
+
 ## [4.0.43](https://github.com/opensrc0/fe-theme/compare/v4.0.42...v4.0.43) (2023-12-24)
 
 
