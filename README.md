@@ -46,21 +46,21 @@ FE-Theme is a styled-component based comprehensive library of accessible, reusab
 ## Installation
 
     npm install fe-theme --save
-    npm run theme-prepare --prefix ./node_modules/fe-theme
-
-
 
 ## Usage
 
-#### 1. Passing standrad theme set from ThemeProvider to FE-Theme
+#### 1. Creating a fe-theme folder in the root directory of you application. It contains configuration files of fe-theme component like Button, Input etc.
 
-```Dynamic Variable: root-location-of-your-project```
+    npm run theme-prepare --prefix ./node_modules/fe-theme
+
+#### 2. Passing universal configuration like color properties, font family properties, to the fe-theme library using ThemeProvider 
+#### (For internal usage only but required)
 
 ```js
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { ThemeProvider } from 'styled-components';
-import theme from '{root-location-of-your-project}/fe-theme/universal/theme';
+import theme from '{root-location-of-your-project}/fe-theme/universal/theme'; // root-location-of-your-project is dynamic variable
 import App from './App';
 
 ReactDOM.hydrate(
@@ -71,17 +71,25 @@ ReactDOM.hydrate(
 );
 ```
 
-#### 2. Importing UI component in your application
+#### 3. Setup is completed, Now import UI component in your application like button
 ```js
 import Button from 'fe-theme/Button';
 
 <Button />
 ```
 
-Hurrah...!!! Button is created, but button theme does not match with the your application. No worries.
+Hurrah...!!! Button is created, but button theme does not match with the your application. No worries. You can change default properties of button component
   
-Change default setting of button component, Go to{Root-location-of-your-project} -> fe-theme -> configButton.js and play around the property of button according to your project.
 
+```
+Your Application Folder(Root Directory)
+  └──fe-theme                       
+    ├──configButton           
+    ├──configInput          
+    └──configChip    
+     
+```
+Play around the property of button according to your project.
 
 
 ## Contributing
