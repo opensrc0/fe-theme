@@ -72,8 +72,6 @@ Hurrah...!!! Button is created, but color does not match with the application. N
 <Button design="secondary" />
 ```
 
-#### 5. As simple as that. Setup finished.
-
 ## Contributing
 
 Feel like contributing? Most welcome! 
