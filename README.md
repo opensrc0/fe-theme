@@ -7,7 +7,7 @@
 <br />
 <p align="center">
    <a href="https://www.npmjs.com/package/fe-theme">
-     <img alt="Minified Size" src="https://badgen.net/bundlephobia/minzip/fe-theme@4.0.9?color=cyan"/>
+     <img alt="Minified Size" src="https://badgen.net/bundlephobia/minzip/fe-theme?color=cyan"/>
    </a>
   <a href="https://styled-components.com/releases#v6.1.1">
     <img alt="Styled Component Version" src="https://img.shields.io/badge/styled_component-6.1.1-%2350c62a"/>
@@ -155,6 +155,8 @@ Thanks goes to these wonderful people
           </a>
           <br />
         </td>
+      </tr>
+      <tr>
         <td align="center" valign="top" width="14.28%">
           <a target="_blank" href="https://github.com/fossabot">
             <img src="https://avatars.githubusercontent.com/u/29791463?v=4" width="64px;" alt="Fossa Bot" />

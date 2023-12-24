@@ -12,6 +12,7 @@
     "build-es": "babel __application/component -d __build-es --ignore *.test.js",
     "prebuild-prepare": "echo \"\\x1b[97m\\x1b[44m 2. Started: Direct import of individual package preparation started. \\x1b[0m\"",
     "build-prepare": "node ./__application/scripts/buildPrepare.js",
+    "theme-prepare": "node ./__appset/themePrepare.js",
     "precommit": "lint-staged",
     "commit": "git-cz",
     "lint": "run-p lint:*",
@@ -114,7 +115,8 @@
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "styled-components": "^6.1.1"
+    "styled-components": "^6.1.1",
+    "mkdirp": "^3.0.1"
   },
   "files": [
     "__build-es/**",
