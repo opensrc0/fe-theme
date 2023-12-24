@@ -1,3 +1,11 @@
+## [4.0.39](https://github.com/opensrc0/fe-theme/compare/v4.0.38...v4.0.39) (2023-12-24)
+
+
+### Bug Fixes
+
+* **package.json:** added package copy files ([41bd8c7](https://github.com/opensrc0/fe-theme/commit/41bd8c7a5d605f5f112303422ee0bb9ac640bf60))
+* **package.jsonm:** package.json ([3af687b](https://github.com/opensrc0/fe-theme/commit/3af687b484925aec1dc2aedd02a2db03d006acf8))
+
 ## [4.0.38](https://github.com/opensrc0/fe-theme/compare/v4.0.37...v4.0.38) (2023-12-24)
 
 
