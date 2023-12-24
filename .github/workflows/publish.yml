@@ -40,15 +40,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         
-    - name: Copy
-      uses: andstor/copycat-action@v3
-      with:
-        personal_token: ${{ secrets.PERSONAL_TOKEN }}
-        src_path: /__appset
-        dst_path: /
-        dst_owner: andstor
-        dst_repo_name: copycat-action
-    
     - run: npm ci
     - run: npm run build
     - run: npm run semantic-release

@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /* eslint-disable no-console */
 const fs = require('fs');
 const path = require('path');
@@ -8,7 +9,6 @@ const ignoreFiles = [
   'scripts',
   'utils',
   'themePrepare.js',
-  'theme.js',
   'universal',
 ];
 
@@ -31,11 +31,20 @@ const srcPath = path.resolve(__dirname, '../__appset');
 const components = fs.readdirSync(srcPath).filter((files) => !ignoreFiles.includes(files) && !files.includes('WIP-'));
 let count = 0;
 
+// Prod:
 const createDir = path.resolve(`${__dirname}`, '../../../fe-theme');
+
+// Local
+// const createDir = path.resolve(`${__dirname}`, '../../jio-fiber-chat-bot/fe-theme');
 
 mkdirp(createDir).then(() => {
   components.map((component) => {
+    // Prod:
     const defaultDir = path.resolve(`${__dirname}`, '../../../node_modules/fe-theme/__appset');
+
+    // Local:
+    // const defaultDir = path.resolve(`${__dirname}`, '../__appset');
+
     const appDir = path.resolve(`${__dirname}`, '../../../fe-theme');
     const defaultDirData = fs.readFileSync(`${defaultDir}/${component}`).toString().split('export')[0].split('=')[1];
 
@@ -68,4 +77,36 @@ const ${replaceComponentName} =${defaultDirData}export default ${replaceComponen
 
     return null;
   });
+}).catch((err) => {
+  console.log('err', err);
+});
+
+const srcPathInner = path.resolve(__dirname, '../__appset/universal');
+const componentsInner = fs.readdirSync(srcPathInner).filter((files) => !ignoreFiles.includes(files) && !files.includes('WIP-'));
+
+// Prod:
+const createInnerDir = path.resolve(`${__dirname}`, '../../../fe-theme/universal');
+
+// Local
+// const createInnerDir = path.resolve(`${__dirname}`, '../../jio-fiber-chat-bot/fe-theme/universal');
+
+mkdirp(createInnerDir).then(() => {
+  componentsInner.map((component) => {
+    // Prod: const defaultDir = path.resolve(`${__dirname}`, '../../../node_modules/fe-theme/__appset');
+
+    const appDir = path.resolve(`${__dirname}`, '../../fe-theme/__appset/universal');
+
+    fs.readFile(`${appDir}/${component}`, 'utf8', (err, data) => {
+      console.log(err, data);
+      const componentFile = path.resolve(createInnerDir, component);
+      const componentContent = data;
+      fs.writeFile(componentFile, componentContent, () => {
+
+      });
+    });
+
+    return null;
+  });
+}).catch((err) => {
+  console.log('err', err);
 });
