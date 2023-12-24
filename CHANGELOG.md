@@ -1,3 +1,10 @@
+## [4.0.41](https://github.com/opensrc0/fe-theme/compare/v4.0.40...v4.0.41) (2023-12-24)
+
+
+### Bug Fixes
+
+* **added __appset folder in npm package:** added __appset folder in npm ([0c60d63](https://github.com/opensrc0/fe-theme/commit/0c60d635462c0f9ccea6c5b1b74bedfa754bda10))
+
 ## [4.0.40](https://github.com/opensrc0/fe-theme/compare/v4.0.39...v4.0.40) (2023-12-24)
 
 
