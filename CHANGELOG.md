@@ -1,3 +1,10 @@
+## [4.0.37](https://github.com/opensrc0/fe-theme/compare/v4.0.36...v4.0.37) (2023-12-24)
+
+
+### Bug Fixes
+
+* **readme.md:** changed setup of component and readme.md file ([f45601e](https://github.com/opensrc0/fe-theme/commit/f45601e5eec98b725a3bf2f48e92c0c95914cf22))
+
 ## [4.0.36](https://github.com/opensrc0/fe-theme/compare/v4.0.35...v4.0.36) (2023-12-19)
 
 
