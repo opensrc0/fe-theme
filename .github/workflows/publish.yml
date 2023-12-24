@@ -46,6 +46,7 @@ jobs:
         personal_token: ${{ secrets.PERSONAL_TOKEN }}
         src_path: /__appset
         dst_path: /
+        dst_owner: andstor
     
     - run: npm ci
     - run: npm run build
