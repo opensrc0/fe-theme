@@ -9,7 +9,7 @@
     "local": "babel __application/component -d __build-es --watch",
     "build": "run-s build-es build-prepare",
     "prebuild-es": "echo \"\\x1b[97m\\x1b[44m 1. Started: Building Component in __build-es folder. \\x1b[0m\"",
-    "build-es": "babel __application/component -d __build-es --ignore *.test.js && npm run copyfiles __appset/* /home/runner/work/fe-theme/fe-theme/",
+    "build-es": "babel __application/component -d __build-es --ignore *.test.js",
     "prebuild-prepare": "echo \"\\x1b[97m\\x1b[44m 2. Started: Direct import of individual package preparation started. \\x1b[0m\"",
     "build-prepare": "node ./__application/scripts/buildPrepare.js",
     "theme-prepare": "node ./__appset/themePrepare.js",
@@ -20,8 +20,7 @@
     "version-i": "npm version patch",
     "storybook": "storybook dev -p 8888",
     "build-storybook": "storybook build",
-    "semantic-release": "semantic-release --branches master",
-    "copyfiles": "copyfiles"
+    "semantic-release": "semantic-release --branches master"
   },
   "lint-staged": {
     "*.js": [
@@ -93,7 +92,6 @@
     "babel-plugin-styled-components": "^2.1.4",
     "babel-plugin-syntax-trailing-function-commas": "^6.22.0",
     "classnames": "^2.3.2",
-    "copyfiles": "^2.4.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.54.0",
     "eslint-config-airbnb": "^19.0.4",
@@ -122,6 +120,7 @@
   },
   "files": [
     "__build-es/**",
+    "__appset/**",
     "Box/",
     "Button/",
     "Flex/",
