@@ -49,6 +49,9 @@ FE-Theme is a styled-component based comprehensive library of accessible, reusab
 ## Usage
 
 #### 1. Passing standrad theme set from ThemeProvider to FE-Theme
+
+```Dynamic Variable: **root-location-of-your-project**``
+
 ```js
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -67,16 +70,13 @@ ReactDOM.hydrate(
 #### 2. Importing UI component in your application
 ```js
 import Button from 'fe-theme/Button';
-```
 
-```js
 <Button />
 ```
-Hurrah...!!! Button is created, but color does not match with the application. No worries.
-  
 
-###### Change default setting of button component, 
-###### {Root-location-of-your-project} -> fe-theme -> configButton.js and play around the property of button according to your project.
+Hurrah...!!! Button is created, but button theme does not match with the your application. No worries.
+  
+###### Change default setting of button component, Go to **{Root-location-of-your-project} -> fe-theme -> configButton.js** and play around the property of button according to your project.
 
 
 ## Contributing
