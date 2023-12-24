@@ -68,15 +68,15 @@ const StyledButton = styled(
   justify-content: center;
   cursor: pointer;
   text-transform: uppercase;
-  color: ${(props) => props.theme.component.Button[props.variant].color};
-  background-color: ${(props) => props.theme.color[props.variant]};
-  font-size: ${(props) => props.theme.fontSize[styles.size[props.size]]};
-  padding: ${(props) => props.theme.px(styles.padding[props.size])};
+  color: ${(props) => props.theme.Button[props.variant].color};
+  background-color: ${(props) => props.theme.Universal.Color[props.variant]};
+  font-size: ${(props) => props.theme.Universal.FontSize[styles.size[props.size]]};
+  padding: ${(props) => props.theme.Universal.PXL(styles.padding[props.size])};
   width: ${(props) => props.fluid ? '100%' : ''};
   border-width: 1px;
   border-style: solid;
-  border-color: ${(props) => props.theme.component.Button[props.variant].borderColor};
-  border-radius: ${(props) => props.theme.component.Button.borderRadius};
+  border-color: ${(props) => props.theme.Button[props.variant].borderColor};
+  border-radius: ${(props) => props.theme.Button.borderRadius};
   pointer-events: ${styles.pointerEvents};
   opacity: ${styles.opacity};
 
