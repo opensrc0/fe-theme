@@ -101,36 +101,6 @@
       h1 a:focus span:nth-child(3) {
         transform: translateX(-1vw);
       }
-
-      .items {
-        margin-top: 24px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      }
-      ul {
-        font-size: 16px;
-        line-height: 26px;
-        color: var(--color-main);
-        font-weight: 700;
-        font-family: "Open Sans", sans-serif;
-      }
-      ul li {
-        display: flex;
-        letter-spacing: 0.125vw;
-      }
-      ul li a {
-        margin-left: 5px;
-      }
-      ul li a:hover,
-      ul li a:focus {
-        color: var(--color-link-active);
-      }
-      ul li a {
-        color: var(--color-link);
-      }
-
       .hi {
         display: inline-block;
         transform-origin: 70% 70%;
@@ -209,7 +179,6 @@
             <span><em>FE-Theme</em></span>
           </a>
         </h1>
-       
       </div>
     </div>
   </div>
