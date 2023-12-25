@@ -1,29 +1,26 @@
-<p align="center">
-  <a href="https://github.com/opensrc0/fe-theme">
-    <img src="https://png.pngtree.com/png-clipart/20220103/original/pngtree-show-biceps-png-image_7019290.png" alt="FE-Theme Logo" width="100" />
-  </a>
-</p>
+<img src="logo.svg" alt="FE-Theme Logo" width="100" style="width: 100%;">
 <h2 align="center">A React UI library using styled-component to build consistent, responsive, theme able UI 💪 </h2>
 <br />
 <p align="center">
-   <a href="https://www.npmjs.com/package/fe-theme">
-     <img alt="Minified Size" src="https://badgen.net/bundlephobia/minzip/fe-theme?color=cyan"/>
-   </a>
+  <a href="https://www.npmjs.com/package/fe-theme">
+   <img alt="Minified Size" src="https://badgen.net/bundlephobia/minzip/fe-theme?color=cyan"/>
+  </a>
   <a href="https://styled-components.com/releases#v6.1.1">
-    <img alt="Styled Component Version" src="https://img.shields.io/badge/styled_component-6.1.1-%2350c62a"/>
+  <img alt="Styled Component Version" src="https://img.shields.io/badge/styled_component-6.1.1-%2350c62a?logo=styled-components&logoColor=50c62a"/>
   </a>
   <a href="https://react.dev/reference/react">
-    <img alt="React Version" src="https://img.shields.io/badge/react-18.2.0-%23f1e05a"/>
-  </a>
-   
-  <a href="https://github.com/opensrc0/fe-theme/stargazers">
-    <img alt="Github Stars" src="https://badgen.net/github/stars/opensrc0/fe-theme?icon=github&color=purple"/>
+  <img alt="React Version" src="https://img.shields.io/badge/react-18.2.0-%23f1e05a?logo=React"/>
   </a>
   <a href="https://www.npmjs.com/package/fe-theme">
     <img alt="NPM Downloads" src="https://img.shields.io/npm/dw/fe-theme?label=Downloads&logo=npm"/>
   </a>
   <a href="https://www.npmjs.com/package/fe-theme/v/latest">
     <img alt="Latest Release" src="https://badgen.net/github/release/opensrc0/fe-theme?icon=github&color=pink"/>
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/opensrc0/fe-theme/stargazers">
+    <img alt="Github Stars" src="https://badgen.net/github/stars/opensrc0/fe-theme?icon=github&color=purple"/>
   </a>
   <a href="https://github.com/opensrc0/fe-theme/blob/master/LICENSE.md">
     <img alt="MIT License" src="https://badgen.net/static/license/MIT/orange"/>
@@ -53,8 +50,7 @@ FE-Theme is a styled-component based comprehensive library of accessible, reusab
 
     npm run theme-prepare --prefix ./node_modules/fe-theme
 
-#### 2. Passing universal configuration like color properties, font family properties, to the fe-theme library using ThemeProvider 
-#### (For internal usage only but required)
+#### 2. Passing universal configuration like color properties, font family properties, to the fe-theme library using ThemeProvider (For internal usage only but required)
 
 ```js
 import React from 'react';
@@ -178,6 +174,6 @@ Thanks goes to these wonderful people
 
 
 
-### License
+## License
 
 MIT © [Himanshu Gupta](https://github.com/opensrc0)
