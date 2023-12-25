@@ -35,6 +35,10 @@
         border-color: var(--color-background);
       }
 
+      .fe-theme-camo {
+          text-decoration: none !important;
+      }
+
       .container {
         background: var(--color-background);
         height: calc(100% - 10px);
