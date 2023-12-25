@@ -42,7 +42,7 @@ FE-Theme is a styled-component based comprehensive library of accessible, reusab
 ## Features
 
 - **Theme:** FE-Theme provides themeable based UI component, and are easy to configure.
-- **Web/Mobile Support:** FE-theme will help people to introduce in Large/Mid/Small size of web based applications.
+- **Web/Mobile Support:** FE-theme will be helpfull in Large/Mid/Small size of web based applications.
 - **Ease of Styling:** FE-Theme contains a set of layout components like `Button` and `Input` that make it easy to style your components by passing props.
 - **Advancement:** FE-Theme provide a variety of advance plug and play component like `Voice Search`, `Share`, `Contact List`, `Live Location Tracking`, `Current Location` etc.
 - **Scalable & Maintainable:** FE-Theme components are built on top of a React UI and Styled-Component for better scalable, maintainable component.
