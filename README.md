@@ -1,10 +1,4 @@
-<img src="welcome.svg" style="width: 100%;" alt="Click to see the source">
-
-<p align="center">
-  <a href="https://github.com/opensrc0/fe-theme">
-    <img src="https://png.pngtree.com/png-clipart/20220103/original/pngtree-show-biceps-png-image_7019290.png" alt="FE-Theme Logo" width="100" />
-  </a>
-</p>
+<img src="welcome.svg" alt="FE-Theme Logo" width="100" style="width: 100%;">
 <h2 align="center">A React UI library using styled-component to build consistent, responsive, theme able UI 💪 </h2>
 <br />
 <p align="center">
