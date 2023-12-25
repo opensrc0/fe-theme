@@ -34,9 +34,8 @@
         border: 24px solid;
         border-color: var(--color-background);
       }
-
-      .fe-theme-camo {
-          text-decoration: none !important;
+[data-a11y-link-underlines=true] .markdown-body a, [data-a11y-link-underlines=true] .markdown-body a:hover, [data-a11y-link-underlines=true] .commit-desc a, [data-a11y-link-underlines=true] .commit-desc a:hover, [data-a11y-link-underlines=true] .Link--inTextBlock, [data-a11y-link-underlines=true] .Link--inTextBlock:hover, [data-a11y-link-underlines=true] .extended-commit-description-container a {
+        text-decoration: none;
       }
 
       .container {
