@@ -34,9 +34,6 @@
         border: 24px solid;
         border-color: var(--color-background);
       }
-[data-a11y-link-underlines=true] .markdown-body a, [data-a11y-link-underlines=true] .markdown-body a:hover, [data-a11y-link-underlines=true] .commit-desc a, [data-a11y-link-underlines=true] .commit-desc a:hover, [data-a11y-link-underlines=true] .Link--inTextBlock, [data-a11y-link-underlines=true] .Link--inTextBlock:hover, [data-a11y-link-underlines=true] .extended-commit-description-container a {
-        text-decoration: none;
-      }
 
       .container {
         background: var(--color-background);
@@ -207,9 +204,9 @@
       <div class='container'>
         <h1>
           <a href="https://github.com/nikolalsvk">
-            <span><em>Himanshu</em></span>
-            <span><em>Himanshu</em></span>
-            <span><em>Himanshu</em></span>
+            <span><em>FE-Theme</em></span>
+            <span><em>FE-Theme</em></span>
+            <span><em>FE-Theme</em></span>
           </a>
         </h1>
        
