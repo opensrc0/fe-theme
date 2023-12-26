@@ -180,8 +180,8 @@ Thanks goes to these wonderful people
           <br />
         </td>
         <td align="center" valign="top" width="14.28%">
-          <a target="_blank" href="https://github.com/fossabot">
-            <img src="https://avatars.githubusercontent.com/u/31703347?v=4" width="64px;" alt="Fossa Bot" />
+          <a target="_blank" href="https://github.com/swarajgolu">
+            <img src="https://avatars.githubusercontent.com/u/31703347?v=4" width="64px;" alt="Swaraj Singh" />
             <br />
             <sub><b>Swaraj Singh</b></sub>
           </a>
