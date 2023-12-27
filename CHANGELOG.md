@@ -1,3 +1,10 @@
+## [4.0.48](https://github.com/opensrc0/fe-theme/compare/v4.0.47...v4.0.48) (2023-12-27)
+
+
+### Bug Fixes
+
+* **Logo.svg:** Update LOGO.svg width in readme.md ([05f9a01](https://github.com/opensrc0/fe-theme/commit/05f9a01cab650531ec4f8ba85a2b27d8d3ed422a))
+
 ## [4.0.47](https://github.com/opensrc0/fe-theme/compare/v4.0.46...v4.0.47) (2023-12-27)
 
 
