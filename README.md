@@ -187,6 +187,14 @@ Thanks goes to these wonderful people
           </a>
           <br />
         </td>
+         <td align="center" valign="top" width="14.28%">
+          <a target="_blank" href="https://github.com/abhinavGupta786">
+            <img src="https://avatars.githubusercontent.com/u/69836367?v=4" width="64px;" alt="Abhinav Gupta" />
+            <br />
+            <sub><b>Abhinav Gupta</b></sub>
+          </a>
+          <br />
+        </td>
       </tr>
     </tbody>
 </table>
