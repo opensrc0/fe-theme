@@ -31,14 +31,23 @@
 FE-Theme is a styled-component based comprehensive library of accessible, reusable, and composable React components that streamlines the development of modern web applications and websites. The library offers a theme based UI to quickly start a new small/medium/large size web based applications.
 
 ## Table of contents
-
-1. 📦 [Installation](#installation)
-2. 💻 [Usage](#usage)
-3. 📝 [Contributing](#contributing)
-4. ✨ [Contributors](#contributors)
-5. ⚖️ [License](#license)
+1. 🚀 [Features](#features)
+2. 📦 [Installation](#installation)
+3. 💻 [Usage](#usage)
+4. 📚 [Online Editor Templates](#online-editor-templates)
+5. 📝 [Contributing](#contributing)
+6. ✨ [Contributors](#contributors)
+7. ⚖️  [License](#license)
   
+## Features
 
+- **Theme:** FE-Theme provides themeable based UI component, and are easy to configure.
+- **Web/Mobile Support:** FE-theme will be helpfull in Large/Mid/Small size of web based applications.
+- **Ease of Styling:** FE-Theme contains a set of layout components like `Button` and `Input` that make it easy to style your components by passing props.
+- **Advancement:** FE-Theme provide a variety of advance plug and play component like `Voice Search`, `Share`, `Contact List`, `Live Location Tracking`, `Current Location` etc.
+- **Scalable & Maintainable:** FE-Theme components are built on top of a React UI and Styled-Component for better scalable, maintainable component.
+- **Accessiblity Support:** FE-Theme components follow the accessiblity guidelines specifications and have the right `aria-*` attributes.
+- **Dark Mode UI:** FE-Theme support dark mode compatibility.
   
 ## Installation
 
@@ -87,6 +96,8 @@ Your Application Folder(Root Directory)
 ```
 Play around the property of button according to your project.
 
+## Online Editor Templates
+WIP
 
 ## Contributing
 
@@ -165,6 +176,22 @@ Thanks goes to these wonderful people
             <img src="https://avatars.githubusercontent.com/u/29791463?v=4" width="64px;" alt="Fossa Bot" />
             <br />
             <sub><b>Fossa Bot</b></sub>
+          </a>
+          <br />
+        </td>
+        <td align="center" valign="top" width="14.28%">
+          <a target="_blank" href="https://github.com/swarajgolu">
+            <img src="https://avatars.githubusercontent.com/u/31703347?v=4" width="64px;" alt="Swaraj Singh" />
+            <br />
+            <sub><b>Swaraj Singh</b></sub>
+          </a>
+          <br />
+        </td>
+         <td align="center" valign="top" width="14.28%">
+          <a target="_blank" href="https://github.com/abhinavGupta786">
+            <img src="https://avatars.githubusercontent.com/u/69836367?v=4" width="64px;" alt="Abhinav Gupta" />
+            <br />
+            <sub><b>Abhinav Gupta</b></sub>
           </a>
           <br />
         </td>
