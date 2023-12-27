@@ -195,7 +195,14 @@ Thanks goes to these wonderful people
           </a>
           <br />
         </td>
-        
+        <td align="center" valign="top" width="14.28%">
+          <a target="_blank" href="https://github.com/hardikjain29">
+            <img src="https://avatars.githubusercontent.com/u/13768932?v=4" width="64px;" alt="Hardik Jain" />
+            <br />
+            <sub><b>Hardik Jain</b></sub>
+          </a>
+          <br />
+        </td>
       </tr>
     </tbody>
 </table>
