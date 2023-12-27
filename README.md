@@ -1,4 +1,4 @@
-<img src="logo.svg" alt="FE-Theme Logo" width="100" style="width: 100%;">
+<img src="logo.svg" alt="FE-Theme Logo" width="100%" style="width: 100%;">
 <h2 align="center">A React UI library using styled-component to build consistent, responsive, theme able UI 💪 </h2>
 <br />
 <p align="center">
