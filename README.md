@@ -1,4 +1,4 @@
-<img src="logo.svg" alt="FE-Theme Logo" width="100" style="width: 100%;">
+<img src="logo.svg" alt="FE-Theme Logo" width="100%" style="width: 100%;">
 <h2 align="center">A React UI library using styled-component to build consistent, responsive, theme able UI 💪 </h2>
 <br />
 <p align="center">
@@ -187,11 +187,19 @@ Thanks goes to these wonderful people
           </a>
           <br />
         </td>
-         <td align="center" valign="top" width="14.28%">
+        <td align="center" valign="top" width="14.28%">
           <a target="_blank" href="https://github.com/abhinavGupta786">
             <img src="https://avatars.githubusercontent.com/u/69836367?v=4" width="64px;" alt="Abhinav Gupta" />
             <br />
             <sub><b>Abhinav Gupta</b></sub>
+          </a>
+          <br />
+        </td>
+        <td align="center" valign="top" width="14.28%">
+          <a target="_blank" href="https://github.com/hardikjain29">
+            <img src="https://avatars.githubusercontent.com/u/13768932?v=4" width="64px;" alt="Hardik Jain" />
+            <br />
+            <sub><b>Hardik Jain</b></sub>
           </a>
           <br />
         </td>
