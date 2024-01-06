@@ -24,7 +24,6 @@ ENVI=local CURRENT_APP_DIR=$(pwd) COMPONENT_CONFIG_PATH=./{location of fe-theme 
 ```
 **Note:** ```COMPONENT_CONFIG_PATH``` is a variable and setup it properly.
 
-
 5. Hurrah...! Now fe-theme repo is available inside the node_modules of your project, and waching change in fe-theme.
 
 
