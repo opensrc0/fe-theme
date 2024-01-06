@@ -13,7 +13,7 @@ const Input = {
   },
   "quaternary": {
     "borderColor": "white",
-  },
-};
+  }
+}
 
 export default Input;
