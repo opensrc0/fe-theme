@@ -4,6 +4,6 @@ const FontWeight = {
   "medium" : "500",
   "semibold" : "600",
   "bold" : "700"
-};
+}
 
 export default FontWeight;
