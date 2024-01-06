@@ -1,3 +1,10 @@
+## [4.0.50](https://github.com/opensrc0/fe-theme/compare/v4.0.49...v4.0.50) (2024-01-06)
+
+
+### Bug Fixes
+
+* **configinput:** change json in configInput ([1feafd6](https://github.com/opensrc0/fe-theme/commit/1feafd634bfdb3056f2402f1f9c6cebca9a8d5a5))
+
 ## [4.0.49](https://github.com/opensrc0/fe-theme/compare/v4.0.48...v4.0.49) (2024-01-06)
 
 
