@@ -1,7 +1,8 @@
-const FontFamily = {};
-
-FontFamily.roboto = 'Roboto';
-FontFamily.averta = 'Averta';
-FontFamily.sans = 'Open Sans,sans-serif';
+/* eslint-disable */
+const FontFamily = {
+  "roboto": "Roboto",
+  "averta": "Averta",
+  "sans": "Open Sans,sans-serif"
+}
 
 export default FontFamily;
