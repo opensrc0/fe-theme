@@ -29,6 +29,10 @@ const color = [
 // generate exports for all platforms
 const srcPath = path.resolve(__dirname, '../__appset');
 const components = fs.readdirSync(srcPath).filter((files) => !ignoreFiles.includes(files) && !files.includes('WIP-'));
+
+const srcPathInner = path.resolve(__dirname, '../__appset/universal');
+const componentsInner = fs.readdirSync(srcPathInner).filter((files) => !ignoreFiles.includes(files) && !files.includes('WIP-'));
+
 let count = 0;
 // Prod:
 const createDir = path.resolve(`${__dirname}`, `../../../${process.env.FE_THEME_PATH}/fe-theme`);
@@ -45,7 +49,7 @@ mkdirp(createDir).then(() => {
     // const defaultDir = path.resolve(`${__dirname}`, '../__appset');
 
     const appDir = path.resolve(`${__dirname}`, `../../../${process.env.FE_THEME_PATH}/fe-theme`);
-    const defaultDirData = fs.readFileSync(`${defaultDir}/${component}`).toString().split('export')[0].split('=')[1];
+    const defaultDirData = fs.readFileSync(`${defaultDir}/${component}`).toString().split('export')[0].split(/=(.*)/s)[1];
 
     fs.readFile(`${appDir}/${component}`, 'utf8', (err, data) => {
       const componentFile = path.resolve(createDir, component);
@@ -53,7 +57,7 @@ mkdirp(createDir).then(() => {
       let componentContent;
 
       if (!err) {
-        const userAppConfig = data.split('export')[0].split('=')[1];
+        const userAppConfig = data.split('export')[0].split(/=(.*)/s)[1];
         componentContent = `/* eslint-disable */
 const ${replaceComponentName} = ${JSON.stringify(mergeObj(JSON.parse(defaultDirData), JSON.parse(userAppConfig)), null, '\t')}
 \nexport default ${replaceComponentName};\n`;
@@ -66,9 +70,9 @@ const ${replaceComponentName} =${defaultDirData}export default ${replaceComponen
         if (writeFileErr) throw writeFileErr;
         console.log(color[getRandomInt(color.length)].value, ` ${count + 1}. generated: ${componentFile} \n`);
         count += 1;
-        if (count === components.length) {
+        if (count === components.length + componentsInner.length - 2) {
           console.log(color[0].value, ` ${count + 1}. Generated: Package index files for package for direct import \n`);
-          console.log('\x1b[44m%s\x1b[0m', ` ${count + 2}. Final: Setup Completed Successfully`);
+          console.log('\x1b[44m%s\x1b[0m', 'Setup Completed Successfully');
           console.log('');
           count = 0;
         }
@@ -80,9 +84,6 @@ const ${replaceComponentName} =${defaultDirData}export default ${replaceComponen
 }).catch((err) => {
   console.log('err', err);
 });
-
-const srcPathInner = path.resolve(__dirname, '../__appset/universal');
-const componentsInner = fs.readdirSync(srcPathInner).filter((files) => !ignoreFiles.includes(files) && !files.includes('WIP-'));
 
 // Prod:
 const createInnerDir = path.resolve(`${__dirname}`, `../../../${process.env.FE_THEME_PATH}/fe-theme/universal`);
@@ -98,38 +99,39 @@ mkdirp(createInnerDir).then(() => {
 
     // const appDir = path.resolve(`${__dirname}`, `../../${process.env.FE_THEME_PATH}/fe-theme/__appset/universal`);
     const appDir = path.resolve(`${__dirname}`, `../../../${process.env.FE_THEME_PATH}/fe-theme/universal`);
-    const defaultDirData = fs.readFileSync(`${defaultDir}/${component}`).toString().split('export')[0].split('=')[1];
+    const defaultDirData = fs.readFileSync(`${defaultDir}/${component}`).toString().split('export')[0].split(/=(.*)/s)[1];
 
-    console.log(appDir, component);
     fs.readFile(`${appDir}/${component}`, 'utf8', (err, data) => {
-      // console.log(data);
       const componentFile = path.resolve(createInnerDir, component);
-      // console.log(componentFile);
-      //   const componentContent = data;
-      const replaceComponentName = component.replace('config', '').replace('.js', '');
-      let componentContent;
 
-      if (!err) {
-        const userAppConfig = data.split('export')[0].split('=')[1];
-        componentContent = `/* eslint-disable */
-const ${replaceComponentName} = ${JSON.stringify(mergeObj(JSON.parse(defaultDirData), JSON.parse(userAppConfig)), null, '\t')}
-\nexport default ${replaceComponentName};\n`;
+      if (component === 'theme.js' || component === 'configPXL.js') {
+        fs.writeFile(componentFile, fs.readFileSync(`${defaultDir}/${component}`).toString(), () => {});
       } else {
-        componentContent = `/* eslint-disable */
-const ${replaceComponentName} =${defaultDirData}export default ${replaceComponentName};\n`;
-      }
+        //   const componentContent = data;
+        const replaceComponentName = component.replace('config', '').replace('.js', '');
+        let componentContent;
 
-      fs.writeFile(componentFile, componentContent, (writeFileErr) => {
-        if (writeFileErr) throw writeFileErr;
-        console.log(color[getRandomInt(color.length)].value, ` ${count + 1}. generated: ${componentFile} \n`);
-        count += 1;
-        if (count === components.length) {
-          console.log(color[0].value, ` ${count + 1}. Generated: Package index files for package for direct import \n`);
-          console.log('\x1b[44m%s\x1b[0m', ` ${count + 2}. Final: Setup Completed Successfully`);
-          console.log('');
-          count = 0;
+        if (!err) {
+          const userAppConfig = data.split('export')[0].split(/=(.*)/s)[1];
+          componentContent = `/* eslint-disable */
+  const ${replaceComponentName} = ${JSON.stringify(mergeObj(JSON.parse(defaultDirData), JSON.parse(userAppConfig)), null, '\t')}
+  \nexport default ${replaceComponentName};\n`;
+        } else {
+          componentContent = `/* eslint-disable */
+  const ${replaceComponentName} =${defaultDirData}export default ${replaceComponentName};\n`;
         }
-      });
+
+        fs.writeFile(componentFile, componentContent, (writeFileErr) => {
+          if (writeFileErr) throw writeFileErr;
+          console.log(color[getRandomInt(color.length)].value, ` ${count + 1}. generated: ${componentFile} \n`);
+          count += 1;
+          if (count === components.length + componentsInner.length - 2) {
+            console.log('\x1b[44m%s\x1b[0m', 'Setup Completed Successfully');
+            console.log('');
+            count = 0;
+          }
+        });
+      }
     });
 
     return null;
