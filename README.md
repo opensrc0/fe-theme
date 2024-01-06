@@ -50,8 +50,21 @@ FE-Theme is a styled-component based comprehensive library of accessible, reusab
 - **Dark Mode UI:** FE-Theme support dark mode compatibility.
   
 ## Installation
+Install `fe-theme` package using any package manager
+  
+```sh
+# with Yarn
+$ yarn add fe-theme
+    
+# with npm
+$ npm i fe-theme --save
 
-    npm install fe-theme --save
+# with pnpm
+$ pnpm add fe-theme
+
+# with Bun
+$ bun add fe-theme
+```
 
 ## Usage
 
