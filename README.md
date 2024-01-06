@@ -68,19 +68,19 @@ $ bun add fe-theme
 
 ## Usage
 
-#### 1. Creating a fe-theme folder in the root directory of you application. It contains configuration files of fe-theme component like Button, Input etc.
+#### 1. Creating a fe-theme folder in your application. It contains configuration files of components like Button, Input etc.
 
 ```js
 COMPONENT_CONFIG_PATH=./{PATH} npm run theme-prepare --prefix ./node_modules/fe-theme
 ```
 
-**Note:** PATH is a variable i.e. path for ```fe-theme configuration folder``` in your application. If you want to place config folder in your root location of your application folder then command will be
+**Note:** ```PATH``` is a variable i.e. path for ```fe-theme configuration folder``` in your application. If you want to place config folder in your root location of your application folder then command will be
 
 ```js
 COMPONENT_CONFIG_PATH=./ npm run theme-prepare --prefix ./node_modules/fe-theme
 ```
 
-#### 2. Passing universal configuration like color properties, font family properties, to the fe-theme library using ThemeProvider (For internal usage only but required)
+#### 2. Passing configuration settings to the fe-theme library using ThemeProvider
 
 ```js
 import React from 'react';
@@ -96,7 +96,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 );
 ```
 
-**Note:** PATH is a variable (Same as 1st point).
+**Note:** ```PATH``` is a variable (Same as 1st point).
 
 #### 3. Setup is completed, Now import UI component in your application like button
 ```js
@@ -105,7 +105,7 @@ import Button from 'fe-theme/Button';
 <Button />
 ```
 
-Hurrah...!!! Button is created, but button theme does not match with the your application. No worries. You can change default properties of button component
+**Hurrah...!!!** Button is created, but button theme does not match with the your application. No worries. You can change default properties of button component
   
 
 ```
@@ -113,10 +113,9 @@ Your Application Folder(Root Directory)
   └──fe-theme                       
     ├──configButton           
     ├──configInput          
-    └──configChip    
-     
+    └──configChip
 ```
-Play around the property of button according to your project.
+Play around the property of component according to your project.
 
 ## Online Editor Templates
 WIP
