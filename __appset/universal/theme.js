@@ -9,7 +9,7 @@ import Input from '../configInput';
 
 export default {
   Universal: {
-    PXL,
+    ...PXL,
     Color,
     FontSize,
     FontFamily,
