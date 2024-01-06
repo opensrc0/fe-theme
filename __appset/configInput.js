@@ -1,18 +1,17 @@
 /* eslint-disable */
-
 const Input = {
   "borderRadius": "4px",
   "primary": {
-    "borderColor": "white",
+    "borderColor": "white"
   },
   "secondary": {
-    "borderColor": "white",
+    "borderColor": "white"
   },
   "tertiary": {
-    "borderColor": "white",
+    "borderColor": "white"
   },
   "quaternary": {
-    "borderColor": "white",
+    "borderColor": "white"
   }
 }
 
