@@ -61,7 +61,7 @@ FE-Theme is a styled-component based comprehensive library of accessible, reusab
 COMPONENT_CONFIG_PATH=./{PATH} npm run theme-prepare --prefix ./node_modules/fe-theme
 ```
 
-**Note:** PATH is a variable i.e. path where to place ```fe-theme configuration folder``` in your application. If you want to place config folder in your root location of your application folder then command will be
+**Note:** PATH is a variable i.e. path for ```fe-theme configuration folder``` in your application. If you want to place config folder in your root location of your application folder then command will be
 
 ```js
 COMPONENT_CONFIG_PATH=./ npm run theme-prepare --prefix ./node_modules/fe-theme
