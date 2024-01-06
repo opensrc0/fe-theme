@@ -102,7 +102,7 @@ WIP
 ## Contributing
 
 Feel like contributing? Most welcome! 
-[Setup locallay on your machine](./.github/SETUP.md) to get fe-theme working on your local machine and [guide lines](./.github/CONTRIBUTING.md) to contribute in fe-theme.
+[Setup locally](./.github/SETUP.md) to get fe-theme working on your local machine and [guide lines](./.github/CONTRIBUTING.md) to contribute in fe-theme.
 
 ## Contributors
 
