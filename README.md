@@ -57,7 +57,15 @@ FE-Theme is a styled-component based comprehensive library of accessible, reusab
 
 #### 1. Creating a fe-theme folder in the root directory of you application. It contains configuration files of fe-theme component like Button, Input etc.
 
-    npm run theme-prepare --prefix ./node_modules/fe-theme
+```js
+COMPONENT_CONFIG_PATH=./{PATH} npm run theme-prepare --prefix ./node_modules/fe-theme
+```
+
+**Note:** PATH is a variable i.e. path where to place ```fe-theme configuration folder``` in your application. If you want to place config folder in your root location of your application folder then command will be
+
+```js
+COMPONENT_CONFIG_PATH=./ npm run theme-prepare --prefix ./node_modules/fe-theme
+```
 
 #### 2. Passing universal configuration like color properties, font family properties, to the fe-theme library using ThemeProvider (For internal usage only but required)
 
@@ -102,9 +110,7 @@ WIP
 ## Contributing
 
 Feel like contributing? Most welcome! 
-Follow this quick [setup and guide lines](./.github/CONTRIBUTING.md) to get fe-theme working on your local machine and contribute.
-
-
+[Setup locally](./.github/SETUP.md) to get fe-theme working on your local machine and [guide lines](./.github/CONTRIBUTING.md) to contribute in fe-theme.
 
 ## Contributors
 

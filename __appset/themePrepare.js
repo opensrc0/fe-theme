@@ -1,3 +1,4 @@
+/* eslint-disable prefer-destructuring */
 /* eslint-disable max-len */
 /* eslint-disable no-console */
 const fs = require('fs');
@@ -26,6 +27,8 @@ const color = [
   { name: 'FgCyan', value: '\x1b[36m%s\x1b[0m' },
 ];
 
+let count = 0;
+
 // generate exports for all platforms
 const srcPath = path.resolve(__dirname, '../__appset');
 const components = fs.readdirSync(srcPath).filter((files) => !ignoreFiles.includes(files) && !files.includes('WIP-'));
@@ -33,27 +36,38 @@ const components = fs.readdirSync(srcPath).filter((files) => !ignoreFiles.includ
 const srcPathInner = path.resolve(__dirname, '../__appset/universal');
 const componentsInner = fs.readdirSync(srcPathInner).filter((files) => !ignoreFiles.includes(files) && !files.includes('WIP-'));
 
-let count = 0;
-// Prod:
-const createDir = path.resolve(`${__dirname}`, `../../../${process.env.FE_THEME_PATH}/fe-theme`);
+let createDir;
+let createInnerDir;
 
-// Local
-// const createDir = path.resolve(`${__dirname}`, '../../jio-fiber-chat-bot/fe-theme');
+if (process.env.ENVI === 'local') {
+  createDir = `${process.env.CURRENT_APP_DIR}/${process.env.COMPONENT_CONFIG_PATH}/fe-theme`;
+  createInnerDir = `${process.env.CURRENT_APP_DIR}/${process.env.COMPONENT_CONFIG_PATH}/fe-theme/universal`;
+} else {
+  createDir = path.resolve(`${__dirname}`, `../../../${process.env.COMPONENT_CONFIG_PATH}/fe-theme`);
+  createInnerDir = path.resolve(`${__dirname}`, `../../../${process.env.COMPONENT_CONFIG_PATH}/fe-theme/universal`);
+}
 
 mkdirp(createDir).then(() => {
   components.map((component) => {
-    // Prod:
-    const defaultDir = path.resolve(`${__dirname}`, '../../../node_modules/fe-theme/__appset');
+    let defaultDir;
+    let appDir;
+    let defaultDirData;
+    let componentFile;
+    const replaceComponentName = component.replace('config', '').replace('.js', '');
 
-    // Local:
-    // const defaultDir = path.resolve(`${__dirname}`, '../__appset');
-
-    const appDir = path.resolve(`${__dirname}`, `../../../${process.env.FE_THEME_PATH}/fe-theme`);
-    const defaultDirData = fs.readFileSync(`${defaultDir}/${component}`).toString().split('export')[0].split(/=(.*)/s)[1];
+    if (process.env.ENVI === 'local') {
+      defaultDir = path.resolve(`${__dirname}`);
+      defaultDirData = fs.readFileSync(`${defaultDir}/${component}`).toString().split('export')[0].split(/=(.*)/s)[1];
+      appDir = `${process.env.CURRENT_APP_DIR}/${process.env.COMPONENT_CONFIG_PATH}/fe-theme`;
+      componentFile = `${appDir}/${component}`;
+    } else {
+      defaultDir = path.resolve(`${__dirname}`, '../../../node_modules/fe-theme/__appset');
+      defaultDirData = fs.readFileSync(`${defaultDir}/${component}`).toString().split('export')[0].split(/=(.*)/s)[1];
+      appDir = path.resolve(`${__dirname}`, `../../../${process.env.COMPONENT_CONFIG_PATH}/fe-theme`);
+      componentFile = path.resolve(createDir, component);
+    }
 
     fs.readFile(`${appDir}/${component}`, 'utf8', (err, data) => {
-      const componentFile = path.resolve(createDir, component);
-      const replaceComponentName = component.replace('config', '').replace('.js', '');
       let componentContent;
 
       if (!err) {
@@ -71,7 +85,6 @@ const ${replaceComponentName} =${defaultDirData}export default ${replaceComponen
         console.log(color[getRandomInt(color.length)].value, ` ${count + 1}. generated: ${componentFile} \n`);
         count += 1;
         if (count === components.length + componentsInner.length - 2) {
-          console.log(color[0].value, ` ${count + 1}. Generated: Package index files for package for direct import \n`);
           console.log('\x1b[44m%s\x1b[0m', 'Setup Completed Successfully');
           console.log('');
           count = 0;
@@ -85,30 +98,30 @@ const ${replaceComponentName} =${defaultDirData}export default ${replaceComponen
   console.log('err', err);
 });
 
-// Prod:
-const createInnerDir = path.resolve(`${__dirname}`, `../../../${process.env.FE_THEME_PATH}/fe-theme/universal`);
-
-// Local
-// const createInnerDir = path.resolve(`${__dirname}`, '../../jio-fiber-chat-bot/fe-theme/universal');
-
 mkdirp(createInnerDir).then(() => {
   componentsInner.map((component) => {
-    const defaultDir = path.resolve(`${__dirname}`, '../../../node_modules/fe-theme/__appset/universal');
+    let defaultDir;
+    let appDir;
+    let defaultDirData;
+    let componentFile;
+    const replaceComponentName = component.replace('config', '').replace('.js', '');
 
-    // Prod: const defaultDir = path.resolve(`${__dirname}`, '../../../node_modules/fe-theme/__appset');
-
-    // const appDir = path.resolve(`${__dirname}`, `../../${process.env.FE_THEME_PATH}/fe-theme/__appset/universal`);
-    const appDir = path.resolve(`${__dirname}`, `../../../${process.env.FE_THEME_PATH}/fe-theme/universal`);
-    const defaultDirData = fs.readFileSync(`${defaultDir}/${component}`).toString().split('export')[0].split(/=(.*)/s)[1];
+    if (process.env.ENVI === 'local') {
+      defaultDir = path.resolve(`${__dirname}`, 'universal');
+      defaultDirData = fs.readFileSync(`${defaultDir}/${component}`).toString().split('export')[0].split(/=(.*)/s)[1];
+      appDir = `${process.env.CURRENT_APP_DIR}/${process.env.COMPONENT_CONFIG_PATH}/fe-theme/universal`;
+      componentFile = `${appDir}/${component}`;
+    } else {
+      defaultDir = path.resolve(`${__dirname}`, '../../../node_modules/fe-theme/__appset/universal');
+      defaultDirData = fs.readFileSync(`${defaultDir}/${component}`).toString().split('export')[0].split(/=(.*)/s)[1];
+      appDir = path.resolve(`${__dirname}`, `../../../${process.env.COMPONENT_CONFIG_PATH}/fe-theme/universal`);
+      componentFile = path.resolve(createInnerDir, component);
+    }
 
     fs.readFile(`${appDir}/${component}`, 'utf8', (err, data) => {
-      const componentFile = path.resolve(createInnerDir, component);
-
       if (component === 'theme.js' || component === 'configPXL.js') {
         fs.writeFile(componentFile, fs.readFileSync(`${defaultDir}/${component}`).toString(), () => {});
       } else {
-        //   const componentContent = data;
-        const replaceComponentName = component.replace('config', '').replace('.js', '');
         let componentContent;
 
         if (!err) {
