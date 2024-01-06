@@ -81,14 +81,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
   </ThemeProvider>
 );
-
-
-ReactDOM.hydrate(
-  <ThemeProvider theme={theme}>
-    <App />
-  </ThemeProvider>,
-  document.getElementById('root'),
-);
 ```
 
 **Note:** PATH is a variable (Same as 1st point).
