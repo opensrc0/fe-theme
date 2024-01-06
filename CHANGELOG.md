@@ -1,3 +1,10 @@
+## [4.0.51](https://github.com/opensrc0/fe-theme/compare/v4.0.50...v4.0.51) (2024-01-06)
+
+
+### Bug Fixes
+
+* **json config:** change all file of config json ([266d8d7](https://github.com/opensrc0/fe-theme/commit/266d8d723b3b078e02435b6126cc072934bff56c))
+
 ## [4.0.50](https://github.com/opensrc0/fe-theme/compare/v4.0.49...v4.0.50) (2024-01-06)
 
 
