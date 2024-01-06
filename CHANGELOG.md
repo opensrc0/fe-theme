@@ -1,3 +1,10 @@
+## [4.0.53](https://github.com/opensrc0/fe-theme/compare/v4.0.52...v4.0.53) (2024-01-06)
+
+
+### Bug Fixes
+
+* **configfontsize:** change the json format ([12de62a](https://github.com/opensrc0/fe-theme/commit/12de62a544cb93381b627e7e63eb59f8db12ba59))
+
 ## [4.0.52](https://github.com/opensrc0/fe-theme/compare/v4.0.51...v4.0.52) (2024-01-06)
 
 
