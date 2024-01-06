@@ -1,5 +1,10 @@
 {
-    "search.exclude": {
+  "search.exclude": {
 		"**/index.js": true,
-	}
+	},
+	"editor.tabSize": 2,
+	"eslint.autoFixOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	},
 }
