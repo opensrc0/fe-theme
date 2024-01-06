@@ -1,3 +1,11 @@
+## [4.0.49](https://github.com/opensrc0/fe-theme/compare/v4.0.48...v4.0.49) (2024-01-06)
+
+
+### Bug Fixes
+
+* **config change:** change in config file ([4ab8f2d](https://github.com/opensrc0/fe-theme/commit/4ab8f2d89f0869b9e0aa89cd932978fe0eb5a1a1))
+* **eslintignore:** eslintignore ([f0f9877](https://github.com/opensrc0/fe-theme/commit/f0f9877b36f036843995c5c13a22dd1ea2034aee))
+
 ## [4.0.48](https://github.com/opensrc0/fe-theme/compare/v4.0.47...v4.0.48) (2023-12-27)
 
 
