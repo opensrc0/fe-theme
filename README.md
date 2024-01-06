@@ -73,7 +73,7 @@ COMPONENT_CONFIG_PATH=./ npm run theme-prepare --prefix ./node_modules/fe-theme
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { ThemeProvider } from 'styled-components';
-import theme from '{root-location-of-your-project}/fe-theme/universal/theme'; // root-location-of-your-project is dynamic variable
+import theme from '{PATH}/fe-theme/universal/theme';
 import App from './App';
 
 ReactDOM.hydrate(
@@ -83,6 +83,8 @@ ReactDOM.hydrate(
   document.getElementById('root'),
 );
 ```
+
+**Note:** PATH is a variable (Same as 1st point).
 
 #### 3. Setup is completed, Now import UI component in your application like button
 ```js
