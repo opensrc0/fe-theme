@@ -1,3 +1,18 @@
+## [4.0.54](https://github.com/opensrc0/fe-theme/compare/v4.0.53...v4.0.54) (2024-01-06)
+
+
+### Bug Fixes
+
+* eslint fix ([ff2927f](https://github.com/opensrc0/fe-theme/commit/ff2927fbe5b2671eb0e604285f7f8a45c5814bbc))
+* local set is ready for development ([77bc419](https://github.com/opensrc0/fe-theme/commit/77bc4192f3c57bf4551eb741e1db2ba67f7818e3))
+* readme.md ([2c8c98b](https://github.com/opensrc0/fe-theme/commit/2c8c98b87bbdbe7f84723c5302c451819d2ed3c2))
+* readme.md ([4eee089](https://github.com/opensrc0/fe-theme/commit/4eee089d99b186089c23f856267dbde9f374c6ac))
+* readme.md ([bd1b370](https://github.com/opensrc0/fe-theme/commit/bd1b370e49bc9d1aca24f869d70cfb3d513d8c04))
+* **readme.md and setup.md:** added command in readme.md and setup.md ([910bd04](https://github.com/opensrc0/fe-theme/commit/910bd045a8b269c0c2143fd44867d771294a039c))
+* **readme.md:** changes in reDME.MD ([b5326fc](https://github.com/opensrc0/fe-theme/commit/b5326fce019aaade52c10a467b467b5ab870ce55))
+* **setup.md:** local setup ([91dd9ba](https://github.com/opensrc0/fe-theme/commit/91dd9ba9546d89b3652884a3da0f485ec3f1641c))
+* **setup.md:** now we can add local setup of fe-theme in any project ([be63a02](https://github.com/opensrc0/fe-theme/commit/be63a02c4f1c8308e7aa60300993003fde686e23))
+
 ## [4.0.53](https://github.com/opensrc0/fe-theme/compare/v4.0.52...v4.0.53) (2024-01-06)
 
 
