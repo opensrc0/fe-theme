@@ -17,5 +17,4 @@ export default {
   },
   Button,
   Input,
-
 };

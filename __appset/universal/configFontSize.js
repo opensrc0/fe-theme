@@ -14,6 +14,6 @@ const FontSize = {
   "xxs" : "11px",
   "xxxs" : "10px",
   "xxxxs" : "8px"
-};
+}
 
 export default FontSize;
