@@ -1,3 +1,10 @@
+## [4.0.52](https://github.com/opensrc0/fe-theme/compare/v4.0.51...v4.0.52) (2024-01-06)
+
+
+### Bug Fixes
+
+* **themeprepare:** changes in themePrepare ([600d3b2](https://github.com/opensrc0/fe-theme/commit/600d3b2f492e3b99b86be39093e3719e39fcc14c))
+
 ## [4.0.51](https://github.com/opensrc0/fe-theme/compare/v4.0.50...v4.0.51) (2024-01-06)
 
 
