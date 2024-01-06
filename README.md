@@ -76,6 +76,13 @@ import { ThemeProvider } from 'styled-components';
 import theme from '{PATH}/fe-theme/universal/theme';
 import App from './App';
 
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <ThemeProvider theme={theme}>
+    <App />
+  </ThemeProvider>
+);
+
+
 ReactDOM.hydrate(
   <ThemeProvider theme={theme}>
     <App />
