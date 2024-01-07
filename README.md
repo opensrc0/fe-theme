@@ -120,13 +120,13 @@ Play around the property of component according to your project.
 ## Online Editor Templates
 #### 1. CodeSandbox
 - JavaScript Starter: https://codesandbox.io/p/devbox/weathered-waterfall-6q2vcg
-- TypeScript Starter: WIP
-- NextJS TypeScript Starter: WIP
+<!-- - TypeScript Starter: WIP -->
+<!-- - NextJS TypeScript Starter: WIP -->
 
 #### 2. Stackblitz
 - JavaScript Starter: WIP
-- TypeScript Starter: WIP
-- NextJS TypeScript Starter: WIP
+<!-- - TypeScript Starter: WIP -->
+<!-- - NextJS TypeScript Starter: WIP -->
 
 
 ## Contributing
