@@ -68,7 +68,7 @@ $ bun add fe-theme
 
 ## Usage
 
-#### 1. Creating a fe-theme folder in your application. It contains configuration files of components like Button, Input etc.
+#### 1. Creating a fe-theme folder in your application. It contains config files of components.
 
 ```js
 COMPONENT_CONFIG_PATH=./{PATH} npm run theme-prepare --prefix ./node_modules/fe-theme
