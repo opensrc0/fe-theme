@@ -1,3 +1,14 @@
+## [4.0.55](https://github.com/opensrc0/fe-theme/compare/v4.0.54...v4.0.55) (2024-01-07)
+
+
+### Bug Fixes
+
+* eslint fix ([21aea29](https://github.com/opensrc0/fe-theme/commit/21aea29566afef15b165d72eb7f0311d62e3ecdd))
+* readme.md ([ebe0034](https://github.com/opensrc0/fe-theme/commit/ebe0034ad6c2a76f8c777e3b08bed62844159440))
+* readme.md ([2ceb176](https://github.com/opensrc0/fe-theme/commit/2ceb176b03cf549407a3bc684afd5e13ca32f653))
+* readme.md ([5a7c223](https://github.com/opensrc0/fe-theme/commit/5a7c223867b2f4c884dc965a381c68e37f630fbd))
+* readme.md ([88100b8](https://github.com/opensrc0/fe-theme/commit/88100b8536d6fd501777fd5a5d50d3c0c3c04787))
+
 ## [4.0.54](https://github.com/opensrc0/fe-theme/compare/v4.0.53...v4.0.54) (2024-01-06)
 
 
