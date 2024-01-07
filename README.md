@@ -124,7 +124,7 @@ Play around the property of component according to your project.
 <!-- - NextJS TypeScript Starter: WIP -->
 
 #### 2. Stackblitz
-- JavaScript Starter: WIP
+- JavaScript Starter: https://stackblitz.com/edit/fe-theme-js-b6mri2
 <!-- - TypeScript Starter: WIP -->
 <!-- - NextJS TypeScript Starter: WIP -->
 
