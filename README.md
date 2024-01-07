@@ -50,39 +50,53 @@ FE-Theme is a styled-component based comprehensive library of accessible, reusab
 - **Dark Mode UI:** FE-Theme support dark mode compatibility.
   
 ## Installation
+Install `fe-theme` package using any package manager
+  
+```sh
+# with Yarn
+$ yarn add fe-theme
+    
+# with npm
+$ npm i fe-theme --save
 
-    npm install fe-theme --save
+# with pnpm
+$ pnpm add fe-theme
+
+# with Bun
+$ bun add fe-theme
+```
 
 ## Usage
 
-#### 1. Creating a fe-theme folder in the root directory of you application. It contains configuration files of fe-theme component like Button, Input etc.
+#### 1. Creating a fe-theme folder in your application. It contains config files of components.
 
 ```js
 COMPONENT_CONFIG_PATH=./{PATH} npm run theme-prepare --prefix ./node_modules/fe-theme
 ```
 
-**Note:** PATH is a variable i.e. path where to place ```fe-theme configuration folder``` in your application. If you want to place config folder in your root location of your application folder then command will be
+**Note:** ```PATH``` is a variable i.e. path for ```fe-theme configuration folder``` in your application. If you want to place config folder in your root location of your application folder then command will be
 
 ```js
 COMPONENT_CONFIG_PATH=./ npm run theme-prepare --prefix ./node_modules/fe-theme
 ```
 
-#### 2. Passing universal configuration like color properties, font family properties, to the fe-theme library using ThemeProvider (For internal usage only but required)
+#### 2. Passing configuration settings to the fe-theme library using ThemeProvider
 
 ```js
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { ThemeProvider } from 'styled-components';
-import theme from '{root-location-of-your-project}/fe-theme/universal/theme'; // root-location-of-your-project is dynamic variable
+import theme from '{PATH}/fe-theme/universal/theme';
 import App from './App';
 
-ReactDOM.hydrate(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <ThemeProvider theme={theme}>
     <App />
-  </ThemeProvider>,
-  document.getElementById('root'),
+  </ThemeProvider>
 );
 ```
+
+**Note:** ```PATH``` is a variable (Same as 1st point).
 
 #### 3. Setup is completed, Now import UI component in your application like button
 ```js
@@ -91,7 +105,7 @@ import Button from 'fe-theme/Button';
 <Button />
 ```
 
-Hurrah...!!! Button is created, but button theme does not match with the your application. No worries. You can change default properties of button component
+**Hurrah...!!!** Button is created, but button theme does not match with the your application. No worries. You can change default properties of button component
   
 
 ```
@@ -99,13 +113,21 @@ Your Application Folder(Root Directory)
   └──fe-theme                       
     ├──configButton           
     ├──configInput          
-    └──configChip    
-     
+    └──configChip
 ```
-Play around the property of button according to your project.
+Play around the property of component according to your project.
 
 ## Online Editor Templates
-WIP
+#### 1. CodeSandbox
+- JavaScript Starter: https://codesandbox.io/p/devbox/weathered-waterfall-6q2vcg
+<!-- - TypeScript Starter: WIP -->
+<!-- - NextJS TypeScript Starter: WIP -->
+
+#### 2. Stackblitz
+- JavaScript Starter: WIP
+<!-- - TypeScript Starter: WIP -->
+<!-- - NextJS TypeScript Starter: WIP -->
+
 
 ## Contributing
 
