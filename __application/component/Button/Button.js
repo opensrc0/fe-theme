@@ -120,7 +120,7 @@ Button.propTypes = {
   spin: PropTypes.bool,
   className: PropTypes.string,
   type: PropTypes.oneOf(['submit', 'button']),
-  variant: PropTypes.oneOf(['primary', 'secondary', 'tertiary', 'quaternary']),
+  variant: PropTypes.string,
   size: PropTypes.oneOf(['s', 'm', 'l']),
 };
 
