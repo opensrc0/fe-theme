@@ -1,3 +1,12 @@
+## [4.0.56](https://github.com/opensrc0/fe-theme/compare/v4.0.55...v4.0.56) (2024-01-08)
+
+
+### Bug Fixes
+
+* **package-lock.json:** added dependency of package-lock.json ([c3cae33](https://github.com/opensrc0/fe-theme/commit/c3cae3334dfa0cc42ed4796f75a6c374e99a12ef))
+* package.json ([a9633ed](https://github.com/opensrc0/fe-theme/commit/a9633ed19ca8bfe256fa9b6b3e31b027d4011679))
+* package.json ([a2e49ce](https://github.com/opensrc0/fe-theme/commit/a2e49ce1b1324799fe7f9087feb189dde44abd55))
+
 ## [4.0.55](https://github.com/opensrc0/fe-theme/compare/v4.0.54...v4.0.55) (2024-01-07)
 
 
