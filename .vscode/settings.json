@@ -1,7 +1,7 @@
 {
   "search.exclude": {
 		"**/index.js": true,
-    "__build-es/**": true,
+    "__build-es/**": true
 	},
 	"editor.tabSize": 2,
 	"editor.codeActionsOnSave": {

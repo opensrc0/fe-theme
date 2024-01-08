@@ -9,14 +9,6 @@ const Button = {
 	"secondary": {
 		"color": "white",
 		"borderColor": "white"
-	},
-	"tertiary": {
-		"color": "white",
-		"borderColor": "white"
-	},
-	"quaternary": {
-		"color": "white",
-		"borderColor": "white"
 	}
 }
 

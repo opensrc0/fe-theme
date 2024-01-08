@@ -132,7 +132,7 @@ Button.defaultProps = {
   spin: false,
   className: '',
   type: 'submit',
-  variant: 'primary',
+  variant: 'secondary',
   size: 'm',
 };
 
