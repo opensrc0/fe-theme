@@ -1,3 +1,11 @@
+## [4.0.57](https://github.com/opensrc0/fe-theme/compare/v4.0.56...v4.0.57) (2024-01-08)
+
+
+### Bug Fixes
+
+* **button:** changes in button ([6ac2d5f](https://github.com/opensrc0/fe-theme/commit/6ac2d5f11a37bfaf74aadcdf90bca61fa5897acd))
+* **setup>md:** added local setup steps in setup.md ([17f5b84](https://github.com/opensrc0/fe-theme/commit/17f5b84d619bef84e5975fbc2be8b812d448fed8))
+
 ## [4.0.56](https://github.com/opensrc0/fe-theme/compare/v4.0.55...v4.0.56) (2024-01-08)
 
 
