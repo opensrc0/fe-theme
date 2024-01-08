@@ -6,7 +6,6 @@ Clone the repository and run the following commands from the root directory
 1. Go to the fe-theme repo location in your terminal and do 
 ```
 npm install
-
 ```
 ```
 npm start
@@ -15,7 +14,7 @@ npm start
 3. Go to your project location in terminal and link cloned repo of fe-theme with your project
 ```
 npm link {fe-theme-repo-location}/fe-theme
-
+npm i styled-components
 ```
 
 4. Last step to get config folder(fe-theme) contains config files of each component in your project repo 
