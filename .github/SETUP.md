@@ -3,7 +3,7 @@ Clone the repository and run the following commands from the root directory
 
 ## Local setup
 
-1. Go to the fe-theme repo location in your terminal and do 
+#### 1. Go to the fe-theme repo location in your terminal and do 
 ```
 npm install
 ```
@@ -11,18 +11,20 @@ npm install
 npm start
 
 ```
-3. Go to your project location in terminal and link cloned repo of fe-theme with your project
+#### 2. Open terminal and Go to any ```working react application``` in your system, where you want to ```implement FE-Theme```
+
 ```js
 npm link {PATH}/fe-theme/ {PATH}/fe-theme/node_modules/styled-components/ {PATH}/fe-theme/node_modules/react {PATH}/fe-theme/node_modules/react-dom
 ```
+**Note:** PATH is the location of cloned fe-theme folder
 
-4. Last step to get config folder(fe-theme) contains config files of each component in your project repo 
+#### 3. Last step to get config folder(fe-theme) contains config files of each component in your project repo 
 ```
 ENVI=local CURRENT_APP_DIR=$(pwd) COMPONENT_CONFIG_PATH=./{location of fe-theme component configuration folder in your application} npm run theme-prepare --prefix ./node_modules/fe-theme
 ```
 **Note:** ```COMPONENT_CONFIG_PATH``` is a variable and setup it properly.
 
-5. 
+#### 4. Pass theme config to ThemeProvider 
 ```js
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -37,7 +39,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 );
 ```
 
-6. Hurrah...! Now fe-theme repo is available inside the node_modules of your project, and waching change in fe-theme.
+#### 5. Hurrah...! Now fe-theme repo is available inside the node_modules of your project, and waching change in fe-theme.
 
 
 <!-- # open http://localhost:6006 -->
