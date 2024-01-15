@@ -64,4 +64,19 @@ theme.component.TextBox = {
   },
 };
 
+theme.component.Chip = {
+  borderRadius: '1rem',
+  padding: '1rem',
+  primary: {
+    backgroundColor: 'rgba(0, 54, 78, 0.2)',
+    color: '#00364E',
+    border: '1px solid #00364E',
+  },
+  secondary: {
+    backgroundColor: 'rgba(3, 86, 123, 0.3)',
+    color: '#03567b',
+    border: '1px solid #03567b',
+  },
+};
+
 export default theme;
