@@ -122,7 +122,8 @@
     "Button/",
     "Flex/",
     "Input/",
-    "theme/"
+    "theme/",
+    "Init.js"
   ],
   "eslintConfig": {
     "extends": [
