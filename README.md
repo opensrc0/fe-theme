@@ -73,6 +73,7 @@ $ bun add fe-theme
 ```js
 import { ThemeProvider } from 'styled-components'; // import ThemeProvider component
 import Init from 'fe-theme/Init'; // import Init function 
+import App from './App';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   // Wrap your application with ThemeProvider
@@ -105,10 +106,11 @@ COMPONENT_CONFIG_PATH=./{PATH} CURRENT_APP_DIR=$(pwd) npm run theme-prepare --pr
 COMPONENET_NAME={COMPONENT_NAME} COMPONENT_CONFIG_PATH=./{PATH} CURRENT_APP_DIR=$(pwd) npm run theme-prepare --prefix ./node_modules/fe-theme
 ```
 
-**Note:** 
-```PATH``` is a variable i.e. where you want to place config files for your application
+&nbsp;&nbsp; **Note:** 
 
-```COMPONENT_NAME``` is a variable i.e. where ```component``` Input, button, CHIP (Allow any case)
+&nbsp;&nbsp;  ```1. PATH``` is a variable i.e. where you want to place config files in your application
+
+&nbsp;&nbsp;  ```2. COMPONENT_NAME``` is a variable i.e. name of the component ```Input```, ```button```, ```CHIP``` (Allow any case)
 
 #### 4. Passing configuration settings to the fe-theme library using ThemeProvider
 
