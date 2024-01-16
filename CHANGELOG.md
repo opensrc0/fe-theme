@@ -1,3 +1,10 @@
+## [4.0.60](https://github.com/opensrc0/fe-theme/compare/v4.0.59...v4.0.60) (2024-01-16)
+
+
+### Bug Fixes
+
+* **added component list:** added component list ([32fbf8f](https://github.com/opensrc0/fe-theme/commit/32fbf8f7345b56f6ba713171eb681745675c6c80))
+
 ## [4.0.59](https://github.com/opensrc0/fe-theme/compare/v4.0.58...v4.0.59) (2024-01-16)
 
 
