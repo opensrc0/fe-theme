@@ -1,3 +1,10 @@
+## [4.0.59](https://github.com/opensrc0/fe-theme/compare/v4.0.58...v4.0.59) (2024-01-16)
+
+
+### Bug Fixes
+
+* **package.json:** added init file in package.json ([d7ae553](https://github.com/opensrc0/fe-theme/commit/d7ae5533e7ac2f2b9d2ee3bb0151402e194ed40a))
+
 ## [4.0.58](https://github.com/opensrc0/fe-theme/compare/v4.0.57...v4.0.58) (2024-01-16)
 
 
