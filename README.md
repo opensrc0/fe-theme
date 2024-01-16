@@ -94,11 +94,10 @@ Wow, the configuration is quite simple, but wait... button design is different i
 
 #### 3. Create your own theme
 
-&nbsp;&nbsp; **a)** Create an empty folder fe-theme in your application anywhere
+&nbsp;&nbsp; **a)** Create an empty folder called ```fe-theme``` in your application at any location.
 
 &nbsp;&nbsp; **b)** Create configButton.js file inside fe-theme folder
 ```js
-/* eslint-disable */
 const Button = {
 	"borderRadius": "50px",
 	"borderColor": "12px",
@@ -114,9 +113,9 @@ const Button = {
 
 export default Button;
 ```
+&nbsp;&nbsp; **Note** Config file name start with ```config``` keyword along with ```component Name``` like ```configButton.js```/```configInput.js```
 
-
-&nbsp;&nbsp; **c)** Create theme.js file and include Button config
+&nbsp;&nbsp; **c)** Create theme.js file and include configButton.js 
 ```js
 /* eslint-disable import/no-anonymous-default-export */
 import Button from '../configButton';
@@ -126,7 +125,7 @@ export default {
 };
 
 ```
-Also, You can automatically generate config files using command line [Check Commands](./.github/COMMAND.md)
+Yeah, We have created config files Mannually but You can also generate config files automatically using command line [Check Commands](./.github/COMMAND.md)
 
 #### 4. Passing configuration settings to the fe-theme library using ThemeProvider
 
