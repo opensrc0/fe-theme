@@ -110,7 +110,9 @@ COMPONENET_NAME={COMPONENT_NAME} COMPONENT_CONFIG_PATH=./{PATH} CURRENT_APP_DIR=
 
 &nbsp;&nbsp;  ```1. PATH``` is a variable i.e. where you want to place config files in your application
 
-&nbsp;&nbsp;  ```2. COMPONENT_NAME``` is a variable i.e. name of the component ```Input```, ```button```. [Find the component list](./.github/COMPONENT.md)
+&nbsp;&nbsp;  ```2. COMPONENT_NAME``` is a variable i.e. name of the component ```Input```, ```button```. 
+
+&nbsp;&nbsp;&nbsp; [Find the component list](./.github/COMPONENT.md)
 
 #### 4. Passing configuration settings to the fe-theme library using ThemeProvider
 
