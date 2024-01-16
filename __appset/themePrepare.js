@@ -27,11 +27,15 @@ const color = [
   { name: 'FgCyan', value: '\x1b[36m%s\x1b[0m' },
 ];
 
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 let count = 0;
 
 // generate exports for all platforms
 const srcPath = path.resolve(__dirname, '../__appset');
-const components = process.env.COMPONENET_NAME ? [`${process.env.COMPONENET_NAME}.js`] : fs.readdirSync(srcPath).filter((files) => !ignoreFiles.includes(files) && !files.includes('WIP-'));
+const components = process.env.COMPONENET_NAME ? [`config${capitalizeFirstLetter(process.env.COMPONENET_NAME)}.js`] : fs.readdirSync(srcPath).filter((files) => !ignoreFiles.includes(files) && !files.includes('WIP-'));
 
 const srcPathInner = path.resolve(__dirname, '../__appset/universal');
 const componentsInner = process.env.COMPONENET_NAME ? [] : fs.readdirSync(srcPathInner).filter((files) => !ignoreFiles.includes(files) && !files.includes('WIP-'));
@@ -102,7 +106,7 @@ mkdirp(createInnerDir).then(() => {
   if (process.env.COMPONENET_NAME) {
     let appDir;
     let componentFile;
-    const replaceComponentName = process.env.COMPONENET_NAME.replace('config', '').replace('.js', '');
+    const replaceComponentName = capitalizeFirstLetter(process.env.COMPONENET_NAME.replace('config', '').replace('.js', ''));
 
     if (process.env.ENVI === 'local') {
       appDir = `${process.env.CURRENT_APP_DIR}/${process.env.COMPONENT_CONFIG_PATH}/fe-theme/universal`;
@@ -115,7 +119,7 @@ mkdirp(createInnerDir).then(() => {
       let componentContent;
       if (!err) {
         console.log('not error', data);
-        componentContent = data.replace('const theme = {', `import ${replaceComponentName} from '../${process.env.COMPONENET_NAME}';
+        componentContent = data.replace('const theme = {', `import ${replaceComponentName} from '../config${capitalizeFirstLetter(process.env.COMPONENET_NAME)}';
 const theme = {
   ${replaceComponentName},`);
         if (!data.includes(`import ${replaceComponentName} from`)) {
@@ -123,7 +127,7 @@ const theme = {
         }
       } else {
         componentContent = `/* eslint-disable */
-import ${replaceComponentName} from '../${process.env.COMPONENET_NAME}';
+import ${replaceComponentName} from '../config${capitalizeFirstLetter(process.env.COMPONENET_NAME)}';
 const theme = {
   ${replaceComponentName}
 }

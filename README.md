@@ -68,45 +68,68 @@ $ bun add fe-theme
 
 ## Usage
 
-#### 1. Creating a fe-theme folder in your application. It contains config files of components.
-
-```js
-COMPONENT_CONFIG_PATH=./{PATH} npm run theme-prepare --prefix ./node_modules/fe-theme
-```
-
-**Note:** ```PATH``` is a variable i.e. path for ```fe-theme configuration folder``` in your application. If you want to place config folder in your root location of your application folder then command will be
-
-```js
-COMPONENT_CONFIG_PATH=./ npm run theme-prepare --prefix ./node_modules/fe-theme
-```
-
-#### 2. Passing configuration settings to the fe-theme library using ThemeProvider
+#### 1. Passing configuration settings to the fe-theme library using ThemeProvider
 
 ```js
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { ThemeProvider } from 'styled-components';
-import theme from '{PATH}/fe-theme/universal/theme';
+import Init from 'fe-theme/Init';
 import App from './App';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <ThemeProvider theme={theme}>
+  <ThemeProvider theme={Init()}>
     <App />
   </ThemeProvider>
 );
 ```
 
-**Note:** ```PATH``` is a variable (Same as 1st point).
-
-#### 3. Setup is completed, Now import UI component in your application like button
+#### 2. You are good to go and import fe-theme component in your application
 ```js
 import Button from 'fe-theme/Button';
 
 <Button />
 ```
 
-**Hurrah...!!!** Button is created, but button theme does not match with the your application. No worries. You can change default properties of button component
-  
+Wow, the configuration is quite simple, but wait... button design is different in my application. No worry, fellow step 3, 4.
+
+#### 3. Creating a fe-theme folder in your application. It contains config files of components.
+
+Create config file for all the component of fe-theme
+```js
+COMPONENT_CONFIG_PATH=./{PATH} CURRENT_APP_DIR=$(pwd) npm run theme-prepare --prefix ./node_modules/fe-theme
+```
+
+Create config file for a single component of fe-theme
+```js
+COMPONENET_NAME={COMPONENT_NAME} COMPONENT_CONFIG_PATH=./{PATH} CURRENT_APP_DIR=$(pwd) npm run theme-prepare --prefix ./node_modules/fe-theme
+```
+
+**Note:** 
+```PATH``` is a variable i.e. where you want to place config files for your application
+```COMPONENT_NAME``` is a variable i.e. where ```component``` Input, button, CHIP (Allow any case)
+
+#### 4. Passing configuration settings to the fe-theme library using ThemeProvider
+
+```js
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { ThemeProvider } from 'styled-components';
+import Init from 'fe-theme/Init';
+import theme from '{PATH}/fe-theme/universal/theme';  // Include your theme to fe-theme
+import App from './App';
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  // Inside the Init function pass theme
+  <ThemeProvider theme={Init(theme)}>
+    <App />
+  </ThemeProvider>
+);
+```
+
+**Note:** ```PATH``` is a variable i.e. location of config files for your application
+
+**Hurrah...!!!** Now you can change button(any compponent) property according to your application
 
 ```
 Your Application Folder(Root Directory)
