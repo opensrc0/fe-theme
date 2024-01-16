@@ -68,16 +68,15 @@ $ bun add fe-theme
 
 ## Usage
 
-#### 1. Passing configuration settings to the fe-theme library using ThemeProvider
+#### 1. Use fe-theme in your application using themeProvider
 
 ```js
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { ThemeProvider } from 'styled-components';
-import Init from 'fe-theme/Init';
+import { ThemeProvider } from 'styled-components'; // import ThemeProvider component
+import Init from 'fe-theme/Init'; // import Init function 
 import App from './App';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+  // Wrap your application with ThemeProvider
   <ThemeProvider theme={Init()}>
     <App />
   </ThemeProvider>
@@ -91,29 +90,31 @@ import Button from 'fe-theme/Button';
 <Button />
 ```
 
-Wow, the configuration is quite simple, but wait... button design is different in my application. No worry, fellow step 3, 4.
+Wow, the configuration is quite simple, but wait... button design is different in my application. No worry, follow step 3, 4.
 
-#### 3. Creating a fe-theme folder in your application. It contains config files of components.
+#### 3. Creating a fe-theme folder in your application. It contains components config file.
 
-Create config file for all the component of fe-theme
+&nbsp;&nbsp;Create config file for all the component of fe-theme
 ```js
 COMPONENT_CONFIG_PATH=./{PATH} CURRENT_APP_DIR=$(pwd) npm run theme-prepare --prefix ./node_modules/fe-theme
 ```
 
-Create config file for a single component of fe-theme
+<p align="center">OR</p>
+
+&nbsp;&nbsp; Creating config file for an individual component
 ```js
 COMPONENET_NAME={COMPONENT_NAME} COMPONENT_CONFIG_PATH=./{PATH} CURRENT_APP_DIR=$(pwd) npm run theme-prepare --prefix ./node_modules/fe-theme
 ```
 
-**Note:** 
-```PATH``` is a variable i.e. where you want to place config files for your application
-```COMPONENT_NAME``` is a variable i.e. where ```component``` Input, button, CHIP (Allow any case)
+&nbsp;&nbsp; **Note:** 
+
+&nbsp;&nbsp;  ```1. PATH``` is a variable i.e. where you want to place config files in your application
+
+&nbsp;&nbsp;  ```2. COMPONENT_NAME``` is a variable i.e. name of the component ```Input```, ```button```. [Find the component list](./.github/COMPONENT.md)
 
 #### 4. Passing configuration settings to the fe-theme library using ThemeProvider
 
 ```js
-import React from 'react';
-import ReactDOM from 'react-dom';
 import { ThemeProvider } from 'styled-components';
 import Init from 'fe-theme/Init';
 import theme from '{PATH}/fe-theme/universal/theme';  // Include your theme to fe-theme
@@ -127,7 +128,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 );
 ```
 
-**Note:** ```PATH``` is a variable i.e. location of config files for your application
+**Note:** ```PATH``` is a variable i.e. location of config files in your application
 
 **Hurrah...!!!** Now you can change button(any compponent) property according to your application
 
