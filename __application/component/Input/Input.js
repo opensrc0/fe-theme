@@ -2,18 +2,17 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropTypes from 'prop-types';
-import theme from '../theme';
 
 const styles = {
   borderRadius(props) {
     if (props.shape === 'bluntEdged') {
-      return theme.cornerEdge;
+      return props.theme.cornerEdge;
     }
     if (props.shape === 'sharpEdged') {
       return '2px';
     }
     if (props.shape === 'capsular') {
-      return theme.px(10);
+      return props.theme.px(10);
     }
     return '';
   },

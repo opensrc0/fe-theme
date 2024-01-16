@@ -27,14 +27,18 @@ const color = [
   { name: 'FgCyan', value: '\x1b[36m%s\x1b[0m' },
 ];
 
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 let count = 0;
 
 // generate exports for all platforms
 const srcPath = path.resolve(__dirname, '../__appset');
-const components = fs.readdirSync(srcPath).filter((files) => !ignoreFiles.includes(files) && !files.includes('WIP-'));
+const components = process.env.COMPONENET_NAME ? [`config${capitalizeFirstLetter(process.env.COMPONENET_NAME)}.js`] : fs.readdirSync(srcPath).filter((files) => !ignoreFiles.includes(files) && !files.includes('WIP-'));
 
 const srcPathInner = path.resolve(__dirname, '../__appset/universal');
-const componentsInner = fs.readdirSync(srcPathInner).filter((files) => !ignoreFiles.includes(files) && !files.includes('WIP-'));
+const componentsInner = process.env.COMPONENET_NAME ? [] : fs.readdirSync(srcPathInner).filter((files) => !ignoreFiles.includes(files) && !files.includes('WIP-'));
 
 let createDir;
 let createInnerDir;
@@ -99,56 +103,91 @@ const ${replaceComponentName} =${defaultDirData}export default ${replaceComponen
 });
 
 mkdirp(createInnerDir).then(() => {
-  componentsInner.map((component) => {
-    let defaultDir;
+  if (process.env.COMPONENET_NAME) {
     let appDir;
-    let defaultDirData;
     let componentFile;
-    const replaceComponentName = component.replace('config', '').replace('.js', '');
+    const replaceComponentName = capitalizeFirstLetter(process.env.COMPONENET_NAME.replace('config', '').replace('.js', ''));
 
     if (process.env.ENVI === 'local') {
-      defaultDir = path.resolve(`${__dirname}`, 'universal');
-      defaultDirData = fs.readFileSync(`${defaultDir}/${component}`).toString().split('export')[0].split(/=(.*)/s)[1];
       appDir = `${process.env.CURRENT_APP_DIR}/${process.env.COMPONENT_CONFIG_PATH}/fe-theme/universal`;
-      componentFile = `${appDir}/${component}`;
+      componentFile = `${appDir}/theme.js`;
     } else {
-      defaultDir = path.resolve(`${__dirname}`, '../../../node_modules/fe-theme/__appset/universal');
-      defaultDirData = fs.readFileSync(`${defaultDir}/${component}`).toString().split('export')[0].split(/=(.*)/s)[1];
       appDir = path.resolve(`${__dirname}`, `../../../${process.env.COMPONENT_CONFIG_PATH}/fe-theme/universal`);
-      componentFile = path.resolve(createInnerDir, component);
+      componentFile = path.resolve(createInnerDir, 'theme.js');
     }
-
-    fs.readFile(`${appDir}/${component}`, 'utf8', (err, data) => {
-      if (component === 'theme.js' || component === 'configPXL.js') {
-        fs.writeFile(componentFile, fs.readFileSync(`${defaultDir}/${component}`).toString(), () => {});
-      } else {
-        let componentContent;
-
-        if (!err) {
-          const userAppConfig = data.split('export')[0].split(/=(.*)/s)[1];
-          componentContent = `/* eslint-disable */
-  const ${replaceComponentName} = ${JSON.stringify(mergeObj(JSON.parse(defaultDirData), JSON.parse(userAppConfig)), null, '\t')}
-  \nexport default ${replaceComponentName};\n`;
-        } else {
-          componentContent = `/* eslint-disable */
-  const ${replaceComponentName} =${defaultDirData}export default ${replaceComponentName};\n`;
+    fs.readFile(`${appDir}/theme.js`, 'utf8', (err, data) => {
+      let componentContent;
+      if (!err) {
+        console.log('not error', data);
+        componentContent = data.replace('const theme = {', `import ${replaceComponentName} from '../config${capitalizeFirstLetter(process.env.COMPONENET_NAME)}';
+const theme = {
+  ${replaceComponentName},`);
+        if (!data.includes(`import ${replaceComponentName} from`)) {
+          fs.writeFile(componentFile, componentContent, () => { });
         }
+      } else {
+        componentContent = `/* eslint-disable */
+import ${replaceComponentName} from '../config${capitalizeFirstLetter(process.env.COMPONENET_NAME)}';
+const theme = {
+  ${replaceComponentName}
+}
 
-        fs.writeFile(componentFile, componentContent, (writeFileErr) => {
-          if (writeFileErr) throw writeFileErr;
-          console.log(color[getRandomInt(color.length)].value, ` ${count + 1}. generated: ${componentFile} \n`);
-          count += 1;
-          if (count === components.length + componentsInner.length - 2) {
-            console.log('\x1b[44m%s\x1b[0m', 'Setup Completed Successfully');
-            console.log('');
-            count = 0;
-          }
-        });
+export default theme;\n`;
+        fs.writeFile(componentFile, componentContent, () => { });
       }
     });
+  } else {
+    componentsInner.map((component) => {
+      let defaultDir;
+      let appDir;
+      let defaultDirData;
+      let componentFile;
+      const replaceComponentName = component.replace('config', '').replace('.js', '');
 
-    return null;
-  });
+      if (process.env.ENVI === 'local') {
+        defaultDir = path.resolve(`${__dirname}`, 'universal');
+        defaultDirData = fs.readFileSync(`${defaultDir}/${component}`).toString().split('export')[0].split(/=(.*)/s)[1];
+        appDir = `${process.env.CURRENT_APP_DIR}/${process.env.COMPONENT_CONFIG_PATH}/fe-theme/universal`;
+        componentFile = `${appDir}/${component}`;
+      } else {
+        defaultDir = path.resolve(`${__dirname}`, '../../../node_modules/fe-theme/__appset/universal');
+        defaultDirData = fs.readFileSync(`${defaultDir}/${component}`).toString().split('export')[0].split(/=(.*)/s)[1];
+        appDir = path.resolve(`${__dirname}`, `../../../${process.env.COMPONENT_CONFIG_PATH}/fe-theme/universal`);
+        componentFile = path.resolve(createInnerDir, component);
+      }
+
+      fs.readFile(`${appDir}/${component}`, 'utf8', (err, data) => {
+        if (component === 'theme.js' || component === 'configPXL.js') {
+          fs.writeFile(componentFile, fs.readFileSync(`${defaultDir}/${component}`).toString(), () => {});
+        } else {
+          let componentContent;
+
+          if (!err) {
+            const userAppConfig = data.split('export')[0].split(/=(.*)/s)[1];
+            componentContent = `/* eslint-disable */
+  const ${replaceComponentName} = ${JSON.stringify(mergeObj(JSON.parse(defaultDirData), JSON.parse(userAppConfig)), null, '\t')}
+  \nexport default ${replaceComponentName};\n`;
+          } else {
+            componentContent = `/* eslint-disable */
+  const ${replaceComponentName} =${defaultDirData}export default ${replaceComponentName};\n`;
+          }
+
+          fs.writeFile(componentFile, componentContent, (writeFileErr) => {
+            if (writeFileErr) throw writeFileErr;
+            console.log(color[getRandomInt(color.length)].value, ` ${count + 1}. generated: ${componentFile} \n`);
+            count += 1;
+            if (count === components.length + componentsInner.length - 2) {
+              console.log('\x1b[44m%s\x1b[0m', 'Setup Completed Successfully');
+              console.log('');
+              count = 0;
+            }
+          });
+        }
+      });
+
+      return null;
+    });
+  }
 }).catch((err) => {
   console.log('err', err);
 });

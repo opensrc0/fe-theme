@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import PXL from './configPXL';
 import Color from './configColor';
 import FontSize from './configFontSize';
