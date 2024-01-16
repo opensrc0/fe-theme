@@ -1,3 +1,11 @@
+## [4.0.58](https://github.com/opensrc0/fe-theme/compare/v4.0.57...v4.0.58) (2024-01-16)
+
+
+### Bug Fixes
+
+* **preparetheme.js:** changed inclusion of theme component ([35da05b](https://github.com/opensrc0/fe-theme/commit/35da05bf938ca94b48b51089821db101ffee0f7f))
+* **readme.md:** changed readme.md ([06205a6](https://github.com/opensrc0/fe-theme/commit/06205a697d221395de701c34c8f3dbc2f9e3b1e9))
+
 ## [4.0.57](https://github.com/opensrc0/fe-theme/compare/v4.0.56...v4.0.57) (2024-01-08)
 
 
