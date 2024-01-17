@@ -1,3 +1,10 @@
+## [4.0.61](https://github.com/opensrc0/fe-theme/compare/v4.0.60...v4.0.61) (2024-01-17)
+
+
+### Bug Fixes
+
+* **eslint and themeprepare:** changed eslint rule and themePrapare ([ed83dd5](https://github.com/opensrc0/fe-theme/commit/ed83dd568e4e73d5739757772d073f87209687e5))
+
 ## [4.0.60](https://github.com/opensrc0/fe-theme/compare/v4.0.59...v4.0.60) (2024-01-16)
 
 
