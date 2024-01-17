@@ -1,15 +1,20 @@
-const color = {
-  "primary": "#00364e",
-  "secondary": "#03567b",
-
-  "white": "#ffffff",
-  "black": "#000000",
-
-  "info": "#1976d2",
-  "success": "#43a047",
-  "warning": "#ffa000",
-  "danger": "#d32f2f",
-  "orange": "#fc6027"
+const Color = {
+  "default": {
+    "bgColor": "#ffffff",
+    "primary": "#00364e",
+    "secondary": "#03567b"
+  },
+  "dark": {
+    "bgColor": "#0a0a0a",
+    "primary": "#0a0a0a",
+    "secondary": "#1f1f1f"
+  }
 }
 
-export default color
+export default window && Color[localStorage.getItem("themeType")] ? Color[localStorage.getItem("themeType")] : Color.default
+
+// "info": "#1976d2",
+// "success": "#43a047",
+// "warning": "#ffa000",
+// "danger": "#d32f2f",
+// "orange": "#fc6027"

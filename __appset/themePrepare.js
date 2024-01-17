@@ -48,16 +48,19 @@ mkdirp(createDir).then(() => {
     let appDir
     let defaultDirData
     let componentFile
+    let exportSplit
     const replaceComponentName = component.replace("config", "").replace(".js", "")
 
     if (process.env.ENVI === "local") {
       defaultDir = path.resolve(`${__dirname}`)
-      defaultDirData = fs.readFileSync(`${defaultDir}/${component}`).toString().split("export")[0].split(/=(.*)/s)[1]
+      exportSplit = fs.readFileSync(`${defaultDir}/${component}`).toString().split("export")
+      defaultDirData = exportSplit[0].split(/=(.*)/s)[1]
       appDir = `${process.env.CURRENT_APP_DIR}/${process.env.COMPONENT_CONFIG_PATH}/fe-theme`
       componentFile = `${appDir}/${component}`
     } else {
       defaultDir = path.resolve(`${__dirname}`, "../../../node_modules/fe-theme/__appset")
-      defaultDirData = fs.readFileSync(`${defaultDir}/${component}`).toString().split("export")[0].split(/=(.*)/s)[1]
+      exportSplit = fs.readFileSync(`${defaultDir}/${component}`).toString().split("export")
+      defaultDirData = exportSplit[0].split(/=(.*)/s)[1]
       appDir = path.resolve(`${__dirname}`, `../../../${process.env.COMPONENT_CONFIG_PATH}/fe-theme`)
       componentFile = path.resolve(createDir, component)
     }
@@ -102,10 +105,10 @@ export default theme;\n`
           const userAppConfig = data.split("export")[0].split(/=(.*)/s)[1]
           componentContent = `/* eslint-disable */
 const ${replaceComponentName} = ${JSON.stringify(mergeObj(JSON.parse(defaultDirData), JSON.parse(userAppConfig)), null, "\t")}
-\nexport default ${replaceComponentName};\n`
+\nexport${exportSplit[1]}\n`
         } else {
           componentContent = `/* eslint-disable */
-const ${replaceComponentName} =${defaultDirData}export default ${replaceComponentName};\n`
+const ${replaceComponentName} =${defaultDirData}export${exportSplit[1]}\n`
         }
 
         fs.writeFile(componentFile, componentContent, (writeFileErr) => {
