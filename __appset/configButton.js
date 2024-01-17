@@ -1,15 +1,16 @@
-/* eslint-disable */
 const Button = {
-	"borderRadius": "50px",
-	"borderColor": "12px",
-	"primary": {
-		"color": "white",
-		"borderColor": "white"
-	},
-	"secondary": {
-		"color": "white",
-		"borderColor": "white"
-	}
+  "primary": {
+    "color": "white",
+    "background": "#03567b",
+    "borderColor": "white",
+    "borderRadius": "4px"
+  },
+  "secondary": {
+    "color": "white",
+    "background": "#03567b",
+    "borderColor": "white",
+    "borderRadius": "4px"
+  }
 }
 
-export default Button;
+export default Button
