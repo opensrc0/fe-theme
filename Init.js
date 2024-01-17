@@ -1,8 +1,8 @@
-import merge from 'lodash.merge';
-import defaultTheme from './__appset/universal/theme';
+import merge from "lodash.merge"
+import defaultTheme from "./__appset/theme"
 
 export default function Init(userTheme) {
-  const mergeTheme = merge(defaultTheme, userTheme);
+  const mergeTheme = merge(defaultTheme, userTheme)
 
-  return mergeTheme;
+  return mergeTheme
 }

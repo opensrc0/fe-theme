@@ -1,4 +1,3 @@
-/* eslint-disable */
 const color = {
   "primary": "#00364e",
   "secondary": "#03567b",
@@ -13,4 +12,4 @@ const color = {
   "orange": "#fc6027"
 }
 
-export default color;
+export default color

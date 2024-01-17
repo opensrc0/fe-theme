@@ -92,25 +92,40 @@ import Button from 'fe-theme/Button';
 
 Wow, the configuration is quite simple, but wait... button design is different in my application. No worry, follow step 3, 4.
 
-#### 3. Creating a fe-theme folder in your application. It contains components config file.
+#### 3. Create your own theme
 
-&nbsp;&nbsp;Create config file for all the component of fe-theme
+&nbsp;&nbsp; **a)** Create an empty folder called ```fe-theme``` in your application at any location.
+
+&nbsp;&nbsp; **b)** Create configButton.js file inside fe-theme folder
 ```js
-COMPONENT_CONFIG_PATH=./{PATH} CURRENT_APP_DIR=$(pwd) npm run theme-prepare --prefix ./node_modules/fe-theme
+const Button = {
+	"borderRadius": "50px",
+	"borderColor": "12px",
+	"primary": {
+		"color": "white",
+		"borderColor": "white"
+	},
+	"secondary": {
+		"color": "white",
+		"borderColor": "white"
+	}
+}
+
+export default Button;
 ```
+&nbsp;&nbsp; **Note** Config file name start with ```config``` keyword along with ```component Name``` like ```configButton.js```/```configInput.js```
 
-<p align="center">OR</p>
-
-&nbsp;&nbsp; Creating config file for an individual component
+&nbsp;&nbsp; **c)** Create theme.js file and include configButton.js 
 ```js
-COMPONENET_NAME={COMPONENT_NAME} COMPONENT_CONFIG_PATH=./{PATH} CURRENT_APP_DIR=$(pwd) npm run theme-prepare --prefix ./node_modules/fe-theme
+/* eslint-disable import/no-anonymous-default-export */
+import Button from '../configButton';
+
+export default {
+  Button,
+};
+
 ```
-
-&nbsp;&nbsp; **Note:** 
-
-&nbsp;&nbsp;  ```1. PATH``` is a variable i.e. where you want to place config files in your application
-
-&nbsp;&nbsp;  ```2. COMPONENT_NAME``` is a variable i.e. name of the component ```Input```, ```button```. [Find the component list](./.github/COMPONENT.md)
+Yeah, We have created config files Mannually but You can also generate config files automatically using command line [Check Commands](./.github/COMMAND.md)
 
 #### 4. Passing configuration settings to the fe-theme library using ThemeProvider
 

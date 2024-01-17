@@ -1,4 +1,3 @@
-/* eslint-disable */
 const Input = {
   "borderRadius": "4px",
   "primary": {
@@ -15,4 +14,4 @@ const Input = {
   }
 }
 
-export default Input;
+export default Input

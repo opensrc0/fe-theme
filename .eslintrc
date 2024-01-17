@@ -40,6 +40,11 @@
     "react/jsx-filename-extension": ["error", { "extensions": [".js"] }],
     "react/require-default-props": ["off"],
     "react/jsx-props-no-spreading": ["off"],
-    "no-restricted-exports": ["off"]
+    "no-restricted-exports": ["off"],
+    "comma-dangle": ["error", "never"],
+    "quotes": ["error", "double"],
+    "quote-props": ["error", "always"],
+    "semi": ["error", "never"]
   }
 }
+
