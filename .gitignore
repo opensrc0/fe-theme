@@ -8,4 +8,6 @@ __build-es
 
 **/index.js
 
+!__application/**/index.js
+
 CHANGELOG.md
