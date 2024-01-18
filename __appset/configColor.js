@@ -1,11 +1,13 @@
 const Color = {
   "default": {
     "bgColor": "#ffffff",
+    "color": "#000000",
     "primary": "#00364e",
     "secondary": "#03567b"
   },
   "dark": {
     "bgColor": "#0a0a0a",
+    "color": "#ffffff",
     "primary": "#0a0a0a",
     "secondary": "#1f1f1f"
   }

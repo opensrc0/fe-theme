@@ -95,7 +95,7 @@ export default theme;\n`
     }
 
     fs.readFile(`${appDir}/${component}`, "utf8", (err, data) => {
-      if (component === "theme.js" || component === "configPXL.js") {
+      if (component === "theme.js" || component === "configPXL.js" || component === "normalise.js") {
         console.log(componentFile, defaultDir, component)
         fs.writeFile(componentFile, fs.readFileSync(`${defaultDir}/${component}`).toString(), () => {})
       } else {
