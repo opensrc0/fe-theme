@@ -74,7 +74,7 @@ const StyledButton = styled(
   width: ${(props) => props.fluid ? "100%" : ""};
   border-width: 1px;
   border-style: solid;
-  border-color: ${(props) => props.theme.Button[props.variant].borderColor};
+  border-color: ${(props) => props.theme.Universal.Color[props.variant]};
   border-radius: ${(props) => props.theme.Button.borderRadius};
   pointer-events: ${styles.pointerEvents};
   opacity: ${styles.opacity};
