@@ -1,3 +1,10 @@
+## [4.0.62](https://github.com/opensrc0/fe-theme/compare/v4.0.61...v4.0.62) (2024-01-30)
+
+
+### Bug Fixes
+
+* upgrade styled-components from 6.1.6 to 6.1.8 ([f449e45](https://github.com/opensrc0/fe-theme/commit/f449e45afc9df4ee01fb2304ed1468fbca901aef))
+
 ## [4.0.61](https://github.com/opensrc0/fe-theme/compare/v4.0.60...v4.0.61) (2024-01-17)
 
 
