@@ -8,4 +8,8 @@ __build-es
 
 **/index.js
 
+!__application/**/index.js
+
 CHANGELOG.md
+
+themePrepare_bck.js
