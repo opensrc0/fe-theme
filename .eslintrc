@@ -44,7 +44,8 @@
     "comma-dangle": ["error", "never"],
     "quotes": ["error", "double"],
     "quote-props": ["error", "always"],
-    "semi": ["error", "never"]
+    "semi": ["error", "never"],
+    "react/jsx-fragments": ["off"]
   }
 }
 

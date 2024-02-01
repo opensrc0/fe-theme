@@ -1,29 +1,28 @@
-const Color = {
-  "default": {
-    "bgColor": "#ffffff",
-    "color": "#000000",
-
+const { defaultColor, darkColor } = {
+  "defaultColor": {
     "primary": "#00364e",
-    "secondary": "#03567b"
+    "secondary": "#03567b",
+    "bgColor": "#fff",
+    "color": "#111"
   },
-  "dark": {
-    "bgColor": "#111111",
-    "color": "#ffffff",
-
-    "primary": "#111111",
-    "secondary": "#4d4d4d"
+  "darkColor": {
+    "primary": "#111",
+    "secondary": "#181818",
+    "bgColor": "#1f1f1f",
+    "color": "#fff"
   }
 }
 
-export default window && Color[localStorage.getItem("themeType")] ? Color[localStorage.getItem("themeType")] : Color.default
+const MixedColor = {
+  "themeColor": defaultColor.secondary,
 
-// "info": "#1976d2",
-// "success": "#43a047",
-// "warning": "#ffa000",
-// "danger": "#d32f2f",
-// "orange": "#fc6027"
+  "black": darkColor.primary,
+  "white": "#fff",
 
-// #111
-// #1e1e1e
-// #3c3c3c
-// #4d4d4d
+  "info": "#1976d2",
+  "success": "#43a047",
+  "warning": "#ffa000",
+  "danger": "#d32f2f"
+}
+
+export default { ...(window && localStorage.getItem("themeType") ? darkColor : defaultColor), ...MixedColor }
