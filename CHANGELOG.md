@@ -1,3 +1,15 @@
+# [4.1.0](https://github.com/opensrc0/fe-theme/compare/v4.0.62...v4.1.0) (2024-02-01)
+
+
+### Bug Fixes
+
+* **normalise.css:** added normalise.css ([f10dc35](https://github.com/opensrc0/fe-theme/commit/f10dc351eca5ef77e77934614a230841986b0d11))
+
+
+### Features
+
+* **configColor:** added dark color ([5f2515b](https://github.com/opensrc0/fe-theme/commit/5f2515b4790a63cd61c315788becea10bcd6b303))
+
 ## [4.0.62](https://github.com/opensrc0/fe-theme/compare/v4.0.61...v4.0.62) (2024-01-30)
 
 
