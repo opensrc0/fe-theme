@@ -1,35 +1,16 @@
-export const MONTHS_NAME = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
-  "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"
+export const color = [
+  { "name": "FgRed", "value": "\x1b[31m%s\x1b[0m" },
+  { "name": "FgGreen", "value": "\x1b[32m%s\x1b[0m" },
+  { "name": "FgYellow", "value": "\x1b[33m%s\x1b[0m" },
+  { "name": "FgMagenta", "value": "\x1b[35m%s\x1b[0m" },
+  { "name": "FgCyan", "value": "\x1b[36m%s\x1b[0m" }
 ]
 
-export const timeMap = {
-  "1": "13",
-  "2": "14",
-  "3": "15",
-  "4": "16",
-  "5": "17",
-  "6": "18",
-  "7": "19",
-  "8": "20",
-  "9": "21",
-  "10": "22",
-  "11": "23",
-  "12": "24"
-}
-
-// YEAR MAPPING
-
-export const yearMapping = {
-  "1": "Jan",
-  "2": "Feb",
-  "3": "Mar",
-  "4": "Apr",
-  "5": "May",
-  "6": "Jun",
-  "7": "Jul",
-  "8": "Aug",
-  "9": "Sept",
-  "10": "Oct",
-  "11": "Nov",
-  "12": "Dec"
-}
+export const ignoreFiles = [
+  ".DS_Store",
+  "scripts",
+  "utils",
+  "themePrepare.js",
+  "universal",
+  "WIP-"
+]
