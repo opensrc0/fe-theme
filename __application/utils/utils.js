@@ -12,9 +12,9 @@ export const getDirPath = (env, CURRENT_APP_DIR, COMPONENT_CONFIG_PATH) => {
   let createDir;
 
   if (env === 'local') {
-    createDir = `${CURRENT_APP_DIR}/${COMPONENT_CONFIG_PATH}/fe-theme`;
+    createDir = `${CURRENT_APP_DIR}/${COMPONENT_CONFIG_PATH}/fe-theme-config`;
   } else {
-    createDir = path.resolve(`${__dirname}`, `../../../${process.env.COMPONENT_CONFIG_PATH}/fe-theme`);
+    createDir = path.resolve(`${__dirname}`, `../../../${process.env.COMPONENT_CONFIG_PATH}/fe-theme-config`);
   }
 
   return createDir;

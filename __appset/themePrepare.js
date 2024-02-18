@@ -18,26 +18,19 @@ const { CURRENT_APP_DIR } = process.env; // My project Location
 const { COMPONENT_CONFIG_PATH } = process.env; // Where to place in My project Location
 const { COMPONENT_NAME } = process.env;
 
-let appDir;
-if (ENVIRONMENT === 'local') {
-  appDir = `${CURRENT_APP_DIR}/${COMPONENT_CONFIG_PATH}fe-theme`;
-} else {
-  appDir = path.resolve(`${__dirname}`, `../../../${process.env.COMPONENT_CONFIG_PATH}fe-theme`);
-}
+const dirPath = getDirPath(ENVIRONMENT, CURRENT_APP_DIR, COMPONENT_CONFIG_PATH);
+const components = getComponents(COMPONENT_NAME);
 
-const manageThemeFile = async (component, dirPath) => {
-  const themeFile = process.env.ENVI === 'local' ? `${appDir}/theme.js` : path.resolve(dirPath, 'theme.js');
+const manageThemeFile = async (component) => {
+  const themeFile = `${path.resolve(dirPath)}/theme.js`;
 
   try {
-    const data = await fs.promises.readFile(`${appDir}/theme.js`, 'utf8');
+    const data = await fs.promises.readFile(`${dirPath}/theme.js`, 'utf8');
     addComponentInExistingThemeFile(component, themeFile, data);
   } catch (err) {
     await addComponentInNewThemeFile(component, themeFile);
   }
 };
-
-const dirPath = getDirPath(ENVIRONMENT, CURRENT_APP_DIR, COMPONENT_CONFIG_PATH);
-const components = getComponents(COMPONENT_NAME);
 
 mkdirp(dirPath).then(async () => {
   for (const component of components) {
@@ -48,9 +41,9 @@ mkdirp(dirPath).then(async () => {
 
   components.map(async (component, index) => {
     const fileData = fs.readFileSync(`${path.resolve('__appset')}/${component}`).toString();
-    const fileName = ENVIRONMENT === 'local' ? `${appDir}/${component}` : path.resolve(dirPath, component);
+    const fileName = `${path.resolve(dirPath)}/${component}`;
 
-    if (await isFileExist(appDir, component)) {
+    if (await isFileExist(dirPath, component)) {
       fileGeneratedLog(index, fileName, true);
       setUpCompletedLog(index, components.length);
       return false;
