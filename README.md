@@ -72,12 +72,12 @@ $ bun add fe-theme
 
 ```js
 import { ThemeProvider } from 'styled-components'; // import ThemeProvider component
-import Init from 'fe-theme/Init'; // import Init function 
+import init from 'fe-theme/init'; // import Init function 
 import App from './App';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   // Wrap your application with ThemeProvider
-  <ThemeProvider theme={Init()}>
+  <ThemeProvider theme={init()}>
     <App />
   </ThemeProvider>
 );
@@ -94,9 +94,10 @@ Wow, the configuration is quite simple, but wait... button design is different i
 
 #### 3. Create your own theme
 
-&nbsp;&nbsp; **a)** Create an empty folder called ```fe-theme``` in your application at any location.
+&nbsp;&nbsp; **a)** Create an empty folder called ```fe-theme-config``` in your application at any location.
 
-&nbsp;&nbsp; **b)** Create configButton.js file inside fe-theme folder
+&nbsp;&nbsp; **c)** Create configButton.js file inside fe-theme-config folder (To configure Button Component)
+
 ```js
 const Button = {
 	"borderRadius": "50px",
@@ -117,7 +118,6 @@ export default Button;
 
 &nbsp;&nbsp; **c)** Create theme.js file and include configButton.js 
 ```js
-/* eslint-disable import/no-anonymous-default-export */
 import Button from '../configButton';
 
 export default {
@@ -127,17 +127,17 @@ export default {
 ```
 Yeah, We have created config files Mannually but You can also generate config files automatically using command line [Check Commands](./.github/COMMAND.md)
 
-#### 4. Passing configuration settings to the fe-theme library using ThemeProvider
+#### 4. Pass the newly created theme file in init function
 
 ```js
 import { ThemeProvider } from 'styled-components';
-import Init from 'fe-theme/Init';
-import theme from '{PATH}/fe-theme/universal/theme';  // Include your theme to fe-theme
+import init from 'fe-theme/init';
+import theme from '{PATH}/fe-theme-config/theme';  // Include your theme to fe-theme
 import App from './App';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   // Inside the Init function pass theme
-  <ThemeProvider theme={Init(theme)}>
+  <ThemeProvider theme={init(theme)}>
     <App />
   </ThemeProvider>
 );
@@ -149,7 +149,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
 ```
 Your Application Folder(Root Directory)
-  └──fe-theme                       
+  └──fe-theme-config                       
     ├──configButton           
     ├──configInput          
     └──configChip
