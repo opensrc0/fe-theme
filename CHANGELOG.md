@@ -1,3 +1,10 @@
+## [4.1.5](https://github.com/opensrc0/fe-theme/compare/v4.1.4...v4.1.5) (2024-02-18)
+
+
+### Bug Fixes
+
+* **fix path:** path fixed ([1ac9491](https://github.com/opensrc0/fe-theme/commit/1ac949185359db3676aea790b601e79a66d6c925))
+
 ## [4.1.4](https://github.com/opensrc0/fe-theme/compare/v4.1.3...v4.1.4) (2024-02-18)
 
 
