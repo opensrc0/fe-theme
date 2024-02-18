@@ -99,13 +99,13 @@ import Button from 'fe-theme/Button';
 
 #### 1. Create your own theme
 
-==> You can generate config files for all the component automatically using command line [Check Commands](./.github/COMMAND.md).
+==> To Generate config files for components **Automatically** using command line [Check Commands](./.github/COMMAND.md).
 
-==> You can also generate it Manually, follow steps given below.
+==> To create config files for components **Manually**, follow steps given below.
 
 &nbsp;&nbsp; **a)** Create an empty folder called ```fe-theme-config``` in your application at any location.
 
-&nbsp;&nbsp; **c)** Create configButton.js file inside fe-theme-config folder (To configure Button Component)
+&nbsp;&nbsp; **c)** Create ```configButton.js``` file inside ```fe-theme-config folder``` (To configure Button Component)
 
 ```js
 const Button = {
