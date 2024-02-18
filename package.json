@@ -12,7 +12,7 @@
     "build-es": "babel __application/component -d __build-es --ignore *.test.js",
     "prebuild-prepare": "echo \"\\x1b[97m\\x1b[44m 2. Started: Direct import of individual package preparation started. \\x1b[0m\"",
     "build-prepare": "node ./__application/scripts/buildPrepare.js",
-    "theme-prepare": "node ./__appset/themePrepare.js",
+    "theme-prepare": "node -r esm ./__appset/themePrepare.js",
     "precommit": "lint-staged",
     "commit": "git-cz",
     "lint": "run-p lint:*",
@@ -123,7 +123,7 @@
     "Flex/",
     "Input/",
     "theme/",
-    "Init.js"
+    "init.js"
   ],
   "eslintConfig": {
     "extends": [
@@ -151,6 +151,7 @@
   "dependencies": {
     "@fortawesome/react-fontawesome": "^0.2.0",
     "classnames": "^2.5.1",
+    "esm": "^3.2.25",
     "lodash.merge": "^4.6.2",
     "mkdirp": "^3.0.1",
     "stylis": "^4.3.1"

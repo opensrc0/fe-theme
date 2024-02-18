@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from 'styled-components';
 
 const Normalise = createGlobalStyle`
   html {
@@ -6,11 +6,11 @@ const Normalise = createGlobalStyle`
   }
 
   body {
-    background: ${(props) => props.theme.Universal.Color.bgColor};
-    color: ${(props) => props.theme.Universal.Color.color};
-    font-size: ${(props) => props.theme.Universal.FontSize.s};
-    font-weight: ${(props) => props.theme.Universal.FontWeight.normal};
-    font-family: ${(props) => props.theme.Universal.FontFamily.roboto}, system-ui, sans-serif;
+    background: ${(props) => props.theme.Color.bgColor};
+    color: ${(props) => props.theme.Color.color};
+    font-size: ${(props) => props.theme.FontSize.s};
+    font-weight: ${(props) => props.theme.FontWeight.normal};
+    font-family: ${(props) => props.theme.FontFamily.roboto}, system-ui, sans-serif;
     margin: 0;
   }
 
@@ -20,6 +20,6 @@ const Normalise = createGlobalStyle`
     line-height: 1.2;
     box-sizing: inherit;
   }
-`
+`;
 
-export default Normalise
+export default Normalise;

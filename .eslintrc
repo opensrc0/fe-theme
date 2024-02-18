@@ -16,6 +16,9 @@
       }
     }
   },
+  "globals": {
+    "globalThis": true
+  },
   "parserOptions": {
     "ecmaVersion":"latest"
   },
@@ -41,10 +44,10 @@
     "react/require-default-props": ["off"],
     "react/jsx-props-no-spreading": ["off"],
     "no-restricted-exports": ["off"],
-    "comma-dangle": ["error", "never"],
-    "quotes": ["error", "double"],
-    "quote-props": ["error", "always"],
-    "semi": ["error", "never"],
+    // "comma-dangle": ["error", "never"],
+    // "quotes": ["error", "double"],
+    // "quote-props": ["error", "always"],
+    // "semi": ["error", "never"],
     "react/jsx-fragments": ["off"]
   }
 }
