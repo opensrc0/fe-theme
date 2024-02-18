@@ -1,3 +1,11 @@
+## [4.1.2](https://github.com/opensrc0/fe-theme/compare/v4.1.1...v4.1.2) (2024-02-18)
+
+
+### Bug Fixes
+
+* **change init name:** changed init file name ([ad6cf95](https://github.com/opensrc0/fe-theme/commit/ad6cf950e1b25ef80c34e73cf38c186cdf3eb080))
+* **readme.md:** changed readme.md ([f97d84f](https://github.com/opensrc0/fe-theme/commit/f97d84faad7619c88e117293974f20fdef5e35a9))
+
 ## [4.1.1](https://github.com/opensrc0/fe-theme/compare/v4.1.0...v4.1.1) (2024-02-18)
 
 
