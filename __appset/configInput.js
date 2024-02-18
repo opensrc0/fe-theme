@@ -1,17 +1,17 @@
 const Input = {
-  "borderRadius": "4px",
-  "primary": {
-    "borderColor": "white"
+  borderRadius: '4px',
+  primary: {
+    borderColor: 'white',
   },
-  "secondary": {
-    "borderColor": "white"
+  secondary: {
+    borderColor: 'white',
   },
-  "tertiary": {
-    "borderColor": "white"
+  tertiary: {
+    borderColor: 'white',
   },
-  "quaternary": {
-    "borderColor": "white"
-  }
-}
+  quaternary: {
+    borderColor: 'white',
+  },
+};
 
-export default Input
+export default Input;

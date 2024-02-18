@@ -34,6 +34,7 @@ FE-Theme is a styled-component based comprehensive library of accessible, reusab
 1. 🚀 [Features](#features)
 2. 📦 [Installation](#installation)
 3. 💻 [Usage](#usage)
+4. ⚙️  [Customization](#customization)
 4. 📚 [Online Editor Templates](#online-editor-templates)
 5. 📝 [Contributing](#contributing)
 6. ✨ [Contributors](#contributors)
@@ -91,9 +92,16 @@ import Button from 'fe-theme/Button';
 ```
 
 &nbsp;&nbsp;Wow, the configuration is quite simple, but wait... button design is different in your application. 
-&nbsp;&nbsp;No worry, follow step 3, 4.
+&nbsp;&nbsp;No worry, Checkout Customization.
 
-#### 3. Create your own theme
+
+## Customization
+
+#### 1. Create your own theme
+
+==> You can generate config files for all the component automatically using command line [Check Commands](./.github/COMMAND.md).
+
+==> You can also generate it Manually, follow steps given below.
 
 &nbsp;&nbsp; **a)** Create an empty folder called ```fe-theme-config``` in your application at any location.
 
@@ -134,9 +142,8 @@ export default {
 };
 
 ```
-Yeah, We have created config files Mannually but You can also generate config files automatically using command line [Check Commands](./.github/COMMAND.md)
 
-#### 4. Pass the newly created theme file in init function
+#### 2. Pass the newly created theme file in init function
 
 ```js
 import { ThemeProvider } from 'styled-components';
