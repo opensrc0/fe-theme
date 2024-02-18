@@ -1,3 +1,10 @@
+## [4.1.4](https://github.com/opensrc0/fe-theme/compare/v4.1.3...v4.1.4) (2024-02-18)
+
+
+### Bug Fixes
+
+* **utils:** added utils folder ([5071424](https://github.com/opensrc0/fe-theme/commit/5071424638cd0440c378a763490dea194703e31b))
+
 ## [4.1.3](https://github.com/opensrc0/fe-theme/compare/v4.1.2...v4.1.3) (2024-02-18)
 
 
