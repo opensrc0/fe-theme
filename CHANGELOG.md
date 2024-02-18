@@ -1,3 +1,11 @@
+## [4.1.3](https://github.com/opensrc0/fe-theme/compare/v4.1.2...v4.1.3) (2024-02-18)
+
+
+### Bug Fixes
+
+* **customization in readme.md:** added Customization section in readme.md ([fe6a249](https://github.com/opensrc0/fe-theme/commit/fe6a2493849d9f08df9b3a4dd8ba3d958170e1f6))
+* readme.md added Customization ([56d0bf0](https://github.com/opensrc0/fe-theme/commit/56d0bf0f6299c02b5d0f9443a6bc46e32a234a01))
+
 ## [4.1.2](https://github.com/opensrc0/fe-theme/compare/v4.1.1...v4.1.2) (2024-02-18)
 
 
