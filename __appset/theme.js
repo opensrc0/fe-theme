@@ -4,18 +4,15 @@ import FontSize from './configFontSize';
 import FontFamily from './configFontFamily';
 import FontWeight from './configFontWeight';
 
-import Button from '../configButton';
-import Input from '../configInput';
+import Button from './configButton';
+import Input from './configInput';
 
 export default {
-  Universal: {
-    PXL,
-    Color,
-    FontSize,
-    FontFamily,
-    FontWeight,
-  },
+  PXL,
+  Color,
+  FontSize,
+  FontFamily,
+  FontWeight,
   Button,
   Input,
-
 };

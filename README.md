@@ -1,4 +1,4 @@
-<img src="logo.svg" alt="FE-Theme Logo" width="100%" style="width: 100%;">
+<img src="https://github.com/opensrc0/fe-theme/blob/develop/logo.svg" alt="FE-Theme Logo" width="100%" style="width: 100%;">
 <h2 align="center">A React UI library using styled-component to build consistent, responsive, theme able UI 💪 </h2>
 <br />
 <p align="center">
@@ -50,61 +50,128 @@ FE-Theme is a styled-component based comprehensive library of accessible, reusab
 - **Dark Mode UI:** FE-Theme support dark mode compatibility.
   
 ## Installation
+Install `fe-theme` package using any package manager
+  
+```sh
+# with Yarn
+$ yarn add fe-theme
+    
+# with npm
+$ npm i fe-theme --save
 
-    npm install fe-theme --save
+# with pnpm
+$ pnpm add fe-theme
+
+# with Bun
+$ bun add fe-theme
+```
 
 ## Usage
 
-#### 1. Creating a fe-theme folder in the root directory of you application. It contains configuration files of fe-theme component like Button, Input etc.
-
-    npm run theme-prepare --prefix ./node_modules/fe-theme
-
-#### 2. Passing universal configuration like color properties, font family properties, to the fe-theme library using ThemeProvider (For internal usage only but required)
+#### 1. Use fe-theme in your application using themeProvider
 
 ```js
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { ThemeProvider } from 'styled-components';
-import theme from '{root-location-of-your-project}/fe-theme/universal/theme'; // root-location-of-your-project is dynamic variable
+import { ThemeProvider } from 'styled-components'; // import ThemeProvider component
+import init from 'fe-theme/init'; // import Init function 
 import App from './App';
 
-ReactDOM.hydrate(
-  <ThemeProvider theme={theme}>
+ReactDOM.createRoot(document.getElementById('root')).render(
+  // Wrap your application with ThemeProvider
+  <ThemeProvider theme={init()}>
     <App />
-  </ThemeProvider>,
-  document.getElementById('root'),
+  </ThemeProvider>
 );
 ```
 
-#### 3. Setup is completed, Now import UI component in your application like button
+#### 2. You are good to go and import fe-theme component in your application
 ```js
 import Button from 'fe-theme/Button';
 
 <Button />
 ```
 
-Hurrah...!!! Button is created, but button theme does not match with the your application. No worries. You can change default properties of button component
-  
+Wow, the configuration is quite simple, but wait... button design is different in my application. No worry, follow step 3, 4.
+
+#### 3. Create your own theme
+
+&nbsp;&nbsp; **a)** Create an empty folder called ```fe-theme-config``` in your application at any location.
+
+&nbsp;&nbsp; **c)** Create configButton.js file inside fe-theme-config folder (To configure Button Component)
+
+```js
+const Button = {
+	"borderRadius": "50px",
+	"borderColor": "12px",
+	"primary": {
+		"color": "white",
+		"borderColor": "white"
+	},
+	"secondary": {
+		"color": "white",
+		"borderColor": "white"
+	}
+}
+
+export default Button;
+```
+&nbsp;&nbsp; **Note** Config file name start with ```config``` keyword along with ```component Name``` like ```configButton.js```/```configInput.js```
+
+&nbsp;&nbsp; **c)** Create theme.js file and include configButton.js 
+```js
+import Button from '../configButton';
+
+export default {
+  Button,
+};
+
+```
+Yeah, We have created config files Mannually but You can also generate config files automatically using command line [Check Commands](./.github/COMMAND.md)
+
+#### 4. Pass the newly created theme file in init function
+
+```js
+import { ThemeProvider } from 'styled-components';
+import init from 'fe-theme/init';
+import theme from '{PATH}/fe-theme-config/theme';  // Include your theme to fe-theme
+import App from './App';
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  // Inside the Init function pass theme
+  <ThemeProvider theme={init(theme)}>
+    <App />
+  </ThemeProvider>
+);
+```
+
+**Note:** ```PATH``` is a variable i.e. location of config files in your application
+
+**Hurrah...!!!** Now you can change button(any compponent) property according to your application
 
 ```
 Your Application Folder(Root Directory)
-  └──fe-theme                       
+  └──fe-theme-config                       
     ├──configButton           
     ├──configInput          
-    └──configChip    
-     
+    └──configChip
 ```
-Play around the property of button according to your project.
+Play around the property of component according to your project.
 
 ## Online Editor Templates
-WIP
+#### 1. CodeSandbox
+- JavaScript Starter: https://codesandbox.io/p/devbox/fe-theme-js-6q2vcg
+<!-- - TypeScript Starter: WIP -->
+<!-- - NextJS TypeScript Starter: WIP -->
+
+#### 2. Stackblitz
+- JavaScript Starter: https://stackblitz.com/edit/fe-theme-js-b6mri2
+<!-- - TypeScript Starter: WIP -->
+<!-- - NextJS TypeScript Starter: WIP -->
+
 
 ## Contributing
 
 Feel like contributing? Most welcome! 
-Follow this quick [setup and guide lines](./.github/CONTRIBUTING.md) to get fe-theme working on your local machine and contribute.
-
-
+[Setup locally](./.github/SETUP.md) to get fe-theme working on your local machine and [guide lines](./.github/CONTRIBUTING.md) to contribute in fe-theme.
 
 ## Contributors
 
