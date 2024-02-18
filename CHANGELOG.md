@@ -1,3 +1,14 @@
+## [4.1.1](https://github.com/opensrc0/fe-theme/compare/v4.1.0...v4.1.1) (2024-02-18)
+
+
+### Bug Fixes
+
+* **button:** given support of default theme, user custom theme, and modify theme with props ([f904557](https://github.com/opensrc0/fe-theme/commit/f90455758d2f341d06a3ea4e636d722133bf0a07))
+* config ([b7349b6](https://github.com/opensrc0/fe-theme/commit/b7349b621a019db9f27d93d5c5f119cc33a18db4))
+* **conflict resolved:** added fe-theme-config instead of fe-theme ([0479956](https://github.com/opensrc0/fe-theme/commit/047995653bd914a13ac78d04804ea19d32a73551))
+* **system update:** update themePrepare file ([d285b48](https://github.com/opensrc0/fe-theme/commit/d285b48a543723db8a8ed3f0504e545d0ac92299))
+* **themeprepare.js:** changed config folder name ([80c2604](https://github.com/opensrc0/fe-theme/commit/80c26047ed551d2d56ec798a59f53876562871d3))
+
 # [4.1.0](https://github.com/opensrc0/fe-theme/compare/v4.0.62...v4.1.0) (2024-02-01)
 
 
