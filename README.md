@@ -90,7 +90,8 @@ import Button from 'fe-theme/Button';
 <Button />
 ```
 
-Wow, the configuration is quite simple, but wait... button design is different in my application. No worry, follow step 3, 4.
+&nbsp;&nbsp;Wow, the configuration is quite simple, but wait... button design is different in your application. 
+&nbsp;&nbsp;No worry, follow step 3, 4.
 
 #### 3. Create your own theme
 
@@ -100,21 +101,29 @@ Wow, the configuration is quite simple, but wait... button design is different i
 
 ```js
 const Button = {
-	"borderRadius": "50px",
-	"borderColor": "12px",
-	"primary": {
-		"color": "white",
-		"borderColor": "white"
-	},
-	"secondary": {
-		"color": "white",
-		"borderColor": "white"
-	}
-}
+  primary: {
+    color: configColor.white,
+    background: configColor.themeColor,
+    borderColor: configColor.themeColor,
+    borderRadius: '4px',
+  },
+  outlined: {
+    color: configColor.themeColor,
+    bgColor: configColor.white,
+    borderColor: configColor.themeColor,
+    borderRadius: '14px',
+  },
+  size: {
+    s: { fontSize: 'xs', padding: [1, 2] },
+    m: { fontSize: 's', padding: [1.5, 2] },
+    l: {  fontSize: 's',  padding: [2, 2.5] },
+  },
+  extraProps: {},
+};
 
 export default Button;
 ```
-&nbsp;&nbsp; **Note** Config file name start with ```config``` keyword along with ```component Name``` like ```configButton.js```/```configInput.js```
+&nbsp;&nbsp; **Note** Config file name start with ```config``` keyword along with ```component Name``` like ```configButton.js``` or ```configInput.js```
 
 &nbsp;&nbsp; **c)** Create theme.js file and include configButton.js 
 ```js
