@@ -6,6 +6,7 @@ Clone the repository and run the following commands from the root directory
 #### 1. Go to the fe-theme repo location in your terminal and do 
 ```
 npm install
+npm run build
 npm start
 ```
 
