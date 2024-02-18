@@ -1,3 +1,130 @@
+# [4.1.0](https://github.com/opensrc0/fe-theme/compare/v4.0.62...v4.1.0) (2024-02-01)
+
+
+### Bug Fixes
+
+* **normalise.css:** added normalise.css ([f10dc35](https://github.com/opensrc0/fe-theme/commit/f10dc351eca5ef77e77934614a230841986b0d11))
+
+
+### Features
+
+* **configColor:** added dark color ([5f2515b](https://github.com/opensrc0/fe-theme/commit/5f2515b4790a63cd61c315788becea10bcd6b303))
+
+## [4.0.62](https://github.com/opensrc0/fe-theme/compare/v4.0.61...v4.0.62) (2024-01-30)
+
+
+### Bug Fixes
+
+* upgrade styled-components from 6.1.6 to 6.1.8 ([f449e45](https://github.com/opensrc0/fe-theme/commit/f449e45afc9df4ee01fb2304ed1468fbca901aef))
+
+## [4.0.61](https://github.com/opensrc0/fe-theme/compare/v4.0.60...v4.0.61) (2024-01-17)
+
+
+### Bug Fixes
+
+* **eslint and themeprepare:** changed eslint rule and themePrapare ([ed83dd5](https://github.com/opensrc0/fe-theme/commit/ed83dd568e4e73d5739757772d073f87209687e5))
+
+## [4.0.60](https://github.com/opensrc0/fe-theme/compare/v4.0.59...v4.0.60) (2024-01-16)
+
+
+### Bug Fixes
+
+* **added component list:** added component list ([32fbf8f](https://github.com/opensrc0/fe-theme/commit/32fbf8f7345b56f6ba713171eb681745675c6c80))
+
+## [4.0.59](https://github.com/opensrc0/fe-theme/compare/v4.0.58...v4.0.59) (2024-01-16)
+
+
+### Bug Fixes
+
+* **package.json:** added init file in package.json ([d7ae553](https://github.com/opensrc0/fe-theme/commit/d7ae5533e7ac2f2b9d2ee3bb0151402e194ed40a))
+
+## [4.0.58](https://github.com/opensrc0/fe-theme/compare/v4.0.57...v4.0.58) (2024-01-16)
+
+
+### Bug Fixes
+
+* **preparetheme.js:** changed inclusion of theme component ([35da05b](https://github.com/opensrc0/fe-theme/commit/35da05bf938ca94b48b51089821db101ffee0f7f))
+* **readme.md:** changed readme.md ([06205a6](https://github.com/opensrc0/fe-theme/commit/06205a697d221395de701c34c8f3dbc2f9e3b1e9))
+
+## [4.0.57](https://github.com/opensrc0/fe-theme/compare/v4.0.56...v4.0.57) (2024-01-08)
+
+
+### Bug Fixes
+
+* **button:** changes in button ([6ac2d5f](https://github.com/opensrc0/fe-theme/commit/6ac2d5f11a37bfaf74aadcdf90bca61fa5897acd))
+* **setup>md:** added local setup steps in setup.md ([17f5b84](https://github.com/opensrc0/fe-theme/commit/17f5b84d619bef84e5975fbc2be8b812d448fed8))
+
+## [4.0.56](https://github.com/opensrc0/fe-theme/compare/v4.0.55...v4.0.56) (2024-01-08)
+
+
+### Bug Fixes
+
+* **package-lock.json:** added dependency of package-lock.json ([c3cae33](https://github.com/opensrc0/fe-theme/commit/c3cae3334dfa0cc42ed4796f75a6c374e99a12ef))
+* package.json ([a9633ed](https://github.com/opensrc0/fe-theme/commit/a9633ed19ca8bfe256fa9b6b3e31b027d4011679))
+* package.json ([a2e49ce](https://github.com/opensrc0/fe-theme/commit/a2e49ce1b1324799fe7f9087feb189dde44abd55))
+
+## [4.0.55](https://github.com/opensrc0/fe-theme/compare/v4.0.54...v4.0.55) (2024-01-07)
+
+
+### Bug Fixes
+
+* eslint fix ([21aea29](https://github.com/opensrc0/fe-theme/commit/21aea29566afef15b165d72eb7f0311d62e3ecdd))
+* readme.md ([ebe0034](https://github.com/opensrc0/fe-theme/commit/ebe0034ad6c2a76f8c777e3b08bed62844159440))
+* readme.md ([2ceb176](https://github.com/opensrc0/fe-theme/commit/2ceb176b03cf549407a3bc684afd5e13ca32f653))
+* readme.md ([5a7c223](https://github.com/opensrc0/fe-theme/commit/5a7c223867b2f4c884dc965a381c68e37f630fbd))
+* readme.md ([88100b8](https://github.com/opensrc0/fe-theme/commit/88100b8536d6fd501777fd5a5d50d3c0c3c04787))
+
+## [4.0.54](https://github.com/opensrc0/fe-theme/compare/v4.0.53...v4.0.54) (2024-01-06)
+
+
+### Bug Fixes
+
+* eslint fix ([ff2927f](https://github.com/opensrc0/fe-theme/commit/ff2927fbe5b2671eb0e604285f7f8a45c5814bbc))
+* local set is ready for development ([77bc419](https://github.com/opensrc0/fe-theme/commit/77bc4192f3c57bf4551eb741e1db2ba67f7818e3))
+* readme.md ([2c8c98b](https://github.com/opensrc0/fe-theme/commit/2c8c98b87bbdbe7f84723c5302c451819d2ed3c2))
+* readme.md ([4eee089](https://github.com/opensrc0/fe-theme/commit/4eee089d99b186089c23f856267dbde9f374c6ac))
+* readme.md ([bd1b370](https://github.com/opensrc0/fe-theme/commit/bd1b370e49bc9d1aca24f869d70cfb3d513d8c04))
+* **readme.md and setup.md:** added command in readme.md and setup.md ([910bd04](https://github.com/opensrc0/fe-theme/commit/910bd045a8b269c0c2143fd44867d771294a039c))
+* **readme.md:** changes in reDME.MD ([b5326fc](https://github.com/opensrc0/fe-theme/commit/b5326fce019aaade52c10a467b467b5ab870ce55))
+* **setup.md:** local setup ([91dd9ba](https://github.com/opensrc0/fe-theme/commit/91dd9ba9546d89b3652884a3da0f485ec3f1641c))
+* **setup.md:** now we can add local setup of fe-theme in any project ([be63a02](https://github.com/opensrc0/fe-theme/commit/be63a02c4f1c8308e7aa60300993003fde686e23))
+
+## [4.0.53](https://github.com/opensrc0/fe-theme/compare/v4.0.52...v4.0.53) (2024-01-06)
+
+
+### Bug Fixes
+
+* **configfontsize:** change the json format ([12de62a](https://github.com/opensrc0/fe-theme/commit/12de62a544cb93381b627e7e63eb59f8db12ba59))
+
+## [4.0.52](https://github.com/opensrc0/fe-theme/compare/v4.0.51...v4.0.52) (2024-01-06)
+
+
+### Bug Fixes
+
+* **themeprepare:** changes in themePrepare ([600d3b2](https://github.com/opensrc0/fe-theme/commit/600d3b2f492e3b99b86be39093e3719e39fcc14c))
+
+## [4.0.51](https://github.com/opensrc0/fe-theme/compare/v4.0.50...v4.0.51) (2024-01-06)
+
+
+### Bug Fixes
+
+* **json config:** change all file of config json ([266d8d7](https://github.com/opensrc0/fe-theme/commit/266d8d723b3b078e02435b6126cc072934bff56c))
+
+## [4.0.50](https://github.com/opensrc0/fe-theme/compare/v4.0.49...v4.0.50) (2024-01-06)
+
+
+### Bug Fixes
+
+* **configinput:** change json in configInput ([1feafd6](https://github.com/opensrc0/fe-theme/commit/1feafd634bfdb3056f2402f1f9c6cebca9a8d5a5))
+
+## [4.0.49](https://github.com/opensrc0/fe-theme/compare/v4.0.48...v4.0.49) (2024-01-06)
+
+
+### Bug Fixes
+
+* **config change:** change in config file ([4ab8f2d](https://github.com/opensrc0/fe-theme/commit/4ab8f2d89f0869b9e0aa89cd932978fe0eb5a1a1))
+* **eslintignore:** eslintignore ([f0f9877](https://github.com/opensrc0/fe-theme/commit/f0f9877b36f036843995c5c13a22dd1ea2034aee))
+
 ## [4.0.48](https://github.com/opensrc0/fe-theme/compare/v4.0.47...v4.0.48) (2023-12-27)
 
 
