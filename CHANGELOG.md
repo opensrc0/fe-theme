@@ -1,3 +1,12 @@
+## [4.1.7](https://github.com/opensrc0/fe-theme/compare/v4.1.6...v4.1.7) (2024-07-18)
+
+
+### Bug Fixes
+
+* upgrade multiple dependencies with Snyk ([834cff6](https://github.com/opensrc0/fe-theme/commit/834cff6a2739149aa3ab9b131cb3f5f95303c609))
+* upgrade styled-components from 6.1.8 to 6.1.9 ([2a1d8d5](https://github.com/opensrc0/fe-theme/commit/2a1d8d5109e1ee26cb2d0bb6a76267fdc2df0915))
+* upgrade stylis from 4.3.1 to 4.3.2 ([07cf1d3](https://github.com/opensrc0/fe-theme/commit/07cf1d32616201897fdc33e927cb9c278ddbc85f))
+
 ## [4.1.6](https://github.com/opensrc0/fe-theme/compare/v4.1.5...v4.1.6) (2024-02-18)
 
 
