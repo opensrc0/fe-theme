@@ -150,7 +150,7 @@
     ]
   },
   "dependencies": {
-    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "classnames": "^2.5.1",
     "esm": "^3.2.25",
     "lodash.merge": "^4.6.2",
